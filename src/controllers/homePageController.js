@@ -57,19 +57,30 @@ const updateSectionContent = async (req, res) => {
   }
 
   const sectionIndex = homePage.sections.findIndex((s) => s.sectionKey === sectionKey);
+  
   if (sectionIndex === -1) {
-    return res.status(404).json({ message: `Section '${sectionKey}' not found` });
+    // If section doesn't exist, create it dynamically
+    homePage.sections.push({
+      sectionKey,
+      title: title || sectionKey,
+      subtitle: subtitle || '',
+      isEnabled: isEnabled !== undefined ? isEnabled : true,
+      order: order !== undefined ? order : homePage.sections.length + 1,
+      contentData: contentData || {}
+    });
+  } else {
+    // Update existing section
+    if (title !== undefined) homePage.sections[sectionIndex].title = title;
+    if (subtitle !== undefined) homePage.sections[sectionIndex].subtitle = subtitle;
+    if (isEnabled !== undefined) homePage.sections[sectionIndex].isEnabled = isEnabled;
+    if (order !== undefined) homePage.sections[sectionIndex].order = order;
+    if (contentData !== undefined) homePage.sections[sectionIndex].contentData = contentData;
   }
-
-  if (title !== undefined) homePage.sections[sectionIndex].title = title;
-  if (subtitle !== undefined) homePage.sections[sectionIndex].subtitle = subtitle;
-  if (isEnabled !== undefined) homePage.sections[sectionIndex].isEnabled = isEnabled;
-  if (order !== undefined) homePage.sections[sectionIndex].order = order;
-  if (contentData !== undefined) homePage.sections[sectionIndex].contentData = contentData;
 
   await homePage.save();
 
-  res.json({ message: `Section '${sectionKey}' updated successfully`, section: homePage.sections[sectionIndex] });
+  const updatedSection = homePage.sections.find(s => s.sectionKey === sectionKey);
+  res.json({ message: `Section '${sectionKey}' updated successfully`, section: updatedSection });
 };
 
 module.exports = {

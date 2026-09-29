@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const superAdminRoutes = require('./routes/superAdminRoutes');
 const navigationRoutes = require('./routes/navigationRoutes');
 const homePageRoutes = require('./routes/homePageRoutes');
+const uploadRoutes = require('./routes/uploadRoutes');
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/super-admin', superAdminRoutes);
 app.use('/api/navigation', navigationRoutes);
 app.use('/api/homepage', homePageRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // Error Handling
 app.use(notFound);
