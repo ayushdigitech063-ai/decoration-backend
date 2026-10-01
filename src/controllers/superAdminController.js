@@ -28,12 +28,35 @@ const getDashboardOverview = async (req, res) => {
   });
 };
 
-// @desc    Get all users (Admins & Users)
+const Booking = require('../models/Booking');
+
+// @desc    Get all users (Admins & Customers with booking details)
 // @route   GET /api/super-admin/users
 // @access  Private/SuperAdmin
 const getAllUsers = async (req, res) => {
-  const users = await User.find().select('-password');
-  res.json(users);
+  try {
+    const users = await User.find().select('-password').sort({ createdAt: -1 });
+    
+    // Fetch booking metrics for each user
+    const usersWithStats = await Promise.all(
+      users.map(async (u) => {
+        const bookingsCount = await Booking.countDocuments({ user: u._id });
+        const latestBooking = await Booking.findOne({ user: u._id })
+          .sort({ createdAt: -1 })
+          .select('bookingId productName eventDate totalAmount advanceAmountPaid paymentStatus bookingStatus createdAt');
+        
+        return {
+          ...u.toObject(),
+          bookingsCount,
+          latestBooking,
+        };
+      })
+    );
+
+    res.json(usersWithStats);
+  } catch (error) {
+    res.status(500).json({ message: 'Error loading users', error: error.message });
+  }
 };
 
 // @desc    Update user role (promote to Admin / revoke)

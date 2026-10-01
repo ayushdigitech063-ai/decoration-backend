@@ -1,0 +1,3889 @@
+[
+  {
+    "id": "wedding-5",
+    "slug": "royal-wedding-gift-hamper",
+    "name": "Royal Wedding Gift Hamper",
+    "description": "Exquisite wedding present pack with traditional elegance, premium gift items, beautiful packaging, and a luxurious presentation.",
+    "price": 2499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-3ymWTf0acXlIabXM19AgC8iOWQe07E9Vu7EWcohCg&s=10",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Premium wedding gift items",
+      "Elegant decorative packaging",
+      "Traditional wedding accents",
+      "Luxury presentation box"
+    ],
+    "rating": 5,
+    "reviewCount": 262
+  },
+  {
+    "id": "wedding-6",
+    "slug": "bridal-couple-keepsake-box",
+    "name": "Bridal Couple Keepsake Box",
+    "description": "Luxurious keepsake box curated for newlyweds to preserve their most cherished wedding memories and special tokens.",
+    "price": 1899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW3jLbx1oesfpmPg39GDwSwAyXQkPjBPImHm4OJYKG4A&s=10",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Decorative keepsake box",
+      "Couple-themed accessories",
+      "Premium gift packaging",
+      "Wedding memory storage space"
+    ],
+    "rating": 4.9,
+    "reviewCount": 184
+  },
+  {
+    "id": "wedding-7",
+    "slug": "traditional-wedding-present-set",
+    "name": "Traditional Wedding Present Set",
+    "description": "Ornate gift collection crafted for grand wedding celebrations with traditional details and premium presentation.",
+    "price": 3199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-8qJXN3nQw-NoqZaMprnVgGDl6DRqsncem-xpn9BKQ&s=10",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Traditional gift collection",
+      "Decorative wedding accents",
+      "Premium presentation box",
+      "Elegant wrapping"
+    ],
+    "rating": 4.8,
+    "reviewCount": 210
+  },
+  {
+    "id": "wedding-8",
+    "slug": "luxury-celebration-gift-basket",
+    "name": "Luxury Celebration Gift Basket",
+    "description": "Premium assorted gift items for special wedding vows and celebrations, arranged beautifully in a luxury gift basket.",
+    "price": 2999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyuiqGdMZ3Au44FKlp3hqQ1_y9C8JyZm0_cumOxmuug&s=10",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Premium assorted gifts",
+      "Decorative basket",
+      "Luxury ribbons",
+      "Wedding celebration accessories"
+    ],
+    "rating": 5,
+    "reviewCount": 315
+  },
+  {
+    "id": "wedding-9",
+    "slug": "handcrafted-luxury-wedding-hamper-one",
+    "name": "Royal Wedding Present Hamper",
+    "description": "Handpicked luxury present and hamper designed specifically for grand weddings and couple milestones.",
+    "price": 2899,
+    "image": "https://tse2.mm.bing.net/th/id/OIP.-xKIhH_iRQfzmWuU1dV6sgHaEl?r=0&pid=Api&h=220&P=0",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Handpicked luxury presents",
+      "Premium hamper packaging",
+      "Wedding-themed decorative elements",
+      "Gift presentation accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 190
+  },
+  {
+    "id": "wedding-10",
+    "slug": "handcrafted-luxury-wedding-hamper-two",
+    "name": "Grand Couple Celebration Box",
+    "description": "Exquisite wedding gift collection packed with elegance, premium items, and a traditional touch for newlyweds.",
+    "price": 3499,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.eu-9aa3xXL0XSXXtQiv5kQHaFF?r=0&pid=Api&h=220&P=0",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Premium couple gifts",
+      "Traditional decorative elements",
+      "Luxury gift box",
+      "Wedding celebration accessories"
+    ],
+    "rating": 5,
+    "reviewCount": 245
+  },
+  {
+    "id": "wedding-11",
+    "slug": "handcrafted-luxury-wedding-hamper-three",
+    "name": "Traditional Bridal Gift Tray",
+    "description": "Beautifully decorated gift set curated for auspicious couple milestones and wedding rituals.",
+    "price": 2299,
+    "image": "https://tse2.mm.bing.net/th/id/OIP.HvN6mIuPhxKdTPy1ggQsxAHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Decorative bridal tray",
+      "Traditional wedding accessories",
+      "Gift presentation elements",
+      "Auspicious decorative details"
+    ],
+    "rating": 4.8,
+    "reviewCount": 160
+  },
+  {
+    "id": "wedding-12",
+    "slug": "handcrafted-luxury-wedding-hamper-four",
+    "name": "Opulent Wedding Gift Basket",
+    "description": "Handcrafted luxury present featuring premium elements for unforgettable wedding celebrations.",
+    "price": 3199,
+    "image": "https://tse2.mm.bing.net/th/id/OIP.D5iTwRmtT7p_aLYGH0xdmAHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Wedding",
+    "subcategory": "Wedding Gifts",
+    "availability": true,
+    "included": [
+      "Luxury gift basket",
+      "Premium decorative items",
+      "Wedding celebration accessories",
+      "Elegant gift wrapping"
+    ],
+    "rating": 4.9,
+    "reviewCount": 210
+  },
+  {
+    "id": "festival-13",
+    "slug": "grand-festive-celebration-kit",
+    "name": "Grand Festive Celebration Kit",
+    "description": "Vibrant festive elements to lighten up every celebration, festival evening, and family gathering.",
+    "price": 1599,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemobADcx1wbzySQLE07XuCW7DkkpCQGAoREpKMMjhTw&s=10",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Festive decorative elements",
+      "Celebration accessories",
+      "Traditional decorative accents",
+      "Ready-to-use setup items"
+    ],
+    "rating": 4.7,
+    "reviewCount": 142
+  },
+  {
+    "id": "festival-14",
+    "slug": "traditional-festival-decoratives",
+    "name": "Traditional Festival Decoratives",
+    "description": "Colorful seasonal decorations designed for cultural gatherings and traditional home styling.",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5yvGM_PnSb3SL0omgZI1afaHHi-n6FEfACn0x2YNX_A&s=10",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Colorful decorative pieces",
+      "Traditional accents",
+      "Seasonal decorations",
+      "Home styling elements"
+    ],
+    "rating": 4.6,
+    "reviewCount": 98
+  },
+  {
+    "id": "festival-15",
+    "slug": "auspicous-celebration-package",
+    "name": "Auspicous Celebration Package",
+    "description": "Complete festive ornamentation kit for homes and venues to create a vibrant and welcoming celebration atmosphere.",
+    "price": 2199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOcZ3MUvJE33_SoCKUbJ40Bv58z_y4gH4e4mjMNN4iw&s=10",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Complete festive decoration",
+      "Ornamental accessories",
+      "Venue styling elements",
+      "Traditional decorative accents"
+    ],
+    "rating": 4.9,
+    "reviewCount": 176
+  },
+  {
+    "id": "festival-16",
+    "slug": "festive-special-decor-one",
+    "name": "Festive Celebration Ornament",
+    "description": "Special cultural festive decoration item designed to brighten homes and celebration spaces.",
+    "price": 1499,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.ob8hwl9d6scbchI8LtR9lwHaFj?r=0&pid=Api&h=220&P=0",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Festive ornament",
+      "Cultural decorative accents",
+      "Home styling element"
+    ],
+    "rating": 4.8,
+    "reviewCount": 115
+  },
+  {
+    "id": "festival-17",
+    "slug": "festive-special-decor-two",
+    "name": "Traditional Festive Hamper",
+    "description": "Curated festive essentials for seasonal celebrations, rituals, and traditional gatherings.",
+    "price": 1899,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.4an6OGdO1Y3JEqCaPUP_LQHaJQ?r=0&pid=Api&h=220&P=0",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Festive essentials",
+      "Traditional decorative items",
+      "Seasonal celebration accessories"
+    ],
+    "rating": 4.7,
+    "reviewCount": 130
+  },
+  {
+    "id": "festival-18",
+    "slug": "festive-special-decor-three",
+    "name": "Auspicious Celebration Kit",
+    "description": "Exquisite decorative items designed for joyful festive gatherings and traditional celebrations.",
+    "price": 2399,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.dEFcv-dMWw1TDhOSpYBVswHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Auspicious decorative items",
+      "Festive celebration accessories",
+      "Traditional styling elements"
+    ],
+    "rating": 4.9,
+    "reviewCount": 160
+  },
+  {
+    "id": "festival-19",
+    "slug": "festive-special-decor-four",
+    "name": "Cultural Festival Accent",
+    "description": "Elegant aesthetic product crafted for festive home styling and cultural celebrations.",
+    "price": 1199,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.Lo9VLYJTIDrzVaFBQ_z2owHaJ4?r=0&pid=Api&h=220&P=0",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Elegant festival accent",
+      "Home styling element",
+      "Cultural decorative detail"
+    ],
+    "rating": 4.6,
+    "reviewCount": 95
+  },
+  {
+    "id": "festival-20",
+    "slug": "grand-festive-package",
+    "name": "Grand Festive Package",
+    "description": "Complete festive ornamentation set designed for memorable celebrations and beautifully styled venues.",
+    "price": 2799,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.Bs7LCYybb3anZCLnCjj3DQHaG9?r=0&pid=Api&h=220&P=0",
+    "category": "Festivals",
+    "subcategory": "Festive Decor",
+    "availability": true,
+    "included": [
+      "Complete festive ornamentation",
+      "Decorative accessories",
+      "Venue styling elements",
+      "Celebration-ready setup"
+    ],
+    "rating": 5,
+    "reviewCount": 205
+  },
+  {
+    "id": "puja-21",
+    "slug": "divine-puja-thali-essentials",
+    "name": "Divine Puja Thali & Essentials",
+    "description": "Sacred ritual items decorated with traditional motifs, brass elements, and devotional aesthetics.",
+    "price": 999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2vzXMLs2vjByeMzynxIlAfn5OVQV41wln1yjt8HaxQ&s=10",
+    "category": "Puja",
+    "subcategory": "Puja Essentials",
+    "availability": true,
+    "included": [
+      "Decorative puja thali",
+      "Traditional ritual accessories",
+      "Devotional decorative elements",
+      "Brass-style accents"
+    ],
+    "rating": 5,
+    "reviewCount": 420
+  },
+  {
+    "id": "puja-22",
+    "slug": "blessed-mandap-floral-setup",
+    "name": "Blessed Mandap Floral Setup",
+    "description": "Pure devotional setup crafted with elegant floral aesthetics for home pujas and ceremonies.",
+    "price": 3499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsLommkibFYXhoeTCneXzs4x0QQyE7gRjTZ1RcCGr5g&s",
+    "category": "Puja",
+    "subcategory": "Puja Decoration",
+    "availability": true,
+    "included": [
+      "Floral mandap decoration",
+      "Devotional decorative elements",
+      "Ceremony styling",
+      "Traditional accents"
+    ],
+    "rating": 4.9,
+    "reviewCount": 289
+  },
+  {
+    "id": "puja-23",
+    "slug": "spiritual-home-temple-decor",
+    "name": "Spiritual Home Temple Decor",
+    "description": "Serene decorative elements and warm styling designed for auspicious prayers and home temples.",
+    "price": 1799,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRtXWuvamj9L155RFsfVip7-d-Lv7SwREpu0pvhKFE4A&s=10",
+    "category": "Puja",
+    "subcategory": "Puja Decoration",
+    "availability": true,
+    "included": [
+      "Temple decorative elements",
+      "Spiritual styling accessories",
+      "Traditional accents"
+    ],
+    "rating": 4.8,
+    "reviewCount": 154
+  },
+  {
+    "id": "puja-24",
+    "slug": "traditional-ceremonial-aarti-set",
+    "name": "Traditional Ceremonial Aarti Set",
+    "description": "Elegant brass and floral accents for daily or special festive pujas with complete devotional styling.",
+    "price": 1499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1AjsHLO--3ycMVInMLyIo9xmR90AzuCeB0DXIRXNfQ&s=10",
+    "category": "Puja",
+    "subcategory": "Puja Essentials",
+    "availability": true,
+    "included": [
+      "Aarti set",
+      "Brass-style accents",
+      "Floral decorative elements",
+      "Devotional accessories"
+    ],
+    "rating": 4.7,
+    "reviewCount": 112
+  },
+  {
+    "id": "puja-25",
+    "slug": "sacred-puja-essentials-kit",
+    "name": "Sacred Puja Essentials Kit",
+    "description": "Complete sacred kit for daily prayers and auspicious rituals with traditional elements.",
+    "price": 1299,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.DgJFU1OONBwGlTFyiEBUZQHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Puja",
+    "subcategory": "Puja Essentials",
+    "availability": true,
+    "included": [
+      "Daily puja essentials",
+      "Traditional ritual accessories",
+      "Decorative elements",
+      "Prayer accessories"
+    ],
+    "rating": 4.9,
+    "reviewCount": 135
+  },
+  {
+    "id": "puja-26",
+    "slug": "divine-mandap-decor-item",
+    "name": "Divine Mandap Decor Item",
+    "description": "Exquisite mandap setup elements crafted for serene and divine spiritual ceremonies.",
+    "price": 3899,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.4q0OscjzO7dnGpnLi_s-kgHaF7?r=0&pid=Api&h=220&P=0",
+    "category": "Puja",
+    "subcategory": "Puja Decoration",
+    "availability": true,
+    "included": [
+      "Mandap decorative elements",
+      "Ceremonial styling",
+      "Traditional accents",
+      "Spiritual decor"
+    ],
+    "rating": 5,
+    "reviewCount": 180
+  },
+  {
+    "id": "puja-27",
+    "slug": "traditional-devotional-thali",
+    "name": "Traditional Devotional Thali Set",
+    "description": "Pious ritual items styled with authentic traditional aesthetics and brass accents.",
+    "price": 1199,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.1jA3eUfBpQuZEmND22pSUwHaE8?r=0&pid=Api&h=220&P=0",
+    "category": "Puja",
+    "subcategory": "Puja Essentials",
+    "availability": true,
+    "included": [
+      "Traditional devotional thali",
+      "Ritual accessories",
+      "Brass-style decorative accents"
+    ],
+    "rating": 4.8,
+    "reviewCount": 150
+  },
+  {
+    "id": "puja-28",
+    "slug": "serene-temple-decor-piece",
+    "name": "Serene Temple Decor Piece",
+    "description": "Auspicious home temple ornamentation designed to create a peaceful and devotional atmosphere.",
+    "price": 1599,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.2it6NFOnICKxWw6BoStxXwHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Puja",
+    "subcategory": "Puja Decoration",
+    "availability": true,
+    "included": [
+      "Temple ornament",
+      "Traditional decorative details",
+      "Home temple styling element"
+    ],
+    "rating": 4.7,
+    "reviewCount": 120
+  },
+  {
+    "id": "esthetic-29",
+    "slug": "modern-minimalist-aesthetic-decor",
+    "name": "Modern Minimalist Aesthetic Decor",
+    "description": "Chic artistic styling pieces for modern living spaces, adding subtle elegance and contemporary charm.",
+    "price": 2299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokJ-C704of19scix-aGgOw1238UjZbbhZitVcLWGaSA&s=10",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Minimalist decor piece",
+      "Modern styling element",
+      "Artistic accent"
+    ],
+    "rating": 4.8,
+    "reviewCount": 225
+  },
+  {
+    "id": "esthetic-30",
+    "slug": "boho-chic-elegance-arrangement",
+    "name": "Boho-Chic Elegance Arrangement",
+    "description": "Trendy aesthetic accents designed for subtle sophistication and warm bohemian interior vibes.",
+    "price": 1899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-P9ELEKw25_RUnNECpvs5N4a7E8eS2Pus52FBgKHRA&s=10",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Boho-style decor",
+      "Aesthetic accent",
+      "Interior styling element"
+    ],
+    "rating": 4.7,
+    "reviewCount": 165
+  },
+  {
+    "id": "esthetic-31",
+    "slug": "luxurious-designer-centerpiece",
+    "name": "Luxurious Designer Centerpiece",
+    "description": "Stunning aesthetic decor centerpiece designed to elevate room aesthetics and create an elegant focal point.",
+    "price": 2799,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKYb3x1S573LYJhYIwikKmn7Je7z_c57v758lLsgqUw&s=10",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Designer centerpiece",
+      "Premium decorative accent",
+      "Modern interior styling element"
+    ],
+    "rating": 5,
+    "reviewCount": 380
+  },
+  {
+    "id": "esthetic-32",
+    "slug": "contemporary-artful-home-accent",
+    "name": "Contemporary Artful Home Accent",
+    "description": "Sleek artistic elements for modern home aesthetics combining fine texture with minimalist form.",
+    "price": 1699,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjUzIqXeyRs6PdCf870b0X2Aara1qnLj6CqPxZyswvQ&s=10",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Contemporary accent",
+      "Artistic decor element",
+      "Minimalist styling piece"
+    ],
+    "rating": 4.6,
+    "reviewCount": 88
+  },
+  {
+    "id": "esthetic-33",
+    "slug": "aesthetic-decor-piece-one",
+    "name": "Modern Artistic Accent",
+    "description": "Minimalist and trend-setting artistic home decor accents for modern aesthetics.",
+    "price": 1899,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.0kUqjWnweLqW7FlC6XIKzgHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Modern artistic accent",
+      "Minimalist decor",
+      "Interior styling element"
+    ],
+    "rating": 4.8,
+    "reviewCount": 140
+  },
+  {
+    "id": "esthetic-34",
+    "slug": "aesthetic-decor-piece-two",
+    "name": "Contemporary Design Centerpiece",
+    "description": "Chic aesthetic styling piece designed to elevate contemporary living spaces.",
+    "price": 2499,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.aq6tM0osSVJa7U-3G-b_ugHaI8?r=0&pid=Api&h=220&P=0",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Contemporary centerpiece",
+      "Aesthetic styling element",
+      "Modern decor accent"
+    ],
+    "rating": 4.9,
+    "reviewCount": 195
+  },
+  {
+    "id": "esthetic-35",
+    "slug": "aesthetic-decor-piece-three",
+    "name": "Artful Interior Styling Element",
+    "description": "Elegant home accent crafted for subtle sophistication and modern interior styling.",
+    "price": 1699,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.qfu0DofwpgMLIRc2ncZRCgHaE7?r=0&pid=Api&h=220&P=0",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Artistic interior accent",
+      "Elegant decor element",
+      "Modern styling piece"
+    ],
+    "rating": 4.7,
+    "reviewCount": 110
+  },
+  {
+    "id": "esthetic-36",
+    "slug": "aesthetic-decor-piece-four",
+    "name": "Minimalist Aesthetic Ornament",
+    "description": "Sleek artistic decor piece designed for modern home styling and minimalist interiors.",
+    "price": 2199,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.HDh4eXsxbZFqoAtWVyjmpwHaHa?r=0&pid=Api&h=220&P=0",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Minimalist ornament",
+      "Artistic decor",
+      "Modern interior accent"
+    ],
+    "rating": 4.9,
+    "reviewCount": 165
+  },
+  {
+    "id": "esthetic-37",
+    "slug": "aesthetic-decor-piece-five",
+    "name": "Luxurious Artistic Accent",
+    "description": "Premium designer accent for exquisite and trend-setting interior aesthetics.",
+    "price": 2999,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.fu8BmKcEABu6BL51yuXodQHaFQ?r=0&pid=Api&h=220&P=0",
+    "category": "Esthetic",
+    "subcategory": "Modern Decor",
+    "availability": true,
+    "included": [
+      "Premium artistic accent",
+      "Designer decor element",
+      "Luxury interior styling piece"
+    ],
+    "rating": 5,
+    "reviewCount": 230
+  },
+  {
+    "id": "christmas-1",
+    "slug": "grand-decorated-christmas-tree",
+    "name": "Grand Decorated Christmas Tree",
+    "description": "Exquisitely adorned festive fir tree with ornaments, baubles, and fairy lights.",
+    "price": 3499,
+    "originalPrice": 4499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1N6QA6-7p2IKCkf-yZo46P-pmQLQc8jxuwTbDhRmdA&s",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1N6QA6-7p2IKCkf-yZo46P-pmQLQc8jxuwTbDhRmdA&s",
+      "/christmas/tree-1.png",
+      "/christmas/tree-2.png",
+      "/christmas/tree-3.png"
+    ],
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Pre-installed warm fairy lights",
+      "Assorted premium shatterproof baubles",
+      "Sturdy metallic base support",
+      "Decorative Christmas ornaments",
+      "Complete tree decoration setup"
+    ],
+    "notIncluded": [
+      "Electrical extension board",
+      "Additional custom decorations",
+      "Transportation outside service area"
+    ],
+    "cancellationPolicy": "Cancellation is allowed up to 24 hours before the scheduled decoration date. Cancellation after this period may be subject to applicable charges.",
+    "rating": 4.8,
+    "reviewCount": 24
+  },
+  {
+    "id": "christmas-2",
+    "slug": "santa-claus-festive-welcome-setup",
+    "name": "Santa Claus Festive Welcome Setup",
+    "description": "Delightful holiday arrangement with Santa props, gift boxes, and snow decor. Create an enchanting entrance or living room corner with life-like Santa props, decorative gift boxes, and snowy winter aesthetics.",
+    "price": 4999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakgC-6HSoieTRFWSQxjEubmcJrlOqEDQWb1yLtamPzg&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Life-sized or medium Santa props available",
+      "Decorative wrapped gift boxes included",
+      "Snow-spray winter floor mat finish",
+      "Great photo-booth background for families"
+    ]
+  },
+  {
+    "id": "christmas-3",
+    "slug": "winter-wonderland-snow-lighting",
+    "name": "Winter Wonderland Snow Lighting",
+    "description": "Magical icicle lights and snowfall illumination for home and office exterior. Transform your space into a snowy North Pole retreat with sparkling icicle LED strings and ambient winter blue-white lighting.",
+    "price": 2199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrBsoqBI_UhUpejHXZaKauup7FBs9iLKtsTW0YzQ7rA&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Energy-efficient cascading LED icicles",
+      "Weather-resistant outdoor wiring",
+      "Soft warm-white and cool-blue glow",
+      "Easy installation for balconies and rooftops"
+    ]
+  },
+  {
+    "id": "christmas-4",
+    "slug": "holiday-wreath-door-garland",
+    "name": "Holiday Wreath & Door Garland",
+    "description": "Handcrafted pinecone and red berry door wreath with festive ribbons. Welcome your Christmas guests with a traditional evergreen door wreath embellished with frosted pinecones, red berries, and velvet bows.",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavhIazReGQ78tZRL97UxzfPydNbZjhMmXXLfSyngLQw&s",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Premium artificial evergreen pine needles",
+      "Adorned with natural pinecones & berries",
+      "Durable indoor/outdoor hanging loop",
+      "Classic Christmas red bow accent"
+    ]
+  },
+  {
+    "id": "christmas-5",
+    "slug": "festive-dining-candlelit-centerpiece",
+    "name": "Festive Dining & Candlelit Centerpiece",
+    "description": "Elegant holiday table runner, candles, and centerpiece arrangement for Christmas dinner. Set the ultimate Christmas feast table with a gorgeous candlelit floral centerpiece, festive runners, and gold-accented dinner decor.",
+    "price": 1899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKfGkRYmyr4lCLEUaXQ5MwHG3nuWnbGszl13hl27rUQ&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Includes aromatic festive candles",
+      "Luxurious holiday table runner",
+      "Pine and holly leaf decorative accents",
+      "Perfect for family Christmas Eve dinners"
+    ]
+  },
+  {
+    "id": "christmas-6",
+    "slug": "christmas-sweet-treats-plum-cake-hamper",
+    "name": "Christmas Sweet Treats & Plum Cake Hamper",
+    "description": "Traditional rich plum cake, gingerbread cookies, and holiday chocolates. Indulge in seasonal sweetness with an authentic festive hamper packed with rich dry fruit plum cake, cookies, and gourmet chocolates.",
+    "price": 999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTeDKcLIqCTpbf2g5jJjov8qEVfQ0cuv_xoIscQtM-Dw&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Authentic rich plum cake included",
+      "Freshly baked gingerbread cookies",
+      "Beautifully gift-wrapped festive box",
+      "Ideal for gifting friends and family"
+    ]
+  },
+  {
+    "id": "christmas-7",
+    "slug": "grand-christmas-tree-lighting-setup",
+    "name": "Grand Christmas Tree & Lighting Setup",
+    "description": "Exquisitely decorated giant Christmas tree adorned with glittering baubles, stars, and fairy lights for grand celebrations.",
+    "price": 6499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBGNDDxdate3wKiX02hMXWRLTVGaun1kQpFGELKfORzOTZF-mVOHUWG9hs&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Giant decorative tree",
+      "Glittering baubles & stars",
+      "Fairy lights included",
+      "Professional setup"
+    ]
+  },
+  {
+    "id": "christmas-8",
+    "slug": "snowy-winter-wonderland-theme",
+    "name": "Snowy Winter Wonderland Theme",
+    "description": "Magical artificial snow sprays, white faux fur accents, and frosty winter decor elements to give a real snowy feel.",
+    "price": 8999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBYs6LfDeJ58ZmW5HwEZNKn_qpAjwdWdzCnVcbiJhLg&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Artificial snow sprays",
+      "Faux fur accents",
+      "Frosty elements",
+      "Winter wonderland vibe"
+    ]
+  },
+  {
+    "id": "christmas-9",
+    "slug": "santas-grotto-gift-corner",
+    "name": "Santa's Grotto & Gift Corner",
+    "description": "Festive corner setup with Santa props, gift boxes, stockings, and warm festive backdrops for kids and family photos.",
+    "price": 5899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxK90e4AlKRqbOnIp93VEWcG9F1JeDc4Bx74lFVstsyw&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Santa props",
+      "Wrapped gift boxes",
+      "Stockings & backdrops",
+      "Perfect photo corner"
+    ]
+  },
+  {
+    "id": "christmas-10",
+    "slug": "merry-bright-entrance-archway",
+    "name": "Merry & Bright Entrance Archway",
+    "description": "Grand holiday entrance arch decorated with red-gold ornaments, pine cones, and green garlands to welcome guests.",
+    "price": 7499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9B2yevJe49MW_IGD1rIyizOIXX7aKGfcqTaOY9nEDLg&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Holiday entrance arch",
+      "Red-gold ornaments",
+      "Pine cones & green garlands",
+      "Sturdy structure"
+    ]
+  },
+  {
+    "id": "christmas-11",
+    "slug": "classic-christmas-tree-setup",
+    "name": "Classic Christmas Tree Setup",
+    "description": "Beautifully styled festive Christmas tree adorned with ornaments and glowing fairy lights for your living room.",
+    "price": 2999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJNpF-N-ORl2VSyHFlkFw0hadAloYxEr1HaV88lzHaiA&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Festive Christmas tree",
+      "Ornaments included",
+      "Glowing fairy lights",
+      "Compact & elegant"
+    ]
+  },
+  {
+    "id": "christmas-12",
+    "slug": "festive-gift-box-hamper",
+    "name": "Festive Gift Box Hamper",
+    "description": "Exquisitely wrapped holiday gift boxes filled with seasonal surprises and festive treats for your loved ones.",
+    "price": 1499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7rtYWF8eVTmkemyLGUIVHYl6Y9v4zqSq0BIFfw-w9rA&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Wrapped gift boxes",
+      "Seasonal surprises",
+      "Festive treats",
+      "Beautiful packaging"
+    ]
+  },
+  {
+    "id": "christmas-13",
+    "slug": "premium-christmas-decoration-pack",
+    "name": "Premium Christmas Decoration Pack",
+    "description": "Complete winter decoration collection featuring hanging baubles, ribbons, and star accents for complete room decoration.",
+    "price": 1999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20nDAak0Bp07QwjqSoWK5U8M-CXEQlkx7zRgOdM2mNA&s=10",
+    "category": "Festivals",
+    "subcategory": "Christmas",
+    "availability": true,
+    "included": [
+      "Complete decoration pack",
+      "Hanging baubles & ribbons",
+      "Star accents",
+      "Easy to setup"
+    ]
+  },
+  {
+    "id": "1",
+    "slug": "royal-mandap-setup",
+    "name": "Royal Mandap Setup",
+    "description": "Floral mandap with elegant drapes and chandeliers. Grand wedding decoration designed to create a royal and memorable setting.",
+    "price": 45000,
+    "image": "/wedding1.png",
+    "category": "Wedding Decoration",
+    "subcategory": "Wedding",
+    "availability": true,
+    "included": [
+      "Floral mandap decoration",
+      "Decorative drapes",
+      "Chandelier decoration"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "entrance-gate-decor",
+    "name": "Entrance Gate Decor",
+    "description": "Grand floral welcome gate designed to create a beautiful first impression for your wedding guests.",
+    "price": 18000,
+    "image": "/wedding2.png",
+    "category": "Wedding Decoration",
+    "subcategory": "Wedding",
+    "availability": true,
+    "included": [
+      "Grand entrance gate",
+      "Floral decoration",
+      "Decorative elements"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "stage-backdrop",
+    "name": "Stage Backdrop",
+    "description": "Elegant floral and fairy-light backdrop designed for a beautiful wedding stage and memorable photographs.",
+    "price": 22000,
+    "image": "/wedding3.png",
+    "category": "Wedding Decoration",
+    "subcategory": "Wedding",
+    "availability": true,
+    "included": [
+      "Floral backdrop",
+      "Fairy lights",
+      "Stage decoration"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "aisle-walkway",
+    "name": "Aisle Walkway",
+    "description": "Beautiful petal-lined wedding aisle decorated with elegant lanterns for a romantic entrance.",
+    "price": 15000,
+    "image": "/wedding4.png",
+    "category": "Wedding Decoration",
+    "subcategory": "Wedding",
+    "availability": true,
+    "included": [
+      "Petal-lined aisle",
+      "Decorative lanterns",
+      "Aisle styling"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "reception-setup",
+    "name": "Reception Setup",
+    "description": "Complete reception hall styling designed to create an elegant and welcoming atmosphere for your celebration.",
+    "price": 35000,
+    "image": "/wedding5.png",
+    "category": "Wedding Decoration",
+    "subcategory": "Wedding",
+    "availability": true,
+    "included": [
+      "Reception hall styling",
+      "Decorative elements",
+      "Table and venue styling"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "living-room-refresh",
+    "name": "Living Room Refresh",
+    "description": "Seasonal florals and accent styling that bring a fresh and beautiful look to your living room.",
+    "price": 6000,
+    "image": "/home1.png",
+    "category": "Home Decoration",
+    "subcategory": "Home",
+    "availability": true,
+    "included": [
+      "Seasonal floral decoration",
+      "Accent styling",
+      "Living room arrangement"
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "balcony-makeover",
+    "name": "Balcony Makeover",
+    "description": "Beautiful balcony transformation with fairy lights and potted greens for a warm and inviting atmosphere.",
+    "price": 4500,
+    "image": "/home2.png",
+    "category": "Home Decoration",
+    "subcategory": "Home",
+    "availability": true,
+    "included": [
+      "Fairy lights",
+      "Potted green decoration",
+      "Balcony styling"
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "puja-room-decor",
+    "name": "Puja Room Decor",
+    "description": "Traditional festive styling designed to create a peaceful and beautiful puja room environment.",
+    "price": 5000,
+    "image": "/home3.png",
+    "category": "Home Decoration",
+    "subcategory": "Home",
+    "availability": true,
+    "included": [
+      "Traditional decoration",
+      "Festive styling",
+      "Puja room arrangement"
+    ]
+  },
+  {
+    "id": "9",
+    "slug": "dining-setup",
+    "name": "Dining Setup",
+    "description": "Elegant dining table decoration featuring a beautiful centerpiece and atmospheric lighting.",
+    "price": 3500,
+    "image": "/home4.png",
+    "category": "Home Decoration",
+    "subcategory": "Home",
+    "availability": true,
+    "included": [
+      "Table centerpiece",
+      "Decorative lighting",
+      "Dining table styling"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "entrance-decor",
+    "name": "Entrance Decor",
+    "description": "Beautiful doorway decoration featuring rangoli and floral toran elements for a welcoming entrance.",
+    "price": 2500,
+    "image": "/home5.png",
+    "category": "Home Decoration",
+    "subcategory": "Home",
+    "availability": true,
+    "included": [
+      "Doorway rangoli",
+      "Floral toran",
+      "Entrance styling"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "candlelight-setup",
+    "name": "Candlelight Setup",
+    "description": "Romantic candle and rose petal path arrangement designed for an intimate anniversary celebration.",
+    "price": 8000,
+    "image": "/aniversarry1.png",
+    "category": "Anniversary Decoration",
+    "subcategory": "Anniversary",
+    "availability": true,
+    "included": [
+      "Decorative candles",
+      "Rose petals",
+      "Romantic pathway styling"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "balloon-backdrop",
+    "name": "Balloon Backdrop",
+    "description": "Themed balloon wall with beautiful lights designed to create an attractive anniversary celebration backdrop.",
+    "price": 6500,
+    "image": "/aniversarry2.png",
+    "category": "Anniversary Decoration",
+    "subcategory": "Anniversary",
+    "availability": true,
+    "included": [
+      "Themed balloon wall",
+      "Decorative lights",
+      "Backdrop styling"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "floral-arch",
+    "name": "Floral Arch",
+    "description": "Elegant rose and fairy-light arch designed to create a romantic setting for your anniversary celebration.",
+    "price": 9500,
+    "image": "/aniversarry3.png",
+    "category": "Anniversary Decoration",
+    "subcategory": "Anniversary",
+    "availability": true,
+    "included": [
+      "Rose decoration",
+      "Fairy lights",
+      "Floral arch structure"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "table-for-two",
+    "name": "Table for Two",
+    "description": "Private dinner setup designed for a romantic and intimate anniversary celebration.",
+    "price": 7000,
+    "image": "/aniversarry4.png",
+    "category": "Anniversary Decoration",
+    "subcategory": "Anniversary",
+    "availability": true,
+    "included": [
+      "Private dinner table setup",
+      "Table decoration",
+      "Romantic styling"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "terrace-theme",
+    "name": "Terrace Theme",
+    "description": "Fairy-lit terrace celebration setup designed to create a magical and romantic outdoor atmosphere.",
+    "price": 11000,
+    "image": "/aniversarry5.png",
+    "category": "Anniversary Decoration",
+    "subcategory": "Anniversary",
+    "availability": true,
+    "included": [
+      "Fairy lights",
+      "Terrace decoration",
+      "Celebration styling"
+    ]
+  },
+  {
+    "id": "16",
+    "slug": "balloon-theme-party",
+    "name": "Balloon Theme Party",
+    "description": "Colourful balloon arch and backdrop designed to create a playful and bright birthday celebration for children.",
+    "price": 7500,
+    "image": "/childbirthday1.png",
+    "category": "Child Birthday",
+    "subcategory": "Birthday",
+    "availability": true,
+    "included": [
+      "Colourful balloon arch",
+      "Birthday backdrop",
+      "Theme decoration"
+    ]
+  },
+  {
+    "id": "17",
+    "slug": "cartoon-theme-setup",
+    "name": "Cartoon Theme Setup",
+    "description": "Fun cartoon-themed birthday setup featuring character cutouts and colourful banners.",
+    "price": 9000,
+    "image": "/childbirthday2.png",
+    "category": "Child Birthday",
+    "subcategory": "Birthday",
+    "availability": true,
+    "included": [
+      "Character cutouts",
+      "Theme banners",
+      "Cartoon decoration"
+    ]
+  },
+  {
+    "id": "18",
+    "slug": "photo-booth-corner",
+    "name": "Photo Booth Corner",
+    "description": "Fun themed photo booth corner with colourful props and a decorative backdrop for memorable birthday photographs.",
+    "price": 4000,
+    "image": "/childbirthday3.png",
+    "category": "Child Birthday",
+    "subcategory": "Birthday",
+    "availability": true,
+    "included": [
+      "Themed photo backdrop",
+      "Photo booth props",
+      "Birthday styling"
+    ]
+  },
+  {
+    "id": "19",
+    "slug": "table-cake-decor",
+    "name": "Table & Cake Decor",
+    "description": "Themed cake table styling designed to create an attractive centerpiece for a child's birthday celebration.",
+    "price": 5500,
+    "image": "/childbirthday4.png",
+    "category": "Child Birthday",
+    "subcategory": "Birthday",
+    "availability": true,
+    "included": [
+      "Cake table decoration",
+      "Themed styling",
+      "Decorative elements"
+    ]
+  },
+  {
+    "id": "20",
+    "slug": "full-venue-setup",
+    "name": "Full Venue Setup",
+    "description": "Complete themed venue styling designed to transform the entire birthday celebration space.",
+    "price": 15000,
+    "image": "/childbirthday5.png",
+    "category": "Child Birthday",
+    "subcategory": "Birthday",
+    "availability": true,
+    "included": [
+      "Complete venue styling",
+      "Birthday theme decoration",
+      "Balloon decoration",
+      "Backdrop decoration"
+    ]
+  },
+  {
+    "id": "1",
+    "slug": "aarti-thali",
+    "name": "Aarti Thali",
+    "description": "Exquisite traditional brass aarti thali set for auspicious rituals.",
+    "fullDescription": "Enhance your daily prayers and festival celebrations with this beautifully crafted traditional aarti thali. Made with fine detailing to hold all your puja essentials securely.",
+    "price": 699,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTqZ0VztZVjNogJmN3BINCH-6MY3DyVxcgxt9T2L_UFQ&s=10",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Traditional ethnic design",
+      "Durable high-quality finish",
+      "Easy to clean and maintain",
+      "Perfect for gifting and personal use"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "decoration-deepak",
+    "name": "Decoration Deepak",
+    "description": "Handcrafted decorative deepak to illuminate your home mandap.",
+    "fullDescription": "Bring divine radiance to your home during Ganesh Chaturthi with these artistic decoration deepaks, designed to cast a warm and peaceful glow.",
+    "price": 499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnblBi6vk_BdWwK2ltpRLvyeDpPXTl_7vdeRHzBAYrAQ&s",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Hand-painted intricate details",
+      "Long-burning capacity",
+      "Safe and sturdy base",
+      "Reusable festive decor item"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "ganesh-palki",
+    "name": "Ganesh Palki",
+    "description": "Majestic ornamental palki for welcoming Lord Ganesha home.",
+    "fullDescription": "Give Bappa a royal welcome with this grand and beautifully decorated Ganesh Palki, crafted specifically to elevate your mandap aesthetics.",
+    "price": 2499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzaUCjMCI10fVRrGxr7hM3MyQ-2IRNQImXlKUyLXnyw&s",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Sturdy structural support for idols",
+      "Rich traditional decorations and drapes",
+      "Lightweight and easy to set up",
+      "Grand visual appeal for home mandaps"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "decoration-items",
+    "name": "Decoration Items",
+    "description": "Assorted floral and lighting items for vibrant mandap backdrops.",
+    "fullDescription": "Complete your festival decoration package with this curated set of vibrant floral hangings and matching aesthetic lighting elements.",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxRtaBFbfmQxotAcqghndBTbjVYUoCnf31mZBCUUPL5A&s=10",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Vibrant traditional colors",
+      "Reusable synthetic fabric flowers",
+      "Easy to hang on walls and pillars",
+      "Instant festive transformation"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "modak-prasad",
+    "name": "Modak Prasad",
+    "description": "Delicious sacred modak sweet box offering for Bappa.",
+    "fullDescription": "Complete your pooja rituals with authentic, premium quality modaks prepared especially as a divine offering for Lord Ganesha.",
+    "price": 399,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiIyp_L2aKBiOXH0oG10W6GOpAU0ROmsnq74xFishCA&s=10",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Prepared with pure and premium ingredients",
+      "Traditional authentic taste",
+      "Hygenic festive packaging",
+      "Ideal for prasad distribution"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "royal-lotus-mandap-decor",
+    "name": "Royal Lotus Mandap Decor",
+    "description": "Traditional floral backdrop with auspicious marigold and fresh greens.",
+    "fullDescription": "A traditional lotus-themed mandap backdrop styled with fresh marigold garlands and lush greens, bringing an auspicious and vibrant atmosphere to your home pandal.",
+    "price": 4999,
+    "image": "/ganesh1.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Fresh marigold and floral styling",
+      "Traditional lotus motif backdrop",
+      "Suitable for home mandap setups",
+      "Professional on-site installation"
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "traditional-banana-leaf-arch",
+    "name": "Traditional Banana Leaf Arch",
+    "description": "Eco-friendly natural banana trunk styling with ethnic elements.",
+    "fullDescription": "An eco-friendly entrance arch crafted from natural banana trunks and ethnic decorative elements, perfect for a traditional and sustainable festival look.",
+    "price": 6499,
+    "image": "/ganesh2.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Eco-friendly natural banana trunk styling",
+      "Ethnic traditional decor elements",
+      "Great for entrance and mandap gates",
+      "Sustainable festival decoration"
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "golden-glow-backdrop",
+    "name": "Golden Glow Backdrop",
+    "description": "Warm fairy lights and rich fabric drapes for a divine aura.",
+    "fullDescription": "A warm, glowing backdrop combining soft fairy lights with rich fabric drapes to create a divine and inviting aura around the mandap.",
+    "price": 5999,
+    "image": "/ganesh3.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Warm ambient fairy lighting",
+      "Rich fabric drape styling",
+      "Creates a divine glowing aura",
+      "Ideal for evening aarti sessions"
+    ]
+  },
+  {
+    "id": "9",
+    "slug": "divine-floral-jhula-setup",
+    "name": "Divine Floral Jhula Setup",
+    "description": "Exquisite swing decoration adorned with exotic imported flowers.",
+    "fullDescription": "An exquisite floral swing (jhula) setup adorned with exotic imported flowers, adding a graceful and divine touch to your celebration.",
+    "price": 7999,
+    "image": "/ganesh4.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Exotic imported floral styling",
+      "Elegant swing (jhula) structure",
+      "Premium finish and detailing",
+      "Statement piece for grand mandaps"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "peacock-theme-mandap",
+    "name": "Peacock Theme Mandap",
+    "description": "Vibrant blue and green color palette inspired by Lord Ganesha's favorite motifs.",
+    "fullDescription": "A vibrant peacock-themed mandap in rich blue and green tones, inspired by motifs close to Lord Ganesha, creating a striking festive centerpiece.",
+    "price": 8499,
+    "image": "/ganesh5.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Vibrant peacock-inspired color palette",
+      "Rich blue and green styling",
+      "Eye-catching thematic backdrop",
+      "Grand centerpiece for celebrations"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "modak-special-floral-setup",
+    "name": "Modak Special Floral Setup",
+    "description": "Sweet and charming floral arrangements focusing on divine elegance.",
+    "fullDescription": "A charming modak-inspired floral arrangement designed with divine elegance, adding a sweet and festive touch to the mandap decor.",
+    "price": 5299,
+    "image": "/ganesh6.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Modak-inspired floral styling",
+      "Elegant and charming design",
+      "Fresh floral arrangement",
+      "Adds a festive sweetness to decor"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "royal-velvet-drapes-decor",
+    "name": "Royal Velvet Drapes Decor",
+    "description": "Rich velvet textures combined with brass bells and warm lighting.",
+    "fullDescription": "A regal decoration featuring rich velvet drapes, traditional brass bells, and warm ambient lighting for a truly royal mandap experience.",
+    "price": 6999,
+    "image": "/ganesh7.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Rich velvet fabric drapes",
+      "Traditional brass bell accents",
+      "Warm ambient lighting",
+      "Royal and regal styling"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "eco-friendly-traditional-decor",
+    "name": "Eco-Friendly Traditional Decor",
+    "description": "Sustainable elements designed to keep traditions alive with modern finesse.",
+    "fullDescription": "A thoughtfully designed eco-friendly decoration set that blends traditional aesthetics with sustainable materials and modern finesse.",
+    "price": 4599,
+    "image": "/ganesh8.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Sustainable, eco-friendly materials",
+      "Traditional design with a modern touch",
+      "Environmentally conscious celebration",
+      "Elegant and understated finish"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "the-golden-imperial-raja",
+    "name": "The Golden Imperial Raja",
+    "description": "Majestic golden fabric backdrops paired with royal heavy props fit for a grand celebration.",
+    "fullDescription": "Majestic golden fabric backdrops paired with royal heavy props fit for a grand celebration, complete with professional large-scale setup.",
+    "price": 11999,
+    "image": "/ganesh11.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Majestic golden fabric backdrops",
+      "Royal heavy props",
+      "Includes Professional Setup & Lighting",
+      "Grand visual impact for large spaces"
+    ],
+    "theme": "Golden Glow",
+    "gradientBg": "from-amber-950 via-amber-900 to-neutral-950",
+    "badgeColor": "bg-amber-400 text-neutral-950",
+    "isSpecialCard": true
+  },
+  {
+    "id": "15",
+    "slug": "the-emerald-divine-green",
+    "name": "The Emerald Divine Green",
+    "description": "Lush green foliage arrangements symbolizing nature and fresh beginnings.",
+    "fullDescription": "Lush green foliage arrangements symbolizing nature and fresh beginnings, meticulously styled for grand mandap environments.",
+    "price": 10999,
+    "image": "/ganesh12.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Lush green foliage arrangements",
+      "Symbolizes nature and fresh beginnings",
+      "Includes Professional Setup & Lighting",
+      "Earthy and divine aesthetic"
+    ],
+    "theme": "Green Halka",
+    "gradientBg": "from-emerald-950 via-emerald-900 to-neutral-950",
+    "badgeColor": "bg-emerald-400 text-neutral-950",
+    "isSpecialCard": true
+  },
+  {
+    "id": "16",
+    "slug": "the-crimson-royal-red",
+    "name": "The Crimson Royal Red",
+    "description": "Deep auspicious red drapes combined with traditional brass elements.",
+    "fullDescription": "Deep auspicious red drapes combined with traditional brass elements, creating an intense and divine festive atmosphere.",
+    "price": 12499,
+    "image": "/ganesh13.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Deep auspicious red drapes",
+      "Traditional brass elements combination",
+      "Includes Professional Setup & Lighting",
+      "Royal and vibrant look"
+    ],
+    "theme": "Red Theme",
+    "gradientBg": "from-rose-950 via-rose-900 to-neutral-950",
+    "badgeColor": "bg-rose-500 text-white",
+    "isSpecialCard": true
+  },
+  {
+    "id": "17",
+    "slug": "the-sapphire-celestial-blue",
+    "name": "The Sapphire Celestial Blue",
+    "description": "Serene celestial blue styling creating a peaceful atmosphere for Bappa.",
+    "fullDescription": "Serene celestial blue styling creating a peaceful atmosphere for Bappa, adorned with matching floral accents.",
+    "price": 11499,
+    "image": "/ganesh14.png",
+    "category": "Festivals",
+    "subcategory": "Ganesh Chaturthi",
+    "availability": true,
+    "included": [
+      "Serene celestial blue styling",
+      "Peaceful atmosphere creation",
+      "Includes Professional Setup & Lighting",
+      "Unique and calming aesthetic"
+    ],
+    "theme": "Blue Theme",
+    "gradientBg": "from-sky-950 via-sky-900 to-neutral-950",
+    "badgeColor": "bg-sky-400 text-neutral-950",
+    "isSpecialCard": true
+  },
+  {
+    "id": "1",
+    "slug": "traditional-lohri-food-setup",
+    "name": "Traditional Lohri Food Setup",
+    "description": "Celebrate the warmth of Lohri with our authentic traditional food hamper, featuring sacred offerings and delicacies essential for the holy bonfire rituals.",
+    "price": 899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLkNYjpE_dhvWe90uNARAdmSF4wifoLR0fynT970mwQ&s=10",
+    "category": "Lohri Decoration",
+    "subcategory": "Food & Festive Setup",
+    "availability": true,
+    "included": [
+      "Traditional items included (Revdi, Peanut, Popcorn)",
+      "Hygenic and festive packaging",
+      "Perfect for bonfire offerings",
+      "Authentic Punjabi taste"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "festive-aarti-thali",
+    "name": "Festive Aarti Thali",
+    "description": "Complete your bonfire rituals and prayers with this beautifully crafted traditional aarti thali, designed to hold all pooja essentials gracefully.",
+    "price": 699,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDC6xChT7SI0-UPwH5Hycz2kPvv8XviMqrIMrZwrO5pA&s=10",
+    "category": "Lohri Decoration",
+    "subcategory": "Puja & Rituals",
+    "availability": true,
+    "included": [
+      "Ethnic traditional craftsmanship",
+      "Durable metal finish",
+      "Easy to clean",
+      "Ideal for festive gifting and rituals"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "lohri-special-dhol-prop",
+    "name": "Lohri Special Dhol Prop",
+    "description": "Bring the true Punjabi beat and festive spirit to your party space with this artistic decorative dhol setup, perfect for background styling.",
+    "price": 1999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9mC_wGMerl9a7NZpeeSfbMw6JC6raIAbz3f1g0QgMA&s=10",
+    "category": "Lohri Decoration",
+    "subcategory": "Punjabi Decor",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi dhol design",
+      "Lightweight and easy to place anywhere",
+      "Enhances festive photography backdrop",
+      "Sturdy build quality"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "handcrafted-wooden-utility-set",
+    "name": "Handcrafted Wooden Utility Set",
+    "description": "Add a touch of rustic rural warmth to your home decor with these fine handcrafted wooden utility pieces tailored for festive gatherings.",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhDobNo9h1Mh5Pyy2EQDo5GEWhc53FYp_ltMxdiHctzg&s=10",
+    "category": "Lohri Decoration",
+    "subcategory": "Traditional Decor",
+    "availability": true,
+    "included": [
+      "Made from premium quality wood",
+      "Eco-friendly and durable",
+      "Traditional rustic look",
+      "Multi-purpose usage"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "lohri-bonfire-decor-kit",
+    "name": "Lohri Bonfire & Decor Kit",
+    "description": "Transform your lawn or balcony into a vibrant Lohri venue with our all-in-one decoration package packed with colorful cultural elements.",
+    "price": 2499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqC9WDLXeSDzxeoxnJM7H9SxhleabUUR1lEW5h2tJuYw&s=10",
+    "category": "Lohri Decoration",
+    "subcategory": "Bonfire Setup",
+    "availability": true,
+    "included": [
+      "Complete venue styling package",
+      "Vibrant cultural colors",
+      "Weather-resistant hanging items",
+      "Easy installation support"
+    ]
+  },
+  {
+    "id": "100",
+    "slug": "traditional-bonfire-seating-setup",
+    "name": "Traditional Bonfire & Seating Setup",
+    "description": "Celebrate the warmth of Lohri with our authentic traditional bonfire arrangement, featuring comfortable ethnic floor seating for family and complete festive setup.",
+    "price": 6499,
+    "image": "/loripic1.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Bonfire Setup",
+    "availability": true,
+    "included": [
+      "Authentic traditional bonfire arrangement",
+      "Comfortable ethnic floor seating for family",
+      "Safe and managed setup",
+      "Perfect festive ambiance"
+    ]
+  },
+  {
+    "id": "102",
+    "slug": "peanuts-popcorn-revri-station",
+    "name": "Peanuts, Popcorn & Revri Station",
+    "description": "Traditional festive snacking station decorated with rustic Punjabi elements and bells, offering fresh popcorn, peanuts, and revri.",
+    "price": 3999,
+    "image": "/loripic2.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Food & Festive Setup",
+    "availability": true,
+    "included": [
+      "Traditional festive snacking station",
+      "Decorated with rustic Punjabi elements",
+      "Hygienic arrangement",
+      "Includes revdi, popcorn, and peanuts"
+    ]
+  },
+  {
+    "id": "103",
+    "slug": "dhol-folk-music-corner",
+    "name": "Dhol & Folk Music Corner",
+    "description": "Bring the true Punjabi beat and festive spirit to your party space with this vibrant cultural corner styling featuring traditional Dhol and phulkari props.",
+    "price": 8499,
+    "image": "/loripic3.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Punjabi Decor",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi dhol setup",
+      "Phulkari props and folk elements",
+      "Enhances festive photography backdrop",
+      "Sturdy build quality"
+    ]
+  },
+  {
+    "id": "104",
+    "slug": "warm-marigold-sugarcane-arch",
+    "name": "Warm Marigold & Sugarcane Arch",
+    "description": "Fresh sugarcane stalks intertwined with bright marigold flowers for auspicious welcomes, adding a traditional touch to your entrance.",
+    "price": 5899,
+    "image": "/loripic4.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Fresh sugarcane stalks styling",
+      "Bright marigold flower decorations",
+      "Auspicious entrance arch",
+      "Vibrant festive look"
+    ]
+  },
+  {
+    "id": "105",
+    "slug": "royal-phulkari-backdrop-mandap",
+    "name": "Royal Phulkari Backdrop & Mandap",
+    "description": "Exquisite handmade colorful phulkari cloth backdrop curated for grand Lohri celebrations, giving a royal ethnic look to the venue.",
+    "price": 12499,
+    "image": "/loripic5.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Mandap & Backdrop",
+    "availability": true,
+    "included": [
+      "Exquisite handmade phulkari cloth backdrop",
+      "Curated for grand Lohri celebrations",
+      "Vibrant ethnic colors",
+      "Royal seating setup support"
+    ]
+  },
+  {
+    "id": "106",
+    "slug": "bhangra-folk-dance-stage-decor",
+    "name": "Bhangra & Folk Dance Stage Decor",
+    "description": "High-energy stage decoration with traditional Punjabi props, lights, and vibrant drapes designed specifically for dance performances and celebrations.",
+    "price": 16999,
+    "image": "/loripic6.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Stage Decor",
+    "availability": true,
+    "included": [
+      "High-energy stage decoration",
+      "Traditional Punjabi props and lights",
+      "Vibrant drapes and backdrops",
+      "Ideal for live folk music and dance"
+    ]
+  },
+  {
+    "id": "107",
+    "slug": "desi-ghee-til-sweets-station",
+    "name": "Desi Ghee & Til Sweets Station",
+    "description": "Traditional winter festive counter highlighting sesame sweets, jaggery, desi ghee treats, and winter delicacies for guests.",
+    "price": 4999,
+    "image": "/loripic7.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Food & Festive Setup",
+    "availability": true,
+    "included": [
+      "Traditional winter festive counter",
+      "Sesame sweets and jaggery treats",
+      "Desi ghee delicacies",
+      "Beautiful rustic food counter styling"
+    ]
+  },
+  {
+    "id": "108",
+    "slug": "grand-bonfire-lighting-canopy",
+    "name": "Grand Bonfire & Lighting Canopy",
+    "description": "Spectacular overhead canopy lights and bonfire enclosure designed for large community and family feasts with complete safety measures.",
+    "price": 19999,
+    "image": "/loripic8.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Bonfire Setup",
+    "availability": true,
+    "included": [
+      "Spectacular overhead canopy lights",
+      "Secure large bonfire enclosure",
+      "Ideal for community and family feasts",
+      "Professional installation and management"
+    ]
+  },
+  {
+    "id": "109",
+    "slug": "lohri-floral-entrance-decor",
+    "name": "Lohri Floral Entrance Decor",
+    "description": "Beautiful marigold and traditional floral entrance styling for a warm festive welcome.",
+    "price": 5499,
+    "image": "/loripic9.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Traditional marigold floral decoration",
+      "Colorful festive drapes",
+      "Auspicious entrance styling",
+      "Perfect for home and venue entrances"
+    ]
+  },
+  {
+    "id": "110",
+    "slug": "punjabi-charpai-seating-setup",
+    "name": "Punjabi Charpai Seating Setup",
+    "description": "Rustic Punjabi charpai seating arrangement with colorful cushions and traditional styling.",
+    "price": 7499,
+    "image": "/loripic10.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Seating Setup",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi charpai",
+      "Colorful ethnic cushions",
+      "Rustic Punjabi styling",
+      "Comfortable festive seating"
+    ]
+  },
+  {
+    "id": "111",
+    "slug": "lohri-phulkari-cushion-set",
+    "name": "Lohri Phulkari Cushion Set",
+    "description": "Colorful phulkari cushions designed to add traditional Punjabi charm to your seating area.",
+    "price": 2999,
+    "image": "/loripic11.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Seating Decor",
+    "availability": true,
+    "included": [
+      "Traditional phulkari-inspired patterns",
+      "Bright festive colors",
+      "Soft comfortable filling",
+      "Perfect for ethnic seating setups"
+    ]
+  },
+  {
+    "id": "112",
+    "slug": "punjabi-village-theme-decor",
+    "name": "Punjabi Village Theme Decor",
+    "description": "Complete rustic Punjabi village-inspired decoration for an authentic Lohri celebration.",
+    "price": 14999,
+    "image": "/loripic12.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Theme Decor",
+    "availability": true,
+    "included": [
+      "Complete Punjabi village theme",
+      "Rustic traditional props",
+      "Ethnic seating arrangement",
+      "Ideal for large Lohri celebrations"
+    ]
+  },
+  {
+    "id": "113",
+    "slug": "lohri-photo-booth-setup",
+    "name": "Lohri Photo Booth Setup",
+    "description": "Festive Punjabi photo booth with colorful props, phulkari backdrop, and traditional elements.",
+    "price": 6999,
+    "image": "/loripic13.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Photo Booth",
+    "availability": true,
+    "included": [
+      "Punjabi-themed photo backdrop",
+      "Traditional photography props",
+      "Phulkari-inspired decoration",
+      "Perfect for family photographs"
+    ]
+  },
+  {
+    "id": "114",
+    "slug": "bhangra-props-collection",
+    "name": "Bhangra Props Collection",
+    "description": "Colorful Punjabi props including dhol, turbans, dupattas, and traditional celebration accessories.",
+    "price": 3499,
+    "image": "/loripic14.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Cultural Props",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi props",
+      "Bhangra-inspired accessories",
+      "Colorful festive styling",
+      "Perfect for photography"
+    ]
+  },
+  {
+    "id": "115",
+    "slug": "lohri-fairy-light-canopy",
+    "name": "Lohri Fairy Light Canopy",
+    "description": "Warm decorative fairy-light canopy creating a magical glow around the Lohri celebration area.",
+    "price": 8999,
+    "image": "/loripic15.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Lighting Setup",
+    "availability": true,
+    "included": [
+      "Warm decorative lighting",
+      "Overhead canopy arrangement",
+      "Suitable for outdoor celebrations",
+      "Creates a festive evening ambiance"
+    ]
+  },
+  {
+    "id": "116",
+    "slug": "traditional-matka-decor-set",
+    "name": "Traditional Matka Decor Set",
+    "description": "Decorative Punjabi matkas and earthen pots styled with colorful festive details.",
+    "price": 2499,
+    "image": "/loripic16.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Traditional Decor",
+    "availability": true,
+    "included": [
+      "Traditional earthen matkas",
+      "Colorful ethnic decoration",
+      "Rustic Punjabi styling",
+      "Suitable for entrance and stage decor"
+    ]
+  },
+  {
+    "id": "117",
+    "slug": "lohri-rangoli-floor-decor",
+    "name": "Lohri Rangoli & Floor Decor",
+    "description": "Traditional colorful rangoli and floor decoration designed for festive Lohri entrances.",
+    "price": 3999,
+    "image": "/loripic17.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Floor Decor",
+    "availability": true,
+    "included": [
+      "Traditional rangoli design",
+      "Decorative flower petals",
+      "Festive floor arrangement",
+      "Perfect for entrances and seating areas"
+    ]
+  },
+  {
+    "id": "118",
+    "slug": "lohri-bonfire-safety-setup",
+    "name": "Lohri Bonfire Safety Setup",
+    "description": "Professionally arranged bonfire zone with decorative enclosure and safe seating distance.",
+    "price": 9999,
+    "image": "/loripic18.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Bonfire Setup",
+    "availability": true,
+    "included": [
+      "Organized bonfire zone",
+      "Decorative safety enclosure",
+      "Managed seating arrangement",
+      "Suitable for family gatherings"
+    ]
+  },
+  {
+    "id": "119",
+    "slug": "lohri-welcome-signboard",
+    "name": "Lohri Welcome Signboard",
+    "description": "Customized festive welcome sign with Punjabi-inspired artwork for your celebration entrance.",
+    "price": 1999,
+    "image": "/loripic19.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Festive Punjabi artwork",
+      "Customizable welcome message",
+      "Traditional color styling",
+      "Perfect for entrance decoration"
+    ]
+  },
+  {
+    "id": "120",
+    "slug": "punjabi-turban-dupatta-decor",
+    "name": "Punjabi Turban & Dupatta Decor",
+    "description": "Colorful traditional turbans and dupattas arranged as vibrant Punjabi festive decorations.",
+    "price": 4499,
+    "image": "/loripic20.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Traditional Decor",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi textiles",
+      "Colorful turban decorations",
+      "Decorative dupatta arrangement",
+      "Perfect for photo zones and stages"
+    ]
+  },
+  {
+    "id": "121",
+    "slug": "lohri-dessert-sweet-counter",
+    "name": "Lohri Dessert & Sweet Counter",
+    "description": "Festive dessert counter featuring traditional Lohri sweets and attractive Punjabi styling.",
+    "price": 6499,
+    "image": "/loripic21.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Food Counter",
+    "availability": true,
+    "included": [
+      "Traditional Lohri sweet presentation",
+      "Decorative dessert counter",
+      "Punjabi-inspired styling",
+      "Suitable for family and corporate events"
+    ]
+  },
+  {
+    "id": "122",
+    "slug": "gur-til-festive-counter",
+    "name": "Gur & Til Festive Counter",
+    "description": "Traditional jaggery and sesame sweet counter celebrating the flavors of winter and Lohri.",
+    "price": 4999,
+    "image": "/loripic22.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Food Counter",
+    "availability": true,
+    "included": [
+      "Traditional gur and til treats",
+      "Festive food presentation",
+      "Rustic Punjabi counter styling",
+      "Perfect for Lohri gatherings"
+    ]
+  },
+  {
+    "id": "123",
+    "slug": "lohri-kids-activity-corner",
+    "name": "Lohri Kids Activity Corner",
+    "description": "Colorful children's activity area with Punjabi-themed games, crafts, and festive decorations.",
+    "price": 5999,
+    "image": "/loripic23.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Kids Activity",
+    "availability": true,
+    "included": [
+      "Children-friendly activity zone",
+      "Punjabi-themed games",
+      "Creative craft activities",
+      "Colorful festive decoration"
+    ]
+  },
+  {
+    "id": "124",
+    "slug": "lohri-corporate-celebration-setup",
+    "name": "Lohri Corporate Celebration Setup",
+    "description": "Professional Lohri decoration package designed for offices, teams, and corporate celebrations.",
+    "price": 24999,
+    "image": "/loripic24.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Corporate Setup",
+    "availability": true,
+    "included": [
+      "Professional corporate styling",
+      "Punjabi cultural decoration",
+      "Stage and seating setup",
+      "Suitable for office celebrations"
+    ]
+  },
+  {
+    "id": "125",
+    "slug": "grand-lohri-stage-decoration",
+    "name": "Grand Lohri Stage Decoration",
+    "description": "Premium Punjabi stage setup with vibrant drapes, traditional props, lights, and floral styling.",
+    "price": 18999,
+    "image": "/loripic25.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Stage Decor",
+    "availability": true,
+    "included": [
+      "Premium Punjabi stage design",
+      "Traditional ethnic backdrop",
+      "Decorative lighting",
+      "Floral and textile styling"
+    ]
+  },
+  {
+    "id": "126",
+    "slug": "lohri-family-celebration-package",
+    "name": "Lohri Family Celebration Package",
+    "description": "Complete family Lohri setup combining bonfire, seating, food counter, lighting, and Punjabi decor.",
+    "price": 29999,
+    "image": "/loripic26.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Complete Package",
+    "availability": true,
+    "included": [
+      "Complete family Lohri setup",
+      "Bonfire and seating arrangement",
+      "Traditional food counter",
+      "Decorative lighting and props"
+    ]
+  },
+  {
+    "id": "127",
+    "slug": "premium-lohri-celebration-package",
+    "name": "Premium Lohri Celebration Package",
+    "description": "Luxury Lohri experience featuring premium Punjabi decor, stage, bonfire, lighting, and entertainment styling.",
+    "price": 44999,
+    "image": "/loripic27.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Premium Package",
+    "availability": true,
+    "included": [
+      "Premium venue transformation",
+      "Grand Punjabi stage setup",
+      "Bonfire and seating arrangement",
+      "Ambient decorative lighting",
+      "Traditional cultural props"
+    ]
+  },
+  {
+    "id": "128",
+    "slug": "royal-punjabi-lohri-theme",
+    "name": "Royal Punjabi Lohri Theme",
+    "description": "Luxury royal Punjabi theme featuring rich fabrics, traditional furniture, floral decor, and warm lighting.",
+    "price": 54999,
+    "image": "/loripic28.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Premium Theme",
+    "availability": true,
+    "included": [
+      "Royal Punjabi theme",
+      "Premium ethnic fabrics",
+      "Traditional furniture styling",
+      "Luxury floral decoration",
+      "Warm ambient lighting"
+    ]
+  },
+  {
+    "id": "129",
+    "slug": "lohri-traditional-lantern-decor",
+    "name": "Lohri Traditional Lantern Decor",
+    "description": "Beautiful traditional lantern decoration creating a warm festive glow around the Lohri celebration.",
+    "price": 3999,
+    "image": "/loripic29.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Lighting Decor",
+    "availability": true,
+    "included": [
+      "Traditional lantern decoration",
+      "Warm festive lighting",
+      "Perfect for bonfire areas",
+      "Creates a cozy evening ambiance"
+    ]
+  },
+  {
+    "id": "130",
+    "slug": "punjabi-dhol-entry-decor",
+    "name": "Punjabi Dhol Entry Decor",
+    "description": "Vibrant entrance decoration featuring traditional dhol props and colorful Punjabi elements.",
+    "price": 6999,
+    "image": "/loripic30.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Traditional dhol props",
+      "Colorful Punjabi decoration",
+      "Festive entrance styling",
+      "Ideal for Lohri celebrations"
+    ]
+  },
+  {
+    "id": "131",
+    "slug": "lohri-marigold-curtain-decor",
+    "name": "Lohri Marigold Curtain Decor",
+    "description": "Elegant marigold flower curtain backdrop for traditional Lohri celebrations and photography.",
+    "price": 5999,
+    "image": "/loripic31.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Floral Decor",
+    "availability": true,
+    "included": [
+      "Marigold flower curtain",
+      "Traditional festive styling",
+      "Bright floral backdrop",
+      "Perfect for photography"
+    ]
+  },
+  {
+    "id": "132",
+    "slug": "punjabi-folk-music-setup",
+    "name": "Punjabi Folk Music Setup",
+    "description": "Traditional Punjabi folk music corner with dhol props and cultural stage decoration.",
+    "price": 11999,
+    "image": "/loripic32.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Music Setup",
+    "availability": true,
+    "included": [
+      "Punjabi folk music theme",
+      "Traditional instrument props",
+      "Ethnic stage decoration",
+      "Ideal for live performances"
+    ]
+  },
+  {
+    "id": "133",
+    "slug": "lohri-rustic-food-stall",
+    "name": "Lohri Rustic Food Stall",
+    "description": "Rustic Punjabi-style food stall decorated for traditional Lohri snacks and winter delicacies.",
+    "price": 7999,
+    "image": "/loripic33.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Food Counter",
+    "availability": true,
+    "included": [
+      "Rustic Punjabi food stall",
+      "Traditional festive styling",
+      "Suitable for Lohri snacks",
+      "Decorative serving arrangement"
+    ]
+  },
+  {
+    "id": "134",
+    "slug": "lohri-bonfire-photo-corner",
+    "name": "Lohri Bonfire Photo Corner",
+    "description": "Festive photography corner designed around the Lohri bonfire with Punjabi props and warm lighting.",
+    "price": 8499,
+    "image": "/loripic34.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Photo Booth",
+    "availability": true,
+    "included": [
+      "Bonfire-inspired photo setup",
+      "Punjabi photography props",
+      "Warm decorative lighting",
+      "Traditional seating arrangement"
+    ]
+  },
+  {
+    "id": "135",
+    "slug": "lohri-ceiling-draping-decor",
+    "name": "Lohri Ceiling Draping Decor",
+    "description": "Colorful ceiling draping with traditional Punjabi fabrics for a vibrant festive atmosphere.",
+    "price": 8999,
+    "image": "/loripic35.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Ceiling Decor",
+    "availability": true,
+    "included": [
+      "Colorful ceiling draping",
+      "Punjabi-inspired fabrics",
+      "Vibrant festive styling",
+      "Suitable for indoor venues"
+    ]
+  },
+  {
+    "id": "136",
+    "slug": "traditional-punjabi-stage-props",
+    "name": "Traditional Punjabi Stage Props",
+    "description": "Curated collection of traditional Punjabi props designed for Lohri stages and cultural performances.",
+    "price": 6499,
+    "image": "/loripic36.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Stage Decor",
+    "availability": true,
+    "included": [
+      "Traditional Punjabi props",
+      "Stage-ready decoration",
+      "Cultural styling elements",
+      "Perfect for performances"
+    ]
+  },
+  {
+    "id": "137",
+    "slug": "lohri-couple-celebration-decor",
+    "name": "Lohri Couple Celebration Decor",
+    "description": "Romantic Lohri decoration with warm lights, flowers, traditional seating, and Punjabi accents.",
+    "price": 10999,
+    "image": "/loripic37.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Special Celebration",
+    "availability": true,
+    "included": [
+      "Romantic festive styling",
+      "Warm decorative lighting",
+      "Floral decoration",
+      "Traditional Punjabi accents"
+    ]
+  },
+  {
+    "id": "138",
+    "slug": "lohri-family-photo-backdrop",
+    "name": "Lohri Family Photo Backdrop",
+    "description": "Large traditional Punjabi backdrop designed for family photographs during Lohri celebrations.",
+    "price": 7499,
+    "image": "/loripic38.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Photo Booth",
+    "availability": true,
+    "included": [
+      "Large photography backdrop",
+      "Punjabi traditional design",
+      "Festive floral accents",
+      "Ideal for family photographs"
+    ]
+  },
+  {
+    "id": "139",
+    "slug": "lohri-kids-bhangra-corner",
+    "name": "Lohri Kids Bhangra Corner",
+    "description": "Fun Punjabi-themed children's corner with colorful props and Bhangra-inspired decoration.",
+    "price": 4999,
+    "image": "/loripic39.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Kids Activity",
+    "availability": true,
+    "included": [
+      "Kids-friendly setup",
+      "Bhangra-inspired props",
+      "Colorful festive decoration",
+      "Interactive photography area"
+    ]
+  },
+  {
+    "id": "140",
+    "slug": "lohri-traditional-pottery-decor",
+    "name": "Lohri Traditional Pottery Decor",
+    "description": "Rustic pottery arrangement featuring traditional earthen pots and Punjabi decorative elements.",
+    "price": 3499,
+    "image": "/loripic40.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Traditional Decor",
+    "availability": true,
+    "included": [
+      "Traditional pottery elements",
+      "Rustic Punjabi styling",
+      "Earthen decorative pots",
+      "Perfect for cultural themes"
+    ]
+  },
+  {
+    "id": "141",
+    "slug": "grand-punjabi-entrance-arch",
+    "name": "Grand Punjabi Entrance Arch",
+    "description": "Large decorative entrance arch combining flowers, Punjabi textiles, lights, and traditional props.",
+    "price": 13999,
+    "image": "/loripic41.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Grand entrance arch",
+      "Floral decoration",
+      "Punjabi textile styling",
+      "Warm decorative lighting"
+    ]
+  },
+  {
+    "id": "142",
+    "slug": "lohri-outdoor-garden-setup",
+    "name": "Lohri Outdoor Garden Setup",
+    "description": "Complete outdoor Lohri arrangement with bonfire area, ethnic seating, lights, and festive decor.",
+    "price": 22999,
+    "image": "/loripic42.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Outdoor Setup",
+    "availability": true,
+    "included": [
+      "Complete outdoor setup",
+      "Bonfire arrangement",
+      "Ethnic seating",
+      "Decorative garden lighting",
+      "Punjabi cultural props"
+    ]
+  },
+  {
+    "id": "143",
+    "slug": "lohri-terrace-celebration-setup",
+    "name": "Lohri Terrace Celebration Setup",
+    "description": "Stylish terrace Lohri decoration with warm lights, seating, bonfire styling, and Punjabi accents.",
+    "price": 17999,
+    "image": "/loripic43.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Terrace Setup",
+    "availability": true,
+    "included": [
+      "Terrace-friendly decoration",
+      "Warm ambient lighting",
+      "Compact bonfire styling",
+      "Ethnic seating arrangement"
+    ]
+  },
+  {
+    "id": "144",
+    "slug": "lohri-balcony-decor-package",
+    "name": "Lohri Balcony Decor Package",
+    "description": "Compact Lohri decoration package designed for balconies and small family celebrations.",
+    "price": 6999,
+    "image": "/loripic44.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Balcony Decor",
+    "availability": true,
+    "included": [
+      "Balcony-friendly setup",
+      "Compact festive decoration",
+      "Punjabi-inspired styling",
+      "Warm decorative lighting"
+    ]
+  },
+  {
+    "id": "145",
+    "slug": "lohri-mehfil-seating-decor",
+    "name": "Lohri Mehfil Seating Decor",
+    "description": "Elegant Punjabi mehfil seating arrangement with floor cushions, bolsters, rugs, and ethnic fabrics.",
+    "price": 11999,
+    "image": "/loripic45.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Seating Setup",
+    "availability": true,
+    "included": [
+      "Traditional floor seating",
+      "Colorful ethnic cushions",
+      "Punjabi textile styling",
+      "Comfortable mehfil arrangement"
+    ]
+  },
+  {
+    "id": "146",
+    "slug": "lohri-premium-lighting-package",
+    "name": "Lohri Premium Lighting Package",
+    "description": "Premium warm lighting arrangement combining fairy lights, lanterns, and decorative fixtures.",
+    "price": 12999,
+    "image": "/loripic46.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Lighting Setup",
+    "availability": true,
+    "included": [
+      "Premium warm lighting",
+      "Decorative fairy lights",
+      "Traditional lanterns",
+      "Festive evening ambiance"
+    ]
+  },
+  {
+    "id": "147",
+    "slug": "complete-punjabi-lohri-venue",
+    "name": "Complete Punjabi Lohri Venue",
+    "description": "Full venue decoration combining stage, bonfire, seating, lighting, food counter, and Punjabi props.",
+    "price": 39999,
+    "image": "/loripic47.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Complete Package",
+    "availability": true,
+    "included": [
+      "Complete venue transformation",
+      "Grand stage decoration",
+      "Bonfire and seating setup",
+      "Food counter styling",
+      "Premium Punjabi props"
+    ]
+  },
+  {
+    "id": "148",
+    "slug": "ultimate-lohri-celebration-package",
+    "name": "Ultimate Lohri Celebration Package",
+    "description": "Complete premium Lohri experience with luxury Punjabi decor, entertainment zones, lighting, and festive arrangements.",
+    "price": 59999,
+    "image": "/loripic48.png",
+    "category": "Lohri Decoration",
+    "subcategory": "Premium Package",
+    "availability": true,
+    "included": [
+      "Premium complete venue setup",
+      "Grand Punjabi stage",
+      "Managed bonfire arrangement",
+      "Traditional seating and food counters",
+      "Photography and entertainment zones",
+      "Premium decorative lighting"
+    ]
+  },
+  {
+    "id": "1",
+    "slug": "chota-jhula-for-kanha",
+    "name": "Chota Jhula for Kanha",
+    "description": "Compact and beautifully carved decorative swing for Laddu Gopal.",
+    "fullDescription": "Welcome little Kanha with this exquisite miniature wooden and metal-crafted swing, specially designed for Janmashtami home celebrations.",
+    "price": 599,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItwwvnZ2Jrx4iJMgrod5CeQ-AFGhH3It8O6J7MOlNTw&s",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Kanha Jhula",
+    "availability": true,
+    "included": [
+      "Compact size perfect for home temples",
+      "Intricate traditional carving",
+      "Smooth swinging mechanism",
+      "Durable golden finish"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "janmashtami-aarti-thali",
+    "name": "Janmashtami Aarti Thali",
+    "description": "Decorative brass aarti thali adorned with festive motifs.",
+    "fullDescription": "Perform midnight prayers and celebrations with this specially styled traditional aarti thali tailored for Janmashtami rituals.",
+    "price": 699,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESn2QfExDQ6Hl4FTF_NchW0_nO6PSkoREklkwMFcsow&s",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Pooja Decor",
+    "availability": true,
+    "included": [
+      "Ethnic embossed design",
+      "High-grade brass material",
+      "Includes matching katori and diya slots",
+      "Easy to clean"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "dahi-handi-setup",
+    "name": "Dahi Handi Setup",
+    "description": "Traditional hanging dahi handi matki decorated with vibrant colors.",
+    "fullDescription": "Recreate the joyful spirit of Krishna's childhood with this decorative hanging dahi handi setup complete with traditional motifs and ghungroos.",
+    "price": 899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_WELxulUCtKIopBxVsrqPllhKh7aP6GMAoTrxZCT0wA&s",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Dahi Handi Decor",
+    "availability": true,
+    "included": [
+      "Authentic festive look with ghungroos",
+      "Lightweight decorative matki",
+      "Easy to hang anywhere in the house",
+      "Vibrant traditional colors"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "grand-kanha-jhula",
+    "name": "Grand Kanha Jhula",
+    "description": "Large ornamental floral swing setup for main Janmashtami mandap.",
+    "fullDescription": "An elaborate and grand swing decoration setup adorned with fresh-looking artificial flowers and fairy lights for Kanha ji's birth celebrations.",
+    "price": 2499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY90INzDlN6onZxVAmmRGXaGCvFcitb7a4LKi8nOp3og&s=10",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Kanha Jhula",
+    "availability": true,
+    "included": [
+      "Large scale grand appearance",
+      "Floral decorations included",
+      "Sturdy base and structural support",
+      "Ideal for community and home mandals"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "laddu-gopal-designer-dress",
+    "name": "Laddu Gopal Designer Dress",
+    "description": "Exquisite heavy-work poshak and vastra set for Laddu Gopal.",
+    "fullDescription": "Dress your deity in absolute splendor with this handcrafted designer dress featuring vibrant colors, stones, and Zari work.",
+    "price": 499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdIgEfLcLuoyxLOgrWtHeSu2U3YCUwyPhBBp3mzJ9HvQ&s=10",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Kanha Accessories",
+    "availability": true,
+    "included": [
+      "Intricate zari and stone work",
+      "Soft skin-friendly fabric for idols",
+      "Available in multiple divine colors",
+      "Perfect fit for standard idol sizes"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "janmashtami-prasad-hamper",
+    "name": "Janmashtami Prasad Hamper",
+    "description": "Traditional sacred sweet box featuring Makhan Mishri and panjiri.",
+    "fullDescription": "Complete your midnight celebrations with authentic sacred bhog items, hygienically packed for offering and distribution.",
+    "price": 399,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEaUBYfznkhmESVNpH1VOZwxsDDLGod6gRi0aWFVrofg&s=10",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Prasad & Bhog",
+    "availability": true,
+    "included": [
+      "Prepared with pure desi ghee and love",
+      "Traditional taste (Makhan Mishri special)",
+      "Hygienic festive packaging",
+      "Ideal for midnight bhog"
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "kids-festive-traditional-wear",
+    "name": "Kids Festive Traditional Wear",
+    "description": "Comfortable and vibrant ethnic clothing set for kids for Janmashtami.",
+    "fullDescription": "Dress up your little ones as Kanha or Radha in these comfortable, skin-friendly, and vibrant ethnic outfits.",
+    "price": 1199,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gVYZc4hOxbmlVMuQHR3b7uEnVZ6obfocdlGuLYk2RQ&s=10",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Kids Festive Wear",
+    "availability": true,
+    "included": [
+      "Soft cotton-silk blended fabric",
+      "Easy to wear and lightweight",
+      "Traditional ethnic patterns",
+      "Skin-friendly for kids"
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "divine-jhulan-laddu-gopal-swing",
+    "name": "Divine Jhulan & Laddu Gopal Swing",
+    "description": "Exquisitely decorated floral swings (jhula) adorned with fragrant flowers and golden bells.",
+    "fullDescription": "Exquisitely decorated floral swings (jhula) adorned with fragrant flowers and golden bells for an enchanting Janmashtami celebration.",
+    "price": 5499,
+    "image": "/janmasthmmi.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Kanha Jhula",
+    "availability": true,
+    "included": [
+      "Exquisite floral decoration",
+      "Adorned with golden bells",
+      "Perfect for home and temple mandaps",
+      "Sturdy structural support"
+    ]
+  },
+  {
+    "id": "9",
+    "slug": "makhan-handi-ethnic-decor-setup",
+    "name": "Makhan Handi & Ethnic Decor Setup",
+    "description": "Traditional hanging handis, peacock feathers, and vibrant butter pot arrangements.",
+    "fullDescription": "Traditional hanging handis, peacock feathers, and vibrant butter pot arrangements bringing Gokul vibes to your home.",
+    "price": 4299,
+    "image": "/janmasthmmi1.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Traditional Decor",
+    "availability": true,
+    "included": [
+      "Traditional hanging handis",
+      "Peacock feathers included",
+      "Vibrant butter pot arrangements",
+      "Easy installation"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "vibrant-raas-leela-backdrop",
+    "name": "Vibrant Raas Leela Backdrop",
+    "description": "Colorful traditional backdrop depicting Lord Krishna's divine leelas and pastimes.",
+    "fullDescription": "Colorful traditional backdrop depicting Lord Krishna's divine leelas and pastimes to elevate your festive aesthetics.",
+    "price": 7899,
+    "image": "/janmasthmmi2.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Backdrop Decor",
+    "availability": true,
+    "included": [
+      "High-resolution traditional art print",
+      "Durable fabric material",
+      "Rich and vibrant festive colors",
+      "Ideal for main stage backdrops"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "peacock-motif-festive-arch",
+    "name": "Peacock Motif Festive Arch",
+    "description": "Grand entrance arch styled with peacock feathers, blue drapes, and glowing fairy lights.",
+    "fullDescription": "Grand entrance arch styled with peacock feathers, blue drapes, and glowing fairy lights to welcome your guests in style.",
+    "price": 6499,
+    "image": "/janmasthmmi4.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Entrance Decor",
+    "availability": true,
+    "included": [
+      "Peacock feather theme styling",
+      "Includes glowing fairy lights",
+      "Graceful blue drapes",
+      "Grand entrance appeal"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "grand-mandir-floral-sanctum",
+    "name": "Grand Mandir Floral Sanctum",
+    "description": "Heavy marigold and orchid flower decorations transforming your home mandir into Gokul.",
+    "fullDescription": "Heavy marigold and orchid flower decorations transforming your home mandir into a heavenly Gokul sanctum.",
+    "price": 14999,
+    "image": "/janmasthmmi6.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Mandir Decor",
+    "availability": true,
+    "included": [
+      "Heavy marigold and orchid arrangement",
+      "Complete mandir transformation",
+      "Fresh floral aesthetics",
+      "Professional setup support"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "janmotsav-midnight-glow-illumination",
+    "name": "Janmotsav Midnight Glow Illumination",
+    "description": "Special midnight celebration lighting setup with serial lights, diyas, and spotlights.",
+    "fullDescription": "Special midnight celebration lighting setup with serial lights, diyas, and spotlights for the divine birth moment.",
+    "price": 11599,
+    "image": "/janmasthmmi7.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Lighting Setup",
+    "availability": true,
+    "included": [
+      "Special midnight glow lighting",
+      "Includes decorative diyas and spotlights",
+      "Serial lights arrangement",
+      "Creates a divine spiritual ambiance"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "radha-krishna-phoolon-ki-holi-setup",
+    "name": "Radha-Krishna Phoolon ki Holi Setup",
+    "description": "Auspicious flower petal arrangements and divine deity chowki decoration.",
+    "fullDescription": "Auspicious flower petal arrangements and divine deity chowki decoration for celebrating Phoolon ki Holi with Kanha.",
+    "price": 9299,
+    "image": "/janmasthmmi8.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Floral Decor",
+    "availability": true,
+    "included": [
+      "Auspicious flower petal patterns",
+      "Divine deity chowki styling",
+      "Fragrant traditional setup",
+      "Perfect for rituals and pooja"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "braj-style-vrindavan-street-theme",
+    "name": "Braj Style Vrindavan Street Theme",
+    "description": "Complete thematic temple compound decoration recreating the magical lanes of Vrindavan.",
+    "fullDescription": "Complete thematic temple compound decoration recreating the magical lanes and rustic charm of Vrindavan.",
+    "price": 18499,
+    "image": "/janmasthmmi9.png",
+    "category": "Janmashtami Decoration",
+    "subcategory": "Theme Decor",
+    "availability": true,
+    "included": [
+      "Complete thematic compound setup",
+      "Recreates Vrindavan street lanes",
+      "Immersive traditional props",
+      "Grand community celebration design"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Royal Golden Puja Thali Set",
+    "desc": "Exquisitely crafted brass puja thali with matching katoris and diya.",
+    "fullDesc": "Enhance your Navratri rituals with this premium designer brass puja thali, specially crafted for Ashtami and Navami prayers.",
+    "price": "799",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVHcU6-giSFZscF73kHAXMgYqEpej-UN7EkqmR71bQg&s=10",
+    "features": [
+      "Pure brass material with anti-tarnish finish",
+      "Includes diya, katori, and kumkum holders",
+      "Traditional ethnic embossed design",
+      "Ideal for daily puja and festival gifting"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Silver Plated Auspicious Puja Thali",
+    "desc": "Traditional silver-finish decorated thali for Durga Puja.",
+    "fullDesc": "A stunning silver-plated ritual thali featuring intricate floral patterns to bring divine grace to your home mandir.",
+    "price": "1299",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScN3MIZXfSdZ4zoHwhMNmg45jnmX48FccqpusG4amWig&s=10",
+    "features": [
+      "Elegant silver-plated polish",
+      "Rust-resistant sturdy build",
+      "Complete set for ritual offerings",
+      "Easy to maintain and store"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Designer Navratri Lehenga Choli",
+    "desc": "Vibrant traditional garba outfit with heavy mirror and embroidery work.",
+    "fullDesc": "Step into the festive Garba nights with confidence in this colorful, lightweight, and heavily embroidered traditional chaniya choli.",
+    "price": "2499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3dPhDDvGA92oPYVCAXgj9rzLqUwXOEWVbNaFHulkLQ&s=10",
+    "features": [
+      "Authentic mirror work and thread embroidery",
+      "Comfortable breathable fabric for long dancing hours",
+      "Vibrant traditional color combinations",
+      "Available in multiple sizes"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Traditional Bandhani Garba Dress",
+    "desc": "Classic Gujarati bandhani print outfit tailored for Navratri celebrations.",
+    "fullDesc": "Celebrate the nine nights of devotion and dance with this authentic bandhani print ensemble designed for ultimate comfort and style.",
+    "price": "1899",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa2Q9l8Rx5PVy4hui1YjCLOsIfHg_uAH5qrf6ZlZUU1Q&s=10",
+    "features": [
+      "Traditional Bandhani print design",
+      "Soft cotton-blend fabric",
+      "Durable stitching with beautiful flair",
+      "Perfect for Garba and Dandiya nights"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Navratri Special Prasad & Halwa Box",
+    "desc": "Pure ghee halwa, chana, and traditional sweets for Kanya Pujan.",
+    "fullDesc": "Delightful and pure traditional bhog box prepared specially for Ashtami/Navami Kanya Pujan and family offerings.",
+    "price": "499",
+    "image": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/03/bhog-1618802779-1648232428.jpg",
+    "features": [
+      "Prepared in pure desi ghee",
+      "Hygienically packed festive assortment",
+      "Traditional taste for divine offerings",
+      "Freshly prepared for festival days"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mata Rani Heavy Zari Chunni",
+    "desc": "Divine red velvet chunni adorned with gold lace and sequins.",
+    "fullDesc": "Offer your reverence to Goddess Durga with this premium heavy golden zari work red chunni, designed specifically for Mata ki Chowki.",
+    "price": "349",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxQq1hWiGdvfAMW-qyQhLp-45rzXiEY_P_d3fwrLfzQ&s=10",
+    "features": [
+      "Rich velvet and net fabric",
+      "Intricate golden lace border",
+      "Durable and vibrant red color",
+      "Suitable for all idol sizes"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Fresh Marigold & Rose Flower Mala",
+    "desc": "Fragrant artificial-look decorative garland for Mata Rani's idol.",
+    "fullDesc": "Adorn the divine deity with this vibrant, long-lasting yellow and red floral garland that adds immense grace to your temple setup.",
+    "price": "299",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsfe4mdcmKAmZ08zceYizz1yNARdYGn1P0d1HUvh_wg&s=10",
+    "features": [
+      "Fresh floral appearance",
+      "Durable and reusable material",
+      "Vibrant contrasting colors",
+      "Perfect length for large and medium idols"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Divine Festive Flower Decoration",
+    "desc": "Fresh-look ornamental floral arrangements and decorative strings for temple sanctum.",
+    "fullDesc": "Transform your home temple with these beautiful, fresh-looking ornamental floral arrangements designed specifically for Navratri sanctum decorations.",
+    "price": "1299",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJaZ1rs3P1NjRNAHiBEB7mDIa-vYBsdT6osygPyiU0yA&s=10",
+    "features": [
+      "Fresh floral aesthetics without maintenance",
+      "Durable decorative strings and hangings",
+      "Easy to install across temple arches",
+      "Adds auspicious festive charm"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Mata Ji Heavy Zari Poshak",
+    "desc": "Exquisite designer attire and vastra set adorned with rich gold embroidery for Goddess Durga.",
+    "fullDesc": "Dress Goddess Durga in absolute grandeur with this exquisite designer vastra set featuring heavy gold zari embroidery and vibrant colors.",
+    "price": "1899",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPiEhDgiTwnUG61tRbvZ76NvWeotRitwJclxG7hNEgg&s=10",
+    "features": [
+      "Rich metallic zari embroidery work",
+      "Premium fabric with vibrant finish",
+      "Tailored fit for standard idol sizes",
+      "Durable and lustrous appearance"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sacred Navratri Prasad Hamper",
+    "desc": "Pure traditional sweets and bhog essentials hygienically packaged for daily offerings.",
+    "fullDesc": "Offer pure devotion with this hygienically packaged festive assortment containing traditional sweets and sacred bhog items.",
+    "price": "599",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanhSePMZJEwsmiFFf7T-eCYKewx84kaSKKSWVD-Q83A&s=10",
+    "features": [
+      "Prepared with pure ingredients",
+      "Hygienically sealed festive hamper",
+      "Ideal for daily puja and family distribution",
+      "Traditional authentic taste"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Divine Mata Ji Royal Darbar Setup",
+    "desc": "Auspicious flower backdrops and traditional chowki setup for divine Mata Ji worship.",
+    "fullDesc": "Create a breathtaking royal darbar for Goddess Durga with auspicious flower backdrops and an elegantly styled traditional chowki setup.",
+    "price": "8499",
+    "image": "/mata.png",
+    "features": [
+      "Complete royal chowki and backdrop arrangement",
+      "Auspicious floral aesthetics",
+      "Professional setup support available",
+      "Ideal for home and society pandals"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Grand Navdurga Floral Mandap",
+    "desc": "Exquisite floral decorations and lighting dedicated to the nine forms of Goddess Durga.",
+    "fullDesc": "Celebrate the nine divine forms with a grand floral mandap decorated with intricate lighting and vibrant traditional hangings.",
+    "price": "12999",
+    "image": "/mata1.png",
+    "features": [
+      "Comprehensive mandap decoration design",
+      "Integrated festive lighting elements",
+      "Dedicated styling for Navdurga forms",
+      "High-durability decorative materials"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Akhand Jyoti & Prasad Station",
+    "desc": "Sacred corner arrangement for sacred flames, traditional offerings, and bhog.",
+    "fullDesc": "A dedicated sacred corner styling setup specifically curated to house the Akhand Jyoti lamp and organized traditional bhog stations.",
+    "price": "4599",
+    "image": "/mata2.png",
+    "features": [
+      "Safe and aesthetic flame station layout",
+      "Organized tiers for prasad offerings",
+      "Fire-resistant decorative accents",
+      "Easy to maintain cleanliness"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Traditional Ghatasthapana Decor",
+    "desc": "Authentic ritualistic setup for Kalash sthapana with fresh mango leaves and holy coconuts.",
+    "fullDesc": "Perform your Ghatasthapana rituals with this authentic setup complete with traditional motifs, Kalash elements, and sacred foliage styling.",
+    "price": "6299",
+    "image": "/mata3.png",
+    "features": [
+      "Authentic ritualistic design accuracy",
+      "Includes sacred decorative Kalash elements",
+      "Traditional mango leaf motifs",
+      "Perfect centerpiece for Navratri puja"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Vibrant Garba Night Stage & Backdrop",
+    "desc": "High-energy colorful stage styling with traditional hangings and ethnic motifs for dandiya nights.",
+    "fullDesc": "Set the floor on fire with this high-energy vibrant stage backdrop featuring traditional hangings and lively ethnic motifs for Garba nights.",
+    "price": "18999",
+    "image": "/garba.png",
+    "features": [
+      "Energetic and colorful ethnic styling",
+      "Durable stage backdrops and drapes",
+      "Optimized for dance event visibility",
+      "Quick assembly structure"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Society Dandiya Ground Illumination",
+    "desc": "Complete ground fairy lighting, colorful umbrellas, and traditional dandiya event setup.",
+    "fullDesc": "Light up your society grounds with extensive fairy lights, colorful decorative umbrellas, and complete festive event infrastructure.",
+    "price": "24999",
+    "image": "/garba1.png",
+    "features": [
+      "Extensive fairy lighting and canopy lights",
+      "Colorful traditional umbrellas included",
+      "Weather-resistant outdoor setup",
+      "Ideal for large community gatherings"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Traditional Chaniya Choli Photo Booth",
+    "desc": "Stunning ethnic photo corner styled with traditional props and colourful Gujarati prints.",
+    "fullDesc": "Capture unforgettable festive memories with an ethnic photo booth corner styled using authentic Gujarati prints and traditional props.",
+    "price": "9499",
+    "image": "/garba2.png",
+    "features": [
+      "Instagram-friendly festive backdrop",
+      "Includes traditional seating and props",
+      "Vibrant Gujarati print elements",
+      "Compact footprint for event venues"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Dhol & Folk Beats Pandal Canopy",
+    "desc": "Overhead canopy drapes and vibrant cultural elements for community Garba celebrations.",
+    "fullDesc": "Enhance your community Garba celebrations with overhead canopy drapes and rich cultural elements designed for dhol and folk beats zones.",
+    "price": "15499",
+    "image": "/garba3.png",
+    "features": [
+      "Overhead decorative fabric drapes",
+      "Cultural folk-inspired motifs",
+      "Sturdy canopy framework",
+      "Creates an immersive festive ambiance"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Royal Diwali Jhumar Decor",
+    "desc": "Beautiful hanging light decoration for perfect festive ambience.",
+    "fullDesc": "Bring home the ethereal glow of traditional festivities with our Royal Diwali Jhumar Decor. Handcrafted with precision, this stunning hanging piece combines warm LED lighting with rich traditional motifs to instantly elevate your living room or balcony decor.",
+    "price": "1499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWXyfF9nfnroUuX6Av8SOfExGrXBhPPk_p0m1ziMXIA&s=10",
+    "features": [
+      "Energy-efficient warm LED lights included",
+      "Durable weather-resistant hanging structure",
+      "Easy to install and dismantle",
+      "Handcrafted traditional golden finish"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Traditional Marigold Toran",
+    "desc": "Auspicious artificial marigold door hanging for welcoming guests.",
+    "fullDesc": "Welcome Goddess Lakshmi and your guests with vibrant, everlasting artificial marigold torans. Designed to replicate fresh flowers without the hassle of wilting, it adds an authentic festive charm to your main entrance.",
+    "price": "799",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIcLI0T0papxZtiedcH-Q-qMwsYze3OdeSj65U9bVsQ&s=10",
+    "features": [
+      "Made from premium reusable fabric material",
+      "Standard size fits most main doors perfectly",
+      "Washable and long-lasting quality",
+      "Bright, auspicious yellow and orange hues"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Designer Clay Diya Set",
+    "desc": "Hand-painted colorful earthen diyas for a glowing festival night.",
+    "fullDesc": "Light up every corner of your home with our exclusive set of hand-painted terracotta diyas. Each piece is uniquely crafted and painted by traditional artisans to add a colorful, ethnic touch to your Diwali celebrations.",
+    "price": "599",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsozqhCTvAr8JKXKeYznC9ZUWFuR8qes1fU8lDML8TfQ&s=10",
+    "features": [
+      "Hand-painted by skilled rural artisans",
+      "Eco-friendly natural clay material",
+      "Reusable for multiple festive occasions",
+      "Deep base to hold oil and wicks securely"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Golden Fairy Light Curtain",
+    "desc": "Dazzling warm LED string lights to create a magical background.",
+    "fullDesc": "Transform your walls and backdrops into a cascading waterfall of golden lights. This fairy light curtain is ideal for creating stunning backdrops for puja spaces, living rooms, or festive photography.",
+    "price": "1299",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgk_3j39VAteYS_TiWDdBHSEBHaUd6naw2kLwlqpabpA&s",
+    "features": [
+      "Multiple lighting flash modes available",
+      "Low power consumption LED bulbs",
+      "Safe to touch, does not heat up quickly",
+      "Covers wide wall areas seamlessly"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Luxury Laxmi Pujan Mandap",
+    "desc": "Exquisite floral and fabric backdrop styling for auspicious prayers.",
+    "fullDesc": "Create a divine sanctum for Goddess Lakshmi with our Luxury Laxmi Pujan Mandap setup. Featuring rich fabrics, floral garlands, and subtle lighting, it provides a majestic setting for your family prayers.",
+    "price": "4999",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO192jZsJKPNVAM00tqiDTQHuHqubkhGW8d2AmGsY1Xw&s=10",
+    "features": [
+      "Complete backdrop and seating styling package",
+      "Premium quality synthetic florals and fabrics",
+      "Professional setup support included",
+      "Auspicious color combinations"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Crystal Tea Light Holders",
+    "desc": "Elegant glass candle holders reflecting sparkling golden lights.",
+    "fullDesc": "Add a touch of modern elegance to your traditional decor with these crystal-cut glass tea light holders. They catch the candle flame and refract mesmerizing patterns across your tables and corners.",
+    "price": "899",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2tnBN8VNbVUt13peyI-qs2j_y2h-rhXtSLfNQVMe4iQ&s=10",
+    "features": [
+      "Heavy-duty premium crystal glass",
+      "Heat resistant and safe for burning candles",
+      "Enhances candle brightness multi-fold",
+      "Pack of multiple shimmering pieces"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Festive Rangoli LED Mat",
+    "desc": "Ready-to-place reusable decorative mat with embedded warm lights.",
+    "fullDesc": "Skip the hassle of elaborate powder rangolis with our ready-to-use illuminated rangoli mat. Simply place it at your doorstep or mandap entrance for an instant festive greeting.",
+    "price": "999",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYnqbSGyyAridzgJtj6zw5KIbPWs1cEABW4HpUeCh8Q&s=10",
+    "features": [
+      "Embedded energy-efficient LED glow",
+      "Lightweight, flexible, and waterproof material",
+      "Reusable year after year",
+      "Stunning traditional rangoli patterns"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Royal Velvet Pujaasan",
+    "desc": "Premium velvet seating cloth with golden borders for idols.",
+    "fullDesc": "Give your idols a royal throne with our plush velvet pujaasan. Embellished with intricate golden lace borders, it adds dignity and reverence to your deity installations.",
+    "price": "649",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa2tgfJLanIdkogxXq8Onup53NjiICqxv8qf3WwIChIg&s=10",
+    "features": [
+      "Soft high-density velvet fabric",
+      "Tarnish-resistant zari golden lace border",
+      "Easy to fold and store",
+      "Available in auspicious festive colors"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Deepawali Gift Hamper",
+    "desc": "Curated gift box filled with scented candles, idols, and treats.",
+    "fullDesc": "Express your love and gratitude to family, friends, and colleagues with our luxury Deepawali gift hamper. Thoughtfully packed with aromatic candles, divine idols, and festive delights.",
+    "price": "2199",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNjv_DwKadQA5CRD4inNcvnfH18D924s2j4w0Eiedrg&s=10",
+    "features": [
+      "Beautifully packaged luxury gift box",
+      "Includes scented soy wax candles & idol",
+      "Premium presentation ready for gifting",
+      "Customizable greeting card included"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Society Entrance Arch Light",
+    "desc": "Massive welcoming entrance gate styling with heavy festive lights.",
+    "fullDesc": "Make your residential society or commercial complex stand out this festive season with our grand entrance arch lighting package, complete with heavy illumination and structural decorations.",
+    "price": "12499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToE2W6Df_O_E_h1T7GGPTSGPFLHQlqBIQRPXLyESavHw&s=10",
+    "features": [
+      "Heavy-duty outdoor safe decorative lighting",
+      "Professional installation and teardown service",
+      "Grand visual impact for societies",
+      "Custom banner space integration available"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Hanging Star Lanterns",
+    "desc": "Paper and foil geometric star lamps for balcony and ceiling decor.",
+    "fullDesc": "Create a starry night right on your balcony with our geometric paper and foil star lanterns. When lit from inside, they cast a warm, breathtaking celestial glow across your outdoor spaces.",
+    "price": "499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVLIjm2500oUgLcD4DSBM-Lx0CHmE2nl5xBvlKtc5vYQ&s=10",
+    "features": [
+      "Foldable 3D geometric design",
+      "Durable weather-resistant foil finish",
+      "Comes with bulb holder cord slot",
+      "Stunning multi-color reflections"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Premium Ethnic Flower Setup",
+    "desc": "Fresh-looking artistic floral arrangements for grand celebrations.",
+    "fullDesc": "Enhance your venue aesthetics with our premium ethnic floral setup. Expertly arranged floral strings and centerpieces designed to breathe life and elegance into your festive venue.",
+    "price": "3499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRPaOIH1RG_DKgPz6cIJn12ZKPpXpLR19snjcN-eJlQ&s=10",
+    "features": [
+      "Artistic professional floral arrangement",
+      "Long-lasting fresh appearance",
+      "Suitable for indoor and semi-outdoor venues",
+      "Adds rich royal fragrance and look"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Royal Marigold & Diya Mandap",
+    "desc": "Auspicious marigold strings combined with traditional clay diyas.",
+    "fullDesc": "Bring home the ethereal glow of traditional festivities with our Royal Marigold & Diya Mandap. Handcrafted with precision, this stunning arrangement combines warm LED lighting and fresh-look marigold strings with rich traditional motifs to instantly elevate your festive mandap or living room decor.",
+    "price": "5499",
+    "image": "/diwali1.png",
+    "features": [
+      "Energy-efficient warm LED lights included",
+      "Durable weather-resistant structure",
+      "Easy to install and dismantle",
+      "Handcrafted traditional golden finish"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Grand Floral Laxmi Pujan Setup",
+    "desc": "Exquisite backdrop styling specially curated for auspicious Laxmi Pujan.",
+    "fullDesc": "Create a divine sanctum for Goddess Lakshmi with our Grand Floral Laxmi Pujan Setup. Featuring rich fabrics, designer floral garlands, and subtle warm lighting, it provides a majestic setting for your family prayers and festive celebrations.",
+    "price": "7999",
+    "image": "/diwali2.png",
+    "features": [
+      "Complete backdrop and seating styling package",
+      "Premium quality synthetic florals and fabrics",
+      "Professional setup support included",
+      "Auspicious color combinations"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Golden Fairy Light Arch",
+    "desc": "Dazzling warm fairy lights creating a magical festive aura for your home.",
+    "fullDesc": "Transform your walls, arches, and backdrops into a cascading waterfall of golden lights. This fairy light setup is ideal for creating stunning backdrops for puja spaces, living rooms, or festive photography.",
+    "price": "6299",
+    "image": "/diwali3.png",
+    "features": [
+      "Multiple lighting flash modes available",
+      "Low power consumption LED bulbs",
+      "Safe to touch, does not heat up quickly",
+      "Covers wide wall areas seamlessly"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Traditional Lotus & Toran Decor",
+    "desc": "Handcrafted torans and fresh lotus motifs to welcome Goddess Lakshmi.",
+    "fullDesc": "Welcome Goddess Lakshmi and your guests with vibrant, everlasting artificial marigold torans and lotus motifs. Designed to replicate fresh flowers without the hassle of wilting, it adds an authentic festive charm to your main entrance.",
+    "price": "4899",
+    "image": "/diwali4.png",
+    "features": [
+      "Made from premium reusable fabric material",
+      "Standard size fits most main doors perfectly",
+      "Washable and long-lasting quality",
+      "Bright, auspicious yellow and orange hues"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Grand Gate & Entrance Arch",
+    "desc": "Massive welcoming entrance gate styling with heavy lights and floral pillars for housing societies.",
+    "fullDesc": "Make your residential society or commercial complex stand out this festive season with our grand entrance arch lighting package, complete with heavy illumination and structural decorations.",
+    "price": "18499",
+    "image": "/socity.png",
+    "features": [
+      "Heavy-duty outdoor safe decorative lighting",
+      "Professional installation and teardown service",
+      "Grand visual impact for societies",
+      "Custom banner space integration available"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Society Compound Lighting & Stage",
+    "desc": "Complete community area illumination, stage decoration, and festive photo booths.",
+    "fullDesc": "Illuminate your entire society compound and community stage with synchronized festive lights, grand decorative structures, and specialized photo booths for residents.",
+    "price": "24999",
+    "image": "/socity2.png",
+    "features": [
+      "Complete community area illumination",
+      "Dedicated festive photo booth setup",
+      "Safe outdoor wiring and professional management",
+      "Energy-efficient LED setups"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Community Center Floral Mandap",
+    "desc": "Vibrant traditional decor setup for grand community celebrations and gatherings.",
+    "fullDesc": "Vibrant traditional decor setup specially crafted for large community gatherings, society functions, and grand Diwali events.",
+    "price": "15499",
+    "image": "/socity1.png",
+    "features": [
+      "Large-scale traditional floral arrangements",
+      "Stage backdrop and seating decor",
+      "Professional setup team included",
+      "Durable festive materials"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Festive Pathway & Tree Wrapping",
+    "desc": "Stunning fairy light tree wraps and illuminated pathways across the society complex.",
+    "fullDesc": "Enhance your campus walkways and trees with mesmerizing fairy light wraps, guiding residents through a brilliantly illuminated pathway.",
+    "price": "12999",
+    "image": "/socity4.png",
+    "features": [
+      "Weather-proof outdoor fairy lights",
+      "Professional tree trunk and branch wrapping",
+      "Pathway marker illumination",
+      "Low maintenance and high glow impact"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Tiranga Flag Theme Balloon Arch",
+    "desc": "Vibrant saffron, white, and green balloon decoration for national celebrations.",
+    "fullDesc": "Celebrate Independence Day and Republic Day with a magnificent tricolor balloon entrance arch, ideal for schools, societies, and offices.",
+    "price": "₹2,499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-hqSdiwUDOh0l_Gv56QJXZnARPXBvHdpT_JCCH0WOxw&s=10",
+    "features": [
+      "Premium quality biodegradable balloons",
+      "Striking saffron, white, and green color combo",
+      "Professional setup and structural support",
+      "Perfect for entrance gates and stages"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Patriotic Stage Backdrop & Banner",
+    "desc": "Grand national-themed stage decoration setup with freedom fighters motif.",
+    "fullDesc": "Transform your event stage with an inspiring patriotic backdrop banner designed to honor the spirit of the nation.",
+    "price": "₹4,999",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkp8TO5iFhJD5hSmafWw9wJqvS2uxUSEJg4a8uL5ThQ&s",
+    "features": [
+      "High-definition vibrant printing",
+      "Sturdy wooden or metal frame setup",
+      "Customizable greeting text options",
+      "Professional installation and teardown"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tiranga Floral Decoration Set",
+    "desc": "Exquisite tricolor flower arrangement for podiums and flag hoisting areas.",
+    "fullDesc": "A graceful floral arrangement crafted using fresh or premium artificial flowers in saffron, white, and green hues.",
+    "price": "₹1,899",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRF41QzNeOIEJaXoU_xmv9K12VNfjtFtgJZjuOch_7kA&s=10",
+    "features": [
+      "Aesthetic tricolor floral styling",
+      "Suitable for podiums and dais decoration",
+      "Long-lasting fresh appearance",
+      "Adds a touch of elegance to national events"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Republic Day Badge & Sash Kit",
+    "desc": "Patriotic badges, wristbands, and sashes for event participants.",
+    "fullDesc": "Complete accessory package including tricolor ribbons, badges, and honor sashes for guests and children.",
+    "price": "₹799",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yQs5hQ_oBAPlak76ediAs6bAvkgzEPg8tUj-HdLC1Q&s",
+    "features": [
+      "Includes premium pin-on badges and sashes",
+      "Skin-friendly fabric materials",
+      "Bulk quantity kits available",
+      "Vibrant national flag colors"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Patriotic Kids Cultural Wear",
+    "desc": "Special freedom fighter and tricolor fancy dress costumes for kids.",
+    "fullDesc": "Inspire young minds with comfortable and authentic patriotic fancy dress outfits for school functions and community events.",
+    "price": "₹1,199",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWK7bD3R-um0xJJHajy8xlmjGHUBj2LEGfGxyHBuriSg&s=10",
+    "features": [
+      "Soft and comfortable fabric for children",
+      "Authentic historical and national styling",
+      "Easy to wear and lightweight",
+      "Available in multiple sizes"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tiranga Celebration Sweets & Snacks Box",
+    "desc": "Patriotic themed tricolor sweets and refreshment hamper for gatherings.",
+    "fullDesc": "Celebrate the day of national pride with delicious tricolor sweets and packaged snacks distributed after flag hoisting.",
+    "price": "₹599",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEt9pNWUNZkSKlToBntm-d05JmqSCI-y6Bgs8DGN_51w&s=10",
+    "features": [
+      "Hygienically packed refreshment box",
+      "Delicious tricolor sweets and treats",
+      "Ideal for school and society distribution",
+      "Prepared with premium ingredients"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "National Flag Hoisting Setup Kit",
+    "desc": "Complete kit with rope, flower petals pouch, and pulley mechanism support.",
+    "fullDesc": "Everything needed for a smooth and respectful flag hoisting ceremony, including flower showers and ceremonial setup.",
+    "price": "₹1,499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjjNYnzURdrWGMR-FO7L_Ty8Uy5Oj8yCbFKVTg2XK4Q&s=10",
+    "features": [
+      "Includes smooth pulley rope and floral pouch",
+      "Ensures seamless flag unfurling",
+      "Standard quality equipment",
+      "Essential for official ceremonies"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Tiranga Floral & Balloon Stage Arch",
+    "desc": "Vibrant saffron, white, and green floral and balloon decorations for patriotic flag hoisting ceremonies.",
+    "fullDesc": "A stunning stage arch combining fresh tricolor florals with balloon styling, perfectly suited for official flag hoisting ceremonies and grand national events.",
+    "price": "₹5,499",
+    "image": "/pic1.png",
+    "features": [
+      "Tricolor floral and balloon combination",
+      "Ideal for flag hoisting stages",
+      "Sturdy arch structure with elegant finish",
+      "Professional on-site setup"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Freedom Fighter & National Hero Backdrop",
+    "desc": "Inspiring thematic stage backdrop celebrating India's freedom struggle and national pride.",
+    "fullDesc": "A powerful backdrop design honoring India's freedom fighters, crafted to inspire patriotism at school and community stage events.",
+    "price": "₹7,899",
+    "image": "/pic2.png",
+    "features": [
+      "Freedom fighter themed thematic design",
+      "High-impact stage backdrop styling",
+      "Great for school and cultural events",
+      "Durable print with vivid colors"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Society & Office Tricolor Gate Styling",
+    "desc": "Grand entrance decoration with tricolor ribbons, drapes, and welcoming patriotic banners.",
+    "fullDesc": "Welcome guests and residents with a grand tricolor-themed gate setup, complete with ribbons, drapes, and patriotic banners for societies and offices.",
+    "price": "₹4,299",
+    "image": "/pic3.png",
+    "features": [
+      "Tricolor ribbon and drape styling",
+      "Perfect for society and office entrances",
+      "Welcoming patriotic banner included",
+      "Quick and clean installation"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Patriotic Lighting & Canopy Setup",
+    "desc": "Special saffron-white-green ambient lighting and canopy setup for community celebrations.",
+    "fullDesc": "Set the mood with an ambient saffron-white-green lighting and canopy arrangement, designed for evening community celebrations and gatherings.",
+    "price": "₹9,499",
+    "image": "/pic4.png",
+    "features": [
+      "Tricolor ambient lighting effects",
+      "Elegant canopy setup",
+      "Best suited for evening events",
+      "Enhances overall celebration atmosphere"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Tricolor Grand Event Decoration",
+    "desc": "Magnificent national flag theme setup designed to bring vibrant patriotic energy to venues.",
+    "fullDesc": "A magnificent national flag theme decoration setup, curated to bring vibrant patriotic energy and grandeur to any venue.",
+    "price": "₹3,499",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgUvPtNG6jzL9lLdNi44C8Jvvkk7DY9CocPlxrPqUaQ&s",
+    "features": [
+      "Full venue tricolor theme",
+      "Stage and entrance decor",
+      "Professional installation team",
+      "Suited for grand community events"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Patriotic Stage & Venue Setup",
+    "desc": "Complete ceremonial decoration kit curated for official flag hoisting and community gatherings.",
+    "fullDesc": "A complete ceremonial decoration kit for official flag hoisting ceremonies and community gatherings, including stage, backdrop and seating decor.",
+    "price": "₹5,999",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYZTogAP-T3kYusVBTmfC3YX4_r4w5H4cIiQZNU5G7A&s=10",
+    "features": [
+      "Full stage setup",
+      "Podium & flag mast decoration",
+      "Sound system compatible layout"
+    ]
+  },
+  {
+    "id": "birthday-kids-1",
+    "slug": "avenger-theme-balloon-decoration",
+    "name": "Avenger Theme Balloon Decoration",
+    "description": "Colorful birthday party decoration set with balloons, banners, and table decorations.",
+    "price": 799,
+    "image": "https://cheetah.cherishx.com/uploads/avenger-theme-balloon-decoration.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-2",
+    "slug": "dinosaur-birthday-kit",
+    "name": "Dinosaur Birthday Kit",
+    "description": "Fun dinosaur-themed birthday decoration kit perfect for kids who love dinosaurs.",
+    "price": 999,
+    "image": "https://cheetah.cherishx.com/uploads/bluey-theme-birthday-backdrop.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-3",
+    "slug": "princess-birthday-set",
+    "name": "Princess Birthday Set",
+    "description": "A magical princess-themed party set featuring decorations, balloons, and party accessories.",
+    "price": 899,
+    "image": "https://cheetah.cherishx.com/uploads/butterfly-fairy-birthday-decoration-with-balloons-blooms.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-4",
+    "slug": "superhero-birthday-pack",
+    "name": "Superhero Birthday Pack",
+    "description": "Superhero-themed birthday pack designed to make your little hero's party special.",
+    "price": 1099,
+    "image": "https://cheetah.cherishx.com/uploads/golden-glow-pastel-kids-birthday-decoration.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-1",
+    "slug": "pink-and-silver-birthday-bliss",
+    "name": "Pink and Silver Birthday Bliss",
+    "description": "Colorful birthday party decoration set with balloons, banners, and table decorations.",
+    "price": 799,
+    "image": "https://cheetah.cherishx.com/uploads/pink-and-silver-birthday-bliss-decor.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-2",
+    "slug": "fairy-lights-and-lanterns",
+    "name": "Fairy Lights and Lanterns",
+    "description": "Fun fairy lights and lantern decoration kit perfect for creating a magical atmosphere.",
+    "price": 999,
+    "image": "https://cheetah.cherishx.com/uploads/fairy-lights-lantern-decoration.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-3",
+    "slug": "vibrant-rainbow-kids-birthday-party",
+    "name": "Vibrant Rainbow Kids Birthday Party",
+    "description": "A magical princess-themed party set featuring decorations, balloons, and party accessories.",
+    "price": 899,
+    "image": "https://cheetah.cherishx.com/uploads/vibrant-rainbow-kids-birthday-party-decoration.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-kids-4",
+    "slug": "pastel-and-rosegold-birthday-decoration",
+    "name": "Pastel and Rosegold Birthday Decoration",
+    "description": "Superhero-themed birthday pack designed to make your little hero's party special.",
+    "price": 1099,
+    "image": "https://cheetah.cherishx.com/uploads/pastel-and-rosegold-birthday-decoration.jpg?format=avif&width=640&height=640",
+    "category": "Birthday",
+    "subcategory": "Kids Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-1",
+    "slug": "the-gentlemans-milestone",
+    "name": "The Gentleman's Milestone",
+    "description": "Sophisticated navy & gold backdrop styling with elegant metallic balloon clusters.",
+    "price": 5499,
+    "image": "/dad.png",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-2",
+    "slug": "royal-king-father-setup",
+    "name": "Royal King Father Setup",
+    "description": "Grand royal drapes, custom marquee number/name highlights, and premium cake pedestal.",
+    "price": 8499,
+    "image": "/dad1.png",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-3",
+    "slug": "legacy-celebration-bundle",
+    "name": "Legacy Celebration Bundle",
+    "description": "Complete elite transformation featuring entrance pathway decor, cold pyros & LED ambiance.",
+    "price": 12999,
+    "image": "/dad2.png",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-4",
+    "slug": "classic-tribute-setup",
+    "name": "Classic Tribute Setup",
+    "description": "Warm fairy lights, floral arches and beautiful memory wall integration for dad.",
+    "price": 6499,
+    "image": "/dad3.png",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-5",
+    "slug": "new-classic-theme-based-setup-1",
+    "name": "New Classic Theam based Setup",
+    "description": "Warm fairy lights, floral arches and beautiful memory wall integration for dad.",
+    "price": 6499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUAve16FiNjdS0UdleZDzxHuNZ8o3EWxK8F3ONCb3Ozg&s=10",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-6",
+    "slug": "new-classic-theme-based-setup-2",
+    "name": "New Classic Theam based Setup",
+    "description": "Warm fairy lights, floral arches and beautiful memory wall integration for dad.",
+    "price": 6499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSm4nXTEa6pgaBEZuJqDvelRxrK_z8gcfgth9Ktyz7Q&s=10",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-7",
+    "slug": "new-classic-theme-based-setup-3",
+    "name": "New Classic Theam based Setup",
+    "description": "Warm fairy lights, floral arches and beautiful memory wall integration for dad.",
+    "price": 6499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvZH95VzqbnOmFVIno7nL-qrox-USU3DmbJk5txfR5Q&s=10",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "birthday-father-8",
+    "slug": "new-classic-theme-based-setup-4",
+    "name": "New Classic Theam based Setup",
+    "description": "Warm fairy lights, floral arches and beautiful memory wall integration for dad.",
+    "price": 6499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoqkh5QurgO6HPbUjc0SstZYr4bpuCUwaR4tWFnfoMA&s=10",
+    "category": "Birthday",
+    "subcategory": "Father Birthday",
+    "availability": true
+  },
+  {
+    "id": "newyear-1",
+    "slug": "midnight-glow-setup",
+    "name": "Midnight Glow Setup",
+    "description": "Dazzling metallic balloons, LED counts & gold confetti aesthetics.",
+    "price": 6999,
+    "image": "/party.png",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-2",
+    "slug": "grand-countdown-lounge",
+    "name": "Grand Countdown Lounge",
+    "description": "Luxury seating backdrop, neon signs & ambient club lighting.",
+    "price": 10999,
+    "image": "/party2.png",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-3",
+    "slug": "starry-night-gala",
+    "name": "Starry Night Gala",
+    "description": "Fairy light canopy, champagne table styling & photo booth.",
+    "price": 14999,
+    "image": "/party3.png",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-4",
+    "slug": "vip-celebration-bundle",
+    "name": "VIP Celebration Bundle",
+    "description": "Complete party transformation with entrance arch & cold pyros.",
+    "price": 19999,
+    "image": "/party4.png",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-40",
+    "slug": "vip-celebration-bundle-40",
+    "name": "VIP Celebration Bundle",
+    "description": "Complete party transformation with entrance arch & cold pyros.",
+    "price": 19999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvpY3diWUPEHZ1ELDtkbNWmxv4xbgK0ZnQCgnY3jfng&s=10",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-41",
+    "slug": "vip-celebration-bundle-41",
+    "name": "VIP Celebration Bundle",
+    "description": "Complete party transformation with entrance arch & cold pyros.",
+    "price": 29999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-zm4uSZR_d9Vd-96IeniCZU8-yPK0zZSrK9E4WMDpA&s=10",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-42",
+    "slug": "vip-celebration-bundle-42",
+    "name": "VIP Celebration Bundle",
+    "description": "Complete party transformation with entrance arch & cold pyros.",
+    "price": 12999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSw0QSU2Oo5hLF4wz_38zLSsdTkjlaDdxryBhUKmhzg&s=10",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "newyear-43",
+    "slug": "vip-celebration-bundle-43",
+    "name": "VIP Celebration Bundle",
+    "description": "Complete party transformation with entrance arch & cold pyros.",
+    "price": 19989,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8U60uCEx_aiDW60yk9ceQH3rLVj1quN9B1n1Qba90Vg&s=10",
+    "category": "New Year",
+    "subcategory": "New Year Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-5",
+    "slug": "luxury-suite-romance",
+    "name": "Luxury Suite Romance",
+    "description": "Rose petal pathways, candlelit room styling & swan towel decor.",
+    "price": 4499,
+    "image": "/hoteldecoration.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Hotel Room Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-6",
+    "slug": "royal-banquet-styling",
+    "name": "Royal Banquet Styling",
+    "description": "Grand floral pillars, crystal chandeliers & stage draping.",
+    "price": 24999,
+    "image": "/hoteldecoration1.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Banquet Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-7",
+    "slug": "boutique-anniversary-room",
+    "name": "Boutique Anniversary Room",
+    "description": "Customized balloon ceiling, glowing numbers & memory frames.",
+    "price": 5999,
+    "image": "/hoteldecoration2.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Anniversary Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-8",
+    "slug": "executive-birthday-setup",
+    "name": "Executive Birthday Setup",
+    "description": "Sophisticated backdrop with thematic balloons and cake table.",
+    "price": 7999,
+    "image": "/hoteldecoration3.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Birthday Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-9",
+    "slug": "grand-ballroom-gala",
+    "name": "Grand Ballroom Gala",
+    "description": "Full-scale ceiling draping, royal seating & entrance archway.",
+    "price": 34999,
+    "image": "/hoteldecoration4.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Ballroom Decoration",
+    "availability": true
+  },
+  {
+    "id": "hotel-10",
+    "slug": "imperial-suite-experience",
+    "name": "Imperial Suite Experience",
+    "description": "Premium thematic setup with special lighting and floral curation.",
+    "price": 18999,
+    "image": "/hoteldecoration5.png",
+    "category": "Hotel Decoration",
+    "subcategory": "Hotel Suite Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-11",
+    "slug": "garden-canopy-lights",
+    "name": "Garden Canopy Lights",
+    "description": "Stunning fairy light canopy stretching across outdoor trees.",
+    "price": 12999,
+    "image": "/outsidelooking.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Garden Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-12",
+    "slug": "open-air-lawn-stage",
+    "name": "Open-Air Lawn Stage",
+    "description": "Floral gateway, open-air seating decor & warm ambient glow.",
+    "price": 18999,
+    "image": "/outsidelooking1.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Lawn Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-13",
+    "slug": "terrace-sunset-setup",
+    "name": "Terrace Sunset Setup",
+    "description": "Boho-chic outdoor cabana with cozy cushions and lanterns.",
+    "price": 8999,
+    "image": "/outsidelooking2.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Terrace Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-14",
+    "slug": "path-of-lights-entrance",
+    "name": "Path of Lights Entrance",
+    "description": "Illuminated floral pathway welcoming guests in style.",
+    "price": 6499,
+    "image": "/outsidelooking3.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Entrance Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-15",
+    "slug": "grand-farmhouse-open-lawn",
+    "name": "Grand Farmhouse Open Lawn",
+    "description": "Complete perimeter ambient lighting & royal outdoor Mandap.",
+    "price": 29999,
+    "image": "/outsidelooking4.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Farmhouse Decoration",
+    "availability": true
+  },
+  {
+    "id": "outdoor-16",
+    "slug": "starlit-garden-terrace",
+    "name": "Starlit Garden Terrace",
+    "description": "Exquisite string lighting and open-air luxury seating arrangement.",
+    "price": 21999,
+    "image": "/outsidelooking5.png",
+    "category": "Outdoor Decoration",
+    "subcategory": "Garden Decoration",
+    "availability": true
+  },
+  {
+    "id": "birthday-baby-1",
+    "slug": "cradle-floral-welcome",
+    "name": "Cradle Floral Welcome",
+    "description": "Soft pastel balloon clusters paired with a traditional floral cradle setup for the newborn.",
+    "price": 4999,
+    "image": "/babayborn.png",
+    "category": "Birthday",
+    "subcategory": "Baby Welcome",
+    "availability": true
+  },
+  {
+    "id": "birthday-baby-2",
+    "slug": "celestial-star-moon-arch",
+    "name": "Celestial Star & Moon Arch",
+    "description": "Dreamy golden moon and twinkling star props with pastel drapes for a magical arrival.",
+    "price": 6499,
+    "image": "/babayborn1.png",
+    "category": "Birthday",
+    "subcategory": "Baby Welcome",
+    "availability": true
+  },
+  {
+    "id": "birthday-baby-3",
+    "slug": "welcome-little-prince-princess",
+    "name": "Welcome Little Prince/Princess",
+    "description": "Elegant blue/pink theme setups with customized name boards and glowing fairy lights.",
+    "price": 5999,
+    "image": "/babayborn2.png",
+    "category": "Birthday",
+    "subcategory": "Baby Welcome",
+    "availability": true
+  },
+  {
+    "id": "birthday-baby-4",
+    "slug": "joyful-teddy-balloon-haven",
+    "name": "Joyful Teddy & Balloon Haven",
+    "description": "Cute giant teddy bear integration with rich organic balloon styling for lovely memories.",
+    "price": 7999,
+    "image": "/babayborn3.png",
+    "category": "Birthday",
+    "subcategory": "Baby Welcome",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-5",
+    "slug": "classic-toyland-setup",
+    "name": "Classic Toyland Setup",
+    "description": "Vibrant play-zone elements and joyful toy props to give a cheerful vibe.",
+    "price": 6999,
+    "image": "/mytoyes.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-6",
+    "slug": "tom-jerry-fun-theme",
+    "name": "Tom & Jerry Fun Theme",
+    "description": "Playful cartoon-themed backdrops featuring classic mischief and laughter.",
+    "price": 7499,
+    "image": "/tomandjery.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-7",
+    "slug": "oggy-cockroaches-magic",
+    "name": "Oggy & The Cockroaches Magic",
+    "description": "Fun-filled lively cartoon setup specially loved by kids and family guests.",
+    "price": 7299,
+    "image": "/ogy.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-8",
+    "slug": "doraemon-dream-gadgets",
+    "name": "Doraemon Dream Gadgets",
+    "description": "Magical futuristic blue & white balloon decor with classic Doraemon themes.",
+    "price": 7999,
+    "image": "/dorempn.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-9",
+    "slug": "ultimate-toy-wonderland",
+    "name": "Ultimate Toy Wonderland",
+    "description": "Grand interactive toy-inspired backdrop setup designed for high visual appeal.",
+    "price": 8499,
+    "image": "/toyes.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  },
+  {
+    "id": "cartoon-toy-10",
+    "slug": "schinechain-the-best-cartoon",
+    "name": "SchineChain The Best Cartoon",
+    "description": "Grand interactive cartoon backdrop setup designed for ultimate kids fun and visual appeal.",
+    "price": 8499,
+    "image": "/schinechain.png",
+    "category": "Birthday",
+    "subcategory": "Cartoon & Toy Decoration",
+    "availability": true
+  }
+]

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "seed": "node src/scripts/seedSuperAdmin.js"
+    "seed": "node src/scripts/seedSuperAdmin.js && node src/scripts/seedProducts.js"
   },
   "keywords": [],
   "author": "",
