@@ -28,8 +28,19 @@ const productSchema = new mongoose.Schema({
   
   theme: { type: String, default: '' },
   gradientBg: { type: String, default: '' },
-  badgeColor: { type: String, default: '' },
   isSpecialCard: { type: Boolean, default: false },
+  availableCities: [{ type: String }],
+
+  // City-specific content, SEO Meta Tags, and Custom pricing overrides
+  cityOverrides: [{
+    cityName: { type: String, required: true },
+    metaTitle: { type: String, default: '' },
+    metaDescription: { type: String, default: '' },
+    metaKeywords: { type: String, default: '' },
+    customTitle: { type: String, default: '' },
+    customDescription: { type: String, default: '' },
+    customPrice: { type: Number }
+  }]
 }, { timestamps: true });
 
 module.exports = mongoose.model('Product', productSchema);

@@ -26,6 +26,13 @@ router.get('/', async (req, res) => {
         if (subcat) query.subcategory = subcat._id;
       }
     }
+    if (req.query.city && req.query.city !== 'All') {
+      query.$or = [
+        { availableCities: { $size: 0 } },
+        { availableCities: 'All' },
+        { availableCities: req.query.city }
+      ];
+    }
     
     const products = await Product.find(query)
       .populate('category', 'name slug')
