@@ -1,6 +1,8 @@
 const User = require('../models/User');
 const Navigation = require('../models/Navigation');
 const HomePage = require('../models/HomePage');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 // @desc    Get Super Admin Dashboard Overview
 // @route   GET /api/super-admin/dashboard
@@ -79,8 +81,78 @@ const updateUserRole = async (req, res) => {
   res.json({ message: `User role updated to ${role}`, user: { _id: user._id, name: user.name, role: user.role } });
 };
 
+
+// new changes done  by piyush dubey 
+
+const superAdminLogin = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({
+        success: false,
+        message: 'Email aur password dono required hain',
+      });
+    }
+
+    // Explicitly select password kyunki schema me select: false hai
+    const admin = await User.findOne({ email: email.toLowerCase() }).select('+password');
+
+    if (!admin) {
+      return res.status(401).json({
+        success: false,
+        message: 'Invalid administrative credentials',
+      });
+    }
+
+    // Role check
+    if (admin.role !== 'superadmin' && admin.role !== 'admin') {
+      return res.status(403).json({
+        success: false,
+        message: 'Access denied: Admin rights nahi hain',
+      });
+    }
+
+    // Account active check
+    if (!admin.isActive) {
+      return res.status(403).json({
+        success: false,
+        message: 'Account inactive ya blocked hai',
+      });
+    }
+
+    // Password match
+    const isMatch = await admin.matchPassword(password);
+    if (!isMatch) {
+      return res.status(401).json({
+        success: false,
+        message: 'Invalid administrative credentials',
+      });
+    }
+
+    // Token generation
+    const token = generateToken(admin);
+
+    res.status(200).json({
+      success: true,
+      message: 'Login successful',
+      token,
+      admin: {
+        id: admin._id,
+        name: admin.name,
+        email: admin.email,
+        role: admin.role,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   getDashboardOverview,
   getAllUsers,
   updateUserRole,
+  superAdminLogin
 };
+

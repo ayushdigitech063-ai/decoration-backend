@@ -1,3 +1,4 @@
+// src/models/User.js
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
@@ -5,19 +6,22 @@ const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
       trim: true,
+      default: 'Guest User',
     },
     email: {
       type: String,
-      required: true,
       unique: true,
+      sparse: true,
       lowercase: true,
       trim: true,
     },
     password: {
       type: String,
-      required: true,
+      select: false,
+      required: function () {
+        return this.role === 'superadmin' || this.role === 'admin';
+      },
     },
     role: {
       type: String,
@@ -26,11 +30,39 @@ const userSchema = new mongoose.Schema(
     },
     phone: {
       type: String,
+      unique: true,
+      sparse: true,
+      trim: true,
+    },
+    authProvider: {
+      type: String,
+      enum: ['phone_otp', 'google', 'local'],
+      default: 'phone_otp',
+    },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true,
+    },
+    avatar: {
+      type: String,
       default: '',
+    },
+    otp: {
+      type: String,
+      select: false,
+    },
+    otpExpires: {
+      type: Date,
+      select: false,
     },
     isActive: {
       type: Boolean,
       default: true,
+    },
+    isProfileComplete: {
+      type: Boolean,
+      default: false,
     },
   },
   {
@@ -38,8 +70,11 @@ const userSchema = new mongoose.Schema(
   }
 );
 
+userSchema.index({ phone: 1 });
+userSchema.index({ email: 1 });
+
 userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+  if (!this.isModified('password') || !this.password) return next();
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
   next();
