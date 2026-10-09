@@ -3,6 +3,7 @@ const Navigation = require('../models/Navigation');
 const HomePage = require('../models/HomePage');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const generateToken = require('../utils/generateToken');
 
 // @desc    Get Super Admin Dashboard Overview
 // @route   GET /api/super-admin/dashboard
