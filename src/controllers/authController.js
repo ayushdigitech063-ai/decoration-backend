@@ -211,6 +211,38 @@ const getUserProfile = async (req, res) => {
 
 // new controlles 
 
+
+const registerUser = async (req, res, next) => {
+  try {
+    const { name, email, phone } = req.body;
+    if (!phone || phone.length !== 10) {
+      return res.status(400).json({ success: false, message: 'Valid 10-digit mobile number is required' });
+    }
+    if (!name || !email) {
+      return res.status(400).json({ success: false, message: 'Name and email are required' });
+    }
+
+    let userExists = await User.findOne({ phone });
+    if (userExists) {
+      return res.status(400).json({ success: false, message: 'User already exists' });
+    }
+
+    const newUser = await User.create({
+      name,
+      email,
+      phone,
+      authProvider: 'phone_otp',
+      isProfileComplete: true
+    });
+
+    res.status(201).json({
+      success: true,
+      message: 'Registration successful! Please login.',
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 const sendOTP = async (req, res, next) => {
   try {
     const { phone } = req.body;
@@ -232,10 +264,9 @@ const sendOTP = async (req, res, next) => {
 
     let user = await User.findOne({ phone });
     if (!user) {
-      user = new User({
-        phone,
-        authProvider: 'phone_otp',
-        name: 'Party Guest',
+      return res.status(404).json({
+        success: false,
+        message: "User not found. Please register.",
       });
     }
 
@@ -397,6 +428,7 @@ const completeProfile = async (req, res, next) => {
 };
 
 module.exports = {
+  registerUser,
   // registerUser,
   // loginUser,
   // mobileLogin,
