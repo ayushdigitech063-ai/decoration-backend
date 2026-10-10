@@ -1,3 +1,4 @@
+// src/models/City.js
 const mongoose = require('mongoose');
 
 const citySchema = new mongoose.Schema(
@@ -8,13 +9,20 @@ const citySchema = new mongoose.Schema(
       trim: true,
       unique: true,
     },
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true, // e.g. 'jaipur', 'delhi' (Frontend URL routing ke liye)
+    },
     state: {
       type: String,
       trim: true,
       default: '',
     },
     icon: {
-      type: String, // optional icon name or custom svg
+      type: String, // City skyline ya landmark icon URL
       default: '',
     },
     isActive: {
@@ -34,5 +42,9 @@ const citySchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
+citySchema.index({ slug: 1, isActive: 1 });
+citySchema.set('toJSON', { virtuals: true });
+citySchema.set('toObject', { virtuals: true });
 
 module.exports = mongoose.model('City', citySchema);

@@ -1,92 +1,52 @@
+// src/routes/productRoutes.js
 const express = require('express');
-const { protect, superAdminOnly } = require('../middleware/authMiddleware');
-const Product = require('../models/Product');
-
 const router = express.Router();
 
-// GET all products
-router.get('/', async (req, res) => {
-  try {
-    const query = {};
-    if (req.query.category) {
-      if (req.query.category.match(/^[0-9a-fA-F]{24}$/)) {
-        query.category = req.query.category;
-      } else {
-        const Category = require('../models/Category');
-        const cat = await Category.findOne({ slug: req.query.category });
-        if (cat) query.category = cat._id;
-      }
-    }
-    if (req.query.subcategory) {
-      if (req.query.subcategory.match(/^[0-9a-fA-F]{24}$/)) {
-        query.subcategory = req.query.subcategory;
-      } else {
-        const Category = require('../models/Category');
-        const subcat = await Category.findOne({ slug: req.query.subcategory });
-        if (subcat) query.subcategory = subcat._id;
-      }
-    }
-    if (req.query.city && req.query.city !== 'All') {
-      query.$or = [
-        { availableCities: { $size: 0 } },
-        { availableCities: 'All' },
-        { availableCities: req.query.city }
-      ];
-    }
-    
-    const products = await Product.find(query)
-      .populate('category', 'name slug')
-      .populate('subcategory', 'name slug');
-    res.json(products);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+// Controllers
+const {
+  getAllProducts,
+  getProductByIdentifier,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+} = require('../controllers/productController');
 
-// GET single product
-router.get('/:id', async (req, res) => {
-  try {
-    const product = await Product.findById(req.params.id)
-      .populate('category', 'name slug')
-      .populate('subcategory', 'name slug');
-    if (!product) return res.status(404).json({ message: 'Product not found' });
-    res.json(product);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+// Middlewares
+const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
+const upload = require('../middleware/uploadMiddleware');
 
-// CREATE product
-router.post('/', protect, superAdminOnly, async (req, res) => {
-  try {
-    const product = new Product(req.body);
-    const savedProduct = await product.save();
-    res.status(201).json(savedProduct);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
 
-// UPDATE product
-router.put('/:id', protect, superAdminOnly, async (req, res) => {
-  try {
-    const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!product) return res.status(404).json({ message: 'Product not found' });
-    res.json(product);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
+const productMediaUpload = upload.fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'images', maxCount: 5 },
+]);
 
-// DELETE product
-router.delete('/:id', protect, superAdminOnly, async (req, res) => {
-  try {
-    const product = await Product.findByIdAndDelete(req.params.id);
-    if (!product) return res.status(404).json({ message: 'Product not found' });
-    res.json({ message: 'Product removed' });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+router.get('/', getAllProducts);
+
+router.get('/:identifier', getProductByIdentifier);
+
+router.post(
+  '/',
+  protect,
+  adminOrSuperAdmin,
+  productMediaUpload,
+  createProduct
+);
+
+
+router.put(
+  '/:id',
+  protect,
+  adminOrSuperAdmin,
+  productMediaUpload,
+  updateProduct
+);
+
+router.delete(
+  '/:id',
+  protect,
+  adminOrSuperAdmin,
+  deleteProduct
+);
 
 module.exports = router;

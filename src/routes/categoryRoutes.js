@@ -1,50 +1,49 @@
+// src/routes/categoryRoutes.js
 const express = require('express');
-const { protect, superAdminOnly } = require('../middleware/authMiddleware');
-const Category = require('../models/Category');
-
 const router = express.Router();
 
-// GET all categories
-router.get('/', async (req, res) => {
-  try {
-    const categories = await Category.find().populate('parentCategory');
-    res.json(categories);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+const {
+  getCategoryTree,
+  getAllCategories,
+  getCategoryByIdentifier,
+  createCategory,
+  updateCategory,
+  deleteCategory,
+} = require('../controllers/categoryController');
 
-// CREATE category
-router.post('/', protect, superAdminOnly, async (req, res) => {
-  try {
-    const category = new Category(req.body);
-    const savedCategory = await category.save();
-    res.status(201).json(savedCategory);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
+// Middlewares
+const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
+const upload = require('../middleware/uploadMiddleware');
 
-// UPDATE category
-router.put('/:id', protect, superAdminOnly, async (req, res) => {
-  try {
-    const category = await Category.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!category) return res.status(404).json({ message: 'Category not found' });
-    res.json(category);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
+router.get('/tree', getCategoryTree);
 
-// DELETE category
-router.delete('/:id', protect, superAdminOnly, async (req, res) => {
-  try {
-    const category = await Category.findByIdAndDelete(req.params.id);
-    if (!category) return res.status(404).json({ message: 'Category not found' });
-    res.json({ message: 'Category removed' });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+router.get('/', getAllCategories);
+
+
+router.get('/:identifier', getCategoryByIdentifier);
+
+
+router.post(
+  '/',
+  protect,
+  adminOrSuperAdmin,
+  upload.single('image'),
+  createCategory
+);
+
+router.put(
+  '/:id',
+  protect,
+  adminOrSuperAdmin,
+  upload.single('image'),
+  updateCategory
+);
+
+router.delete(
+  '/:id',
+  protect,
+  adminOrSuperAdmin,
+  deleteCategory
+);
 
 module.exports = router;
