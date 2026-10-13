@@ -5,24 +5,70 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const generateToken = require('../utils/generateToken');
 
+const Product = require('../models/Product');
+const Category = require('../models/Category');
+
 // @desc    Get Super Admin Dashboard Overview
 // @route   GET /api/super-admin/dashboard
 // @access  Private/SuperAdmin
 const getDashboardOverview = async (req, res) => {
-  const userCount = await User.countDocuments({ role: 'user' });
-  const adminCount = await User.countDocuments({ role: 'admin' });
-  const superAdminCount = await User.countDocuments({ role: 'superadmin' });
-  
-  const topbarConfig = await Navigation.findOne({ type: 'topbar' });
-  const sidebarConfig = await Navigation.findOne({ type: 'sidebar' });
-  const homeSections = await HomePage.findOne();
+  const [
+    userCount,
+    adminCount,
+    superAdminCount,
+    topbarConfig,
+    sidebarConfig,
+    homeSections,
+    totalProducts,
+    activeProducts,
+    totalMainCategories,
+    totalSubcategories,
+    lowStockProducts,
+    topCategories
+  ] = await Promise.all([
+    User.countDocuments({ role: 'user' }),
+    User.countDocuments({ role: 'admin' }),
+    User.countDocuments({ role: 'superadmin' }),
+    Navigation.findOne({ type: 'topbar' }),
+    Navigation.findOne({ type: 'sidebar' }),
+    HomePage.findOne(),
+    Product.countDocuments(),
+    Product.countDocuments({ availability: true }),
+    Category.countDocuments({ parentCategory: null }),
+    Category.countDocuments({ parentCategory: { $ne: null } }),
+    Product.countDocuments({ $or: [{ stock: { $lte: 5 } }, { availability: false }] }),
+    Category.find({ parentCategory: null }).limit(6).lean()
+  ]);
+
+  // Aggregate product counts for top categories
+  const categoryBreakdown = await Promise.all(
+    topCategories.map(async (cat, idx) => {
+      const count = await Product.countDocuments({
+        $or: [{ category: cat._id }, { subcategory: cat._id }]
+      });
+      const colors = ['#F59E0B', '#B45309', '#1C1917', '#FCD34D', '#8CBC67', '#A8A29E'];
+      return {
+        name: cat.name,
+        value: count,
+        color: colors[idx % colors.length]
+      };
+    })
+  );
 
   res.json({
     metrics: {
       totalUsers: userCount,
       totalAdmins: adminCount,
       totalSuperAdmins: superAdminCount,
+      totalProducts,
+      activeProducts,
+      inactiveProducts: totalProducts - activeProducts,
+      totalMainCategories,
+      totalSubcategories,
+      totalCategories: totalMainCategories + totalSubcategories,
+      lowStockProducts,
     },
+    categoryBreakdown,
     structure: {
       topbarConfigured: !!topbarConfig,
       sidebarConfigured: !!sidebarConfig,

@@ -13,6 +13,9 @@ const productSchema = new mongoose.Schema({
   category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
   subcategory: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
   
+  sku: { type: String, default: '' },
+  stock: { type: Number, default: 100 },
+  
   availability: { type: Boolean, default: true },
   included: [{ type: String }],
   notIncluded: [{ type: String }],
@@ -42,5 +45,10 @@ const productSchema = new mongoose.Schema({
     customPrice: { type: Number }
   }]
 }, { timestamps: true });
+
+productSchema.index({ name: 'text', description: 'text' });
+productSchema.index({ category: 1, subcategory: 1 });
+productSchema.index({ price: 1 });
+productSchema.index({ availability: 1 });
 
 module.exports = mongoose.model('Product', productSchema);
