@@ -1,5 +1,5 @@
 const express = require('express');
-const { protect, superAdminOnly } = require('../middleware/authMiddleware');
+const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
 const Package = require('../models/Package');
 
 const router = express.Router();
@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 });
 
 // CREATE package
-router.post('/', protect, superAdminOnly, async (req, res) => {
+router.post('/', protect, adminOrSuperAdmin, async (req, res) => {
   try {
     const newPackage = new Package(req.body);
     const savedPackage = await newPackage.save();
@@ -30,7 +30,7 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
 });
 
 // UPDATE package
-router.put('/:id', protect, superAdminOnly, async (req, res) => {
+router.put('/:id', protect, adminOrSuperAdmin, async (req, res) => {
   try {
     const updatedPackage = await Package.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updatedPackage) return res.status(404).json({ message: 'Package not found' });
@@ -41,7 +41,7 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
 });
 
 // DELETE package
-router.delete('/:id', protect, superAdminOnly, async (req, res) => {
+router.delete('/:id', protect, adminOrSuperAdmin, async (req, res) => {
   try {
     const deletedPackage = await Package.findByIdAndDelete(req.params.id);
     if (!deletedPackage) return res.status(404).json({ message: 'Package not found' });

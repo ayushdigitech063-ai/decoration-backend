@@ -83,8 +83,33 @@ const updateSectionContent = async (req, res) => {
   res.json({ message: `Section '${sectionKey}' updated successfully`, section: updatedSection });
 };
 
+// @desc    Get specific section by key
+// @route   GET /api/homepage/sections/:sectionKey
+// @access  Public
+const getSectionByKey = async (req, res) => {
+  try {
+    const { sectionKey } = req.params;
+    let homePage = await HomePage.findOne();
+    if (!homePage) {
+      homePage = await HomePage.create({
+        title: 'Main Home Page Layout',
+        sections: defaultHomeSections,
+      });
+    }
+    const section = homePage.sections.find((s) => s.sectionKey === sectionKey);
+    if (!section) {
+      return res.status(404).json({ message: `Section '${sectionKey}' not found` });
+    }
+    res.json(section);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 module.exports = {
   getHomePageStructure,
+  getSectionByKey,
   updateHomePageSections,
   updateSectionContent,
 };
+

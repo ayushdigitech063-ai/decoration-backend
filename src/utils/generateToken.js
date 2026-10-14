@@ -19,7 +19,7 @@ const generateToken = (user, expiresIn = null) => {
       ? '12h'
       : process.env.JWT_EXPIRE || '30d');
 
-  return jwt.sign(payload, process.env.JWT_SECRET || 'your_secret_key', {
+  return jwt.sign(payload, process.env.JWT_SECRET || 'superadmin_secret_key_partysquare_2026', {
     expiresIn: tokenExpiry,
   });
 };

@@ -86,10 +86,11 @@ router.get('/', async (req, res) => {
 
     // 6. City filter
     if (req.query.city && req.query.city !== 'All') {
+      const cityRegex = new RegExp(`^${req.query.city.trim()}$`, 'i');
       const cityCondition = [
         { availableCities: { $size: 0 } },
         { availableCities: 'All' },
-        { availableCities: req.query.city }
+        { availableCities: cityRegex }
       ];
       if (query.$or) {
         query.$and = [{ $or: query.$or }, { $or: cityCondition }];
@@ -160,16 +161,30 @@ router.get('/', async (req, res) => {
 // GET single product by ID or slug
 router.get('/:id', async (req, res) => {
   try {
-    const isObjectId = mongoose.Types.ObjectId.isValid(req.params.id);
-    const query = isObjectId ? { _id: req.params.id } : { slug: req.params.id };
+    const rawId = String(req.params.id || '').trim();
+    const isObjectId = mongoose.Types.ObjectId.isValid(rawId);
 
-    let product = await Product.findOne(query)
-      .populate('category', 'name slug image')
-      .populate('subcategory', 'name slug image parentCategory');
+    let product = null;
 
-    // If not found by ObjectId, try by slug
-    if (!product && isObjectId) {
-      product = await Product.findOne({ slug: req.params.id })
+    if (isObjectId) {
+      product = await Product.findById(rawId)
+        .populate('category', 'name slug image')
+        .populate('subcategory', 'name slug image parentCategory');
+    }
+
+    // Try case-insensitive slug
+    if (!product) {
+      const escaped = rawId.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+      product = await Product.findOne({ slug: new RegExp(`^${escaped}$`, 'i') })
+        .populate('category', 'name slug image')
+        .populate('subcategory', 'name slug image parentCategory');
+    }
+
+    // Try matching normalized name (hyphens replaced with spaces)
+    if (!product) {
+      const namePattern = rawId.replace(/-/g, ' ');
+      const escapedName = namePattern.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+      product = await Product.findOne({ name: new RegExp(`^${escapedName}$`, 'i') })
         .populate('category', 'name slug image')
         .populate('subcategory', 'name slug image parentCategory');
     }

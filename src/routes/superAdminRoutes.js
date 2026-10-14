@@ -4,21 +4,20 @@ const {
   getDashboardOverview,
   getAllUsers,
   updateUserRole,
-  superAdminLogin
+  superAdminLogin,
+  getAnalyticsReport
 } = require('../controllers/superAdminController');
-const { protect, superAdminOnly } = require('../middleware/authMiddleware');
+const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
 
 router.post('/login', superAdminLogin);
 
 router.use(protect);
-router.use(superAdminOnly);
+router.use(adminOrSuperAdmin);
 
 router.get('/dashboard', getDashboardOverview);
+router.get('/analytics', getAnalyticsReport);
 router.get('/users', getAllUsers);
 router.put('/users/:id/role', updateUserRole);
 
-// piyush changes 
-
-
-
 module.exports = router;
+

@@ -26,6 +26,7 @@ app.get('/api/health', (req, res) => {
 const categoryRoutes = require('./routes/categoryRoutes');
 const productRoutes = require('./routes/productRoutes');
 const packageRoutes = require('./routes/packageRoutes');
+const galleryRoutes = require('./routes/galleryRoutes');
 const cityRoutes = require('./routes/cityRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 const settingRoutes = require('./routes/settingRoutes');
@@ -40,6 +41,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/packages', packageRoutes);
+app.use('/api/gallery', galleryRoutes);
 app.use('/api/cities', cityRoutes);
 app.use('/api/bookings', bookingRoutes);
 

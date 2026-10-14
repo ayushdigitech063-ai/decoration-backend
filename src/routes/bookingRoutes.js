@@ -1,13 +1,29 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
 const Booking = require('../models/Booking');
 const User = require('../models/User');
+const generateToken = require('../utils/generateToken');
 const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
 
-// @desc    Create a new booking (Logged in customer only)
+// Helper: Optional protect (if bearer token is present, populates req.user)
+const optionalProtect = async (req, res, next) => {
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    try {
+      const token = req.headers.authorization.split(' ')[1];
+      const decoded = jwt.verify(token, process.env.JWT_SECRET || 'superadmin_secret_key_partysquare_2026');
+      req.user = await User.findById(decoded.id).select('-password');
+    } catch (e) {
+      // Proceed without user
+    }
+  }
+  next();
+};
+
+// @desc    Create a new booking (Logged in or Direct Customer)
 // @route   POST /api/bookings
-// @access  Private (User/Customer)
-router.post('/', protect, async (req, res) => {
+// @access  Public / Private
+router.post('/', optionalProtect, async (req, res) => {
   try {
     const {
       productName,
@@ -24,10 +40,40 @@ router.post('/', protect, async (req, res) => {
       paymentMethod,
       customerPhone,
       customerName,
+      customerEmail,
     } = req.body;
 
     if (!productName || !eventDate || !totalAmount) {
       return res.status(400).json({ message: 'Missing required booking fields (Product, Date, Amount)' });
+    }
+
+    let userDoc = req.user;
+    let token = null;
+
+    if (!userDoc) {
+      const cleanPhone = (customerPhone || '').trim().replace(/[^0-9]/g, '').slice(-10);
+      if (cleanPhone) {
+        userDoc = await User.findOne({ phone: cleanPhone });
+        if (!userDoc) {
+          userDoc = await User.create({
+            name: customerName || 'Customer',
+            phone: cleanPhone,
+            email: customerEmail || `cust_${cleanPhone}@partysquare.in`,
+            role: 'user',
+            authProvider: 'phone_otp',
+          });
+        }
+      } else {
+        userDoc = await User.findOne({ email: customerEmail || 'guest@partysquare.in' });
+        if (!userDoc) {
+          userDoc = await User.create({
+            name: customerName || 'Guest User',
+            email: customerEmail || 'guest@partysquare.in',
+            role: 'user',
+          });
+        }
+      }
+      token = generateToken(userDoc);
     }
 
     const calculatedAdvance = advanceAmountPaid || Math.round(Number(totalAmount) * 0.5);
@@ -39,10 +85,10 @@ router.post('/', protect, async (req, res) => {
 
     const booking = await Booking.create({
       bookingId,
-      user: req.user._id,
-      customerName: customerName || req.user.name,
-      customerEmail: req.user.email,
-      customerPhone: customerPhone || req.user.phone || '',
+      user: userDoc._id,
+      customerName: customerName || userDoc.name,
+      customerEmail: customerEmail || userDoc.email || 'customer@partysquare.in',
+      customerPhone: customerPhone || userDoc.phone || '',
       productName,
       productId: productId || '',
       productImage: productImage || '',
@@ -62,8 +108,15 @@ router.post('/', protect, async (req, res) => {
 
     res.status(201).json({
       success: true,
-      message: 'Booking created successfully with 50% advance confirmed!',
+      message: 'Booking created successfully with confirmed status!',
       booking,
+      token,
+      user: {
+        _id: userDoc._id,
+        name: userDoc.name,
+        phone: userDoc.phone,
+        email: userDoc.email,
+      },
     });
   } catch (error) {
     console.error('Error creating booking:', error);
@@ -80,6 +133,24 @@ router.get('/my', protect, async (req, res) => {
     res.json(bookings);
   } catch (error) {
     res.status(500).json({ message: 'Error loading user bookings', error: error.message });
+  }
+});
+
+// @desc    Get bookings by phone number
+// @route   GET /api/bookings/by-phone/:phone
+router.get('/by-phone/:phone', async (req, res) => {
+  try {
+    const cleanPhone = req.params.phone.trim().replace(/[^0-9]/g, '').slice(-10);
+    const bookings = await Booking.find({
+      $or: [
+        { customerPhone: cleanPhone },
+        { customerPhone: `+91${cleanPhone}` },
+        { customerPhone: new RegExp(cleanPhone, 'i') }
+      ]
+    }).sort({ createdAt: -1 });
+    res.json(bookings);
+  } catch (error) {
+    res.status(500).json({ message: 'Error loading bookings by phone', error: error.message });
   }
 });
 
