@@ -215,29 +215,49 @@ const getUserProfile = async (req, res) => {
 const registerUser = async (req, res, next) => {
   try {
     const { name, email, phone } = req.body;
-    if (!phone || phone.length !== 10) {
+    const cleanPhone = (phone || '').trim().replace(/[^0-9]/g, '').slice(-10);
+    const cleanEmail = (email || '').trim().toLowerCase();
+
+    if (!cleanPhone || cleanPhone.length !== 10) {
       return res.status(400).json({ success: false, message: 'Valid 10-digit mobile number is required' });
     }
-    if (!name || !email) {
+    if (!name || !cleanEmail) {
       return res.status(400).json({ success: false, message: 'Name and email are required' });
     }
 
-    let userExists = await User.findOne({ phone });
+    let userExists = await User.findOne({
+      $or: [{ phone: cleanPhone }, { email: cleanEmail }]
+    });
+
     if (userExists) {
-      return res.status(400).json({ success: false, message: 'User already exists' });
+      if (userExists.phone === cleanPhone) {
+        return res.status(400).json({ success: false, message: 'This mobile number is already registered. Please login.' });
+      } else {
+        return res.status(400).json({ success: false, message: 'This email is already registered. Please use another email or login.' });
+      }
     }
 
     const newUser = await User.create({
-      name,
-      email,
-      phone,
+      name: name.trim(),
+      email: cleanEmail,
+      phone: cleanPhone,
       authProvider: 'phone_otp',
       isProfileComplete: true
     });
 
+    const token = generateToken(newUser);
+
     res.status(201).json({
       success: true,
-      message: 'Registration successful! Please login.',
+      message: 'Registration successful!',
+      token,
+      user: {
+        id: newUser._id,
+        name: newUser.name,
+        phone: newUser.phone,
+        email: newUser.email,
+        role: newUser.role,
+      }
     });
   } catch (error) {
     next(error);
