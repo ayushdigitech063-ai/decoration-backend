@@ -52,28 +52,67 @@ router.post('/', optionalProtect, async (req, res) => {
 
     if (!userDoc) {
       const cleanPhone = (customerPhone || '').trim().replace(/[^0-9]/g, '').slice(-10);
-      if (cleanPhone) {
-        userDoc = await User.findOne({ phone: cleanPhone });
-        if (!userDoc) {
+      const cleanEmail = (customerEmail || '').trim().toLowerCase();
+
+      // Look up existing user by phone or email
+      const orQuery = [];
+      if (cleanPhone) orQuery.push({ phone: cleanPhone });
+      if (cleanEmail) orQuery.push({ email: cleanEmail });
+
+      if (orQuery.length > 0) {
+        userDoc = await User.findOne({ $or: orQuery });
+      }
+
+      if (!userDoc) {
+        try {
           userDoc = await User.create({
             name: customerName || 'Customer',
-            phone: cleanPhone,
-            email: customerEmail || `cust_${cleanPhone}@partysquare.in`,
+            phone: cleanPhone || undefined,
+            email: cleanEmail || (cleanPhone ? `cust_${cleanPhone}@partysquare.in` : `guest_${Date.now()}@partysquare.in`),
             role: 'user',
             authProvider: 'phone_otp',
           });
-        }
-      } else {
-        userDoc = await User.findOne({ email: customerEmail || 'guest@partysquare.in' });
-        if (!userDoc) {
-          userDoc = await User.create({
-            name: customerName || 'Guest User',
-            email: customerEmail || 'guest@partysquare.in',
-            role: 'user',
-          });
+        } catch (createErr) {
+          // If collision occurred (duplicate phone or email), find the conflicting user
+          if (cleanPhone) userDoc = await User.findOne({ phone: cleanPhone });
+          if (!userDoc && cleanEmail) userDoc = await User.findOne({ email: cleanEmail });
+
+          // If still cannot find, create fallback user with unique email
+          if (!userDoc) {
+            const uniqueSuffix = `${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+            userDoc = await User.create({
+              name: customerName || 'Customer',
+              phone: cleanPhone || undefined,
+              email: `user_${uniqueSuffix}@partysquare.in`,
+              role: 'user',
+              authProvider: 'phone_otp',
+            });
+          }
         }
       }
-      token = generateToken(userDoc);
+
+      // If user doc exists, update name if needed
+      if (userDoc) {
+        let changed = false;
+        if (customerName && (userDoc.name === 'Customer' || userDoc.name === 'Guest User')) {
+          userDoc.name = customerName;
+          changed = true;
+        }
+        if (cleanPhone && !userDoc.phone) {
+          userDoc.phone = cleanPhone;
+          changed = true;
+        }
+        if (cleanEmail && !userDoc.email) {
+          userDoc.email = cleanEmail;
+          changed = true;
+        }
+        if (changed) {
+          try {
+            await userDoc.save();
+          } catch (e) {}
+        }
+        token = generateToken(userDoc);
+      }
     }
 
     const calculatedAdvance = advanceAmountPaid || Math.round(Number(totalAmount) * 0.5);
