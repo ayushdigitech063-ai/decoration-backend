@@ -145,11 +145,11 @@ const superAdminLogin = async (req, res, next) => {
     if (!email || !password) {
       return res.status(400).json({
         success: false,
-        message: 'Email aur password dono required hain',
+        message: 'Email and password are required',
       });
     }
 
-    // Explicitly select password kyunki schema me select: false hai
+    // Explicitly select password since schema has select: false
     const admin = await User.findOne({ email: email.toLowerCase() }).select('+password');
 
     if (!admin) {
@@ -163,7 +163,7 @@ const superAdminLogin = async (req, res, next) => {
     if (admin.role !== 'superadmin' && admin.role !== 'admin') {
       return res.status(403).json({
         success: false,
-        message: 'Access denied: Admin rights nahi hain',
+        message: 'Access denied: Administrator privileges required',
       });
     }
 
@@ -171,7 +171,7 @@ const superAdminLogin = async (req, res, next) => {
     if (!admin.isActive) {
       return res.status(403).json({
         success: false,
-        message: 'Account inactive ya blocked hai',
+        message: 'Account is inactive or suspended',
       });
     }
 

@@ -270,7 +270,7 @@ const sendOTP = async (req, res, next) => {
     if (!phone || !/^\d{10}$/.test(phone)) {
       return res.status(400).json({
         success: false,
-        message: 'Valid 10-digit mobile number enter kijiye',
+        message: 'Please enter a valid 10-digit mobile number',
       });
     }
 
@@ -298,7 +298,7 @@ const sendOTP = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: 'OTP bhej diya gaya hai',
+      message: 'OTP sent successfully',
     });
   } catch (error) {
     next(error);
@@ -312,7 +312,7 @@ const verifyOTP = async (req, res, next) => {
     if (!phone || !otp) {
       return res.status(400).json({
         success: false,
-        message: 'Phone aur OTP dono required hain',
+        message: 'Phone number and OTP are required',
       });
     }
 
@@ -327,7 +327,7 @@ const verifyOTP = async (req, res, next) => {
     if (!user) {
       return res.status(400).json({
         success: false,
-        message: 'Invalid ya expired OTP',
+        message: 'Invalid or expired OTP',
       });
     }
 
@@ -363,7 +363,7 @@ const googleAuth = async (req, res, next) => {
     if (!idToken) {
       return res.status(400).json({
         success: false,
-        message: 'Google token required hai',
+        message: 'Google token is required',
       });
     }
 
@@ -422,7 +422,7 @@ const completeProfile = async (req, res, next) => {
     const user = await User.findById(req.user.id);
 
     if (!user) {
-      return res.status(404).json({ success: false, message: 'User nahi mila' });
+      return res.status(404).json({ success: false, message: 'User not found' });
     }
 
     if (name) user.name = name;
@@ -434,7 +434,7 @@ const completeProfile = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: 'Profile update ho gaya',
+      message: 'Profile updated successfully',
       user: {
         id: user._id,
         name: user.name,
