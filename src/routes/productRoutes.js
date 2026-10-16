@@ -31,18 +31,52 @@ router.get('/', async (req, res) => {
       ];
     }
 
-    // 2. Category filter (by ID, slug, or name)
+    // 2. Category filter (by ID, slug, or name with child & related category support)
     if (req.query.category && req.query.category !== 'all') {
       if (mongoose.Types.ObjectId.isValid(req.query.category)) {
-        query.category = req.query.category;
+        const childCats = await Category.find({ parentCategory: req.query.category }, '_id');
+        if (childCats.length > 0) {
+          const catIds = [req.query.category, ...childCats.map(c => c._id)];
+          query.$and = query.$and || [];
+          query.$and.push({
+            $or: [{ category: { $in: catIds } }, { subcategory: { $in: catIds } }]
+          });
+        } else {
+          query.category = req.query.category;
+        }
       } else {
+        const catSlug = req.query.category.toLowerCase().trim();
         const cat = await Category.findOne({
           $or: [
-            { slug: req.query.category.toLowerCase().trim() },
+            { slug: catSlug },
             { name: new RegExp(`^${req.query.category.trim()}$`, 'i') },
           ],
         });
-        if (cat) query.category = cat._id;
+        if (cat) {
+          const childCats = await Category.find({ parentCategory: cat._id }, '_id');
+          let additionalCats = [];
+          if (catSlug.includes('festiv')) {
+            additionalCats = await Category.find({
+              $or: [
+                { name: /festiv|lohri|diwali|ganesh|navratri|christmas|janmashtami|independence/i },
+                { slug: /festiv|lohri|diwali|ganesh|navratri|christmas|janmashtami|independence/i }
+              ]
+            }, '_id');
+          }
+          const allTargetIds = Array.from(new Set([
+            String(cat._id),
+            ...childCats.map(c => String(c._id)),
+            ...additionalCats.map(c => String(c._id))
+          ])).map(id => new mongoose.Types.ObjectId(id));
+
+          query.$and = query.$and || [];
+          query.$and.push({
+            $or: [
+              { category: { $in: allTargetIds } },
+              { subcategory: { $in: allTargetIds } }
+            ]
+          });
+        }
       }
     }
 
@@ -84,20 +118,10 @@ router.get('/', async (req, res) => {
       }
     }
 
-    // 6. City filter
+    // 6. City filter (Strict city matching: Only show products specifically assigned to this city)
     if (req.query.city && req.query.city !== 'All') {
       const cityRegex = new RegExp(`^${req.query.city.trim()}$`, 'i');
-      const cityCondition = [
-        { availableCities: { $size: 0 } },
-        { availableCities: 'All' },
-        { availableCities: cityRegex }
-      ];
-      if (query.$or) {
-        query.$and = [{ $or: query.$or }, { $or: cityCondition }];
-        delete query.$or;
-      } else {
-        query.$or = cityCondition;
-      }
+      query.availableCities = cityRegex;
     }
 
     // 7. Sorting
