@@ -62,6 +62,7 @@ const galleryRoutes = require('./routes/galleryRoutes');
 const cityRoutes = require('./routes/cityRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 const settingRoutes = require('./routes/settingRoutes');
+const reviewRoutes = require('./routes/reviewRoutes');
 
 // API Routes
 app.use('/api/auth', authRoutes);
@@ -76,6 +77,7 @@ app.use('/api/packages', packageRoutes);
 app.use('/api/gallery', galleryRoutes);
 app.use('/api/cities', cityRoutes);
 app.use('/api/bookings', bookingRoutes);
+app.use('/api/reviews', reviewRoutes);
 
 // Error Handling
 app.use(notFound);
