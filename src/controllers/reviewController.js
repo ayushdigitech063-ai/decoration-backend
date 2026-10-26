@@ -1,5 +1,6 @@
 const Review = require('../models/Review');
 const Booking = require('../models/Booking');
+const Product = require('../models/Product');
 
 // ─────────────────────────────────────────────
 // POST /api/reviews
@@ -59,32 +60,82 @@ const submitReview = async (req, res) => {
       return res.status(409).json({ message: 'You have already reviewed this booking.' });
     }
     console.error('submitReview error:', err);
-    return res.status(500).json({ message: 'Server error. Please try again.' });
+    return res.status(500).json({ message: 'Server error.' });
+  }
+};
+
+// ─────────────────────────────────────────────
+// POST /api/reviews/admin-create
+// Admin manually creates a review for any product/URL
+// Protected + Admin
+// ─────────────────────────────────────────────
+const createReviewAdmin = async (req, res) => {
+  try {
+    const { productId, productName, customerName, city, rating, comment, status } = req.body;
+
+    if (!productId || !customerName || !rating || !comment) {
+      return res.status(400).json({
+        message: 'Product, customer name, rating, and comment are required.',
+      });
+    }
+
+    const numRating = Number(rating);
+    if (numRating < 1 || numRating > 5) {
+      return res.status(400).json({ message: 'Rating must be between 1 and 5.' });
+    }
+
+    let resolvedProductName = productName;
+    if (!resolvedProductName) {
+      const prod = await Product.findById(productId);
+      resolvedProductName = prod ? prod.name : 'Decoration Package';
+    }
+
+    const review = await Review.create({
+      productId: String(productId),
+      productName: resolvedProductName,
+      customerName: customerName.trim(),
+      city: city ? city.trim() : '',
+      rating: numRating,
+      comment: comment.trim(),
+      status: status || 'APPROVED',
+      isManual: true,
+      booking: null,
+      bookingId: '',
+      user: null,
+    });
+
+    return res.status(201).json({ success: true, review });
+  } catch (err) {
+    console.error('createReviewAdmin error:', err);
+    return res.status(500).json({ message: err.message || 'Server error.' });
   }
 };
 
 // ─────────────────────────────────────────────
 // GET /api/reviews/product/:productId
-// Public: fetch APPROVED + FEATURED reviews for a product
+// Public: returns APPROVED & FEATURED reviews for a product
 // ─────────────────────────────────────────────
 const getReviewsByProduct = async (req, res) => {
   try {
     const { productId } = req.params;
+
     const reviews = await Review.find({
       productId,
       status: { $in: ['APPROVED', 'FEATURED'] },
     })
-      .sort({ status: -1, createdAt: -1 }) // FEATURED first
-      .limit(20)
+      .sort({ createdAt: -1 })
       .lean();
 
-    // Compute average
     const avg =
       reviews.length > 0
-        ? (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1)
+        ? (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1)
         : null;
 
-    return res.json({ reviews, averageRating: avg, totalCount: reviews.length });
+    return res.json({
+      reviews,
+      count: reviews.length,
+      averageRating: avg,
+    });
   } catch (err) {
     console.error('getReviewsByProduct error:', err);
     return res.status(500).json({ message: 'Server error.' });
@@ -93,15 +144,16 @@ const getReviewsByProduct = async (req, res) => {
 
 // ─────────────────────────────────────────────
 // GET /api/reviews/check/:bookingId
-// Protected: check if current user already reviewed this booking
+// Protected: checks if logged-in user already reviewed this booking
 // ─────────────────────────────────────────────
 const checkReviewed = async (req, res) => {
   try {
-    const booking = await Booking.findOne({ bookingId: req.params.bookingId });
-    if (!booking) return res.json({ reviewed: false });
+    const { bookingId } = req.params;
+    const booking = await Booking.findOne({ bookingId });
+    if (!booking) return res.status(404).json({ message: 'Booking not found.' });
 
-    const existing = await Review.findOne({ booking: booking._id, user: req.user._id });
-    return res.json({ reviewed: !!existing, review: existing || null });
+    const review = await Review.findOne({ booking: booking._id, user: req.user._id });
+    return res.json({ reviewed: Boolean(review), review: review || null });
   } catch (err) {
     return res.status(500).json({ message: 'Server error.' });
   }
@@ -109,12 +161,15 @@ const checkReviewed = async (req, res) => {
 
 // ─────────────────────────────────────────────
 // GET /api/reviews  (Admin)
-// Protected + Admin: get all reviews with optional status filter
+// Protected + Admin: returns all reviews with status filter
 // ─────────────────────────────────────────────
 const getAllReviewsAdmin = async (req, res) => {
   try {
+    const { status } = req.query;
     const filter = {};
-    if (req.query.status) filter.status = req.query.status;
+    if (status && ['PENDING', 'APPROVED', 'FEATURED', 'REJECTED'].includes(status)) {
+      filter.status = status;
+    }
 
     const reviews = await Review.find(filter)
       .populate('user', 'name email phone')
@@ -174,6 +229,7 @@ const deleteReview = async (req, res) => {
 
 module.exports = {
   submitReview,
+  createReviewAdmin,
   getReviewsByProduct,
   checkReviewed,
   getAllReviewsAdmin,

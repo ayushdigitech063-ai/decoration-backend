@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema(
   {
-    // The booking this review is linked to (must be COMPLETED)
+    // The booking this review is linked to (optional for admin-created reviews)
     booking: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Booking',
-      required: true,
+      default: null,
     },
     bookingId: {
       type: String,
-      required: true,
+      default: '',
     },
 
     // The product/decoration being reviewed
@@ -24,11 +24,11 @@ const reviewSchema = new mongoose.Schema(
       required: true,
     },
 
-    // The customer who submitted
+    // The customer who submitted (optional for admin-created reviews)
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
-      required: true,
+      default: null,
     },
     customerName: {
       type: String,
@@ -59,13 +59,17 @@ const reviewSchema = new mongoose.Schema(
       enum: ['PENDING', 'APPROVED', 'FEATURED', 'REJECTED'],
       default: 'PENDING',
     },
+    isManual: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-// One review per booking per user
-reviewSchema.index({ booking: 1, user: 1 }, { unique: true });
+// Sparse compound index for customer reviews
+reviewSchema.index({ booking: 1, user: 1 }, { unique: true, sparse: true });
 
 module.exports = mongoose.model('Review', reviewSchema);

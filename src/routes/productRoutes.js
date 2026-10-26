@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const mongoose = require('mongoose');
 const { protect, superAdminOnly } = require('../middleware/authMiddleware');
 const Product = require('../models/Product');
@@ -157,6 +157,7 @@ router.get('/', async (req, res) => {
     let productsQuery = Product.find(query)
       .populate('category', 'name slug image')
       .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory')
       .sort(sortField);
 
     if (limit > 0) {
@@ -193,7 +194,8 @@ router.get('/:id', async (req, res) => {
     if (isObjectId) {
       product = await Product.findById(rawId)
         .populate('category', 'name slug image')
-        .populate('subcategory', 'name slug image parentCategory');
+        .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory');
     }
 
     // Try case-insensitive slug
@@ -201,7 +203,8 @@ router.get('/:id', async (req, res) => {
       const escaped = rawId.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
       product = await Product.findOne({ slug: new RegExp(`^${escaped}$`, 'i') })
         .populate('category', 'name slug image')
-        .populate('subcategory', 'name slug image parentCategory');
+        .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory');
     }
 
     // Try matching normalized name (hyphens replaced with spaces)
@@ -210,7 +213,8 @@ router.get('/:id', async (req, res) => {
       const escapedName = namePattern.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
       product = await Product.findOne({ name: new RegExp(`^${escapedName}$`, 'i') })
         .populate('category', 'name slug image')
-        .populate('subcategory', 'name slug image parentCategory');
+        .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory');
     }
 
     if (!product) return res.status(404).json({ message: 'Product not found' });
@@ -325,7 +329,8 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
     const saved = await newProduct.save();
     const populated = await Product.findById(saved._id)
       .populate('category', 'name slug image')
-      .populate('subcategory', 'name slug image parentCategory');
+      .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory');
 
     res.status(201).json(populated);
   } catch (error) {
@@ -377,7 +382,8 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
       runValidators: true
     })
       .populate('category', 'name slug image')
-      .populate('subcategory', 'name slug image parentCategory');
+      .populate('subcategory', 'name slug image parentCategory')
+      .populate('subSubcategory', 'name slug image parentCategory');
 
     res.json(updated);
   } catch (error) {

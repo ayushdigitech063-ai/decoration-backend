@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const { protect, adminOrSuperAdmin } = require('../middleware/authMiddleware');
 const Package = require('../models/Package');
 
@@ -8,8 +8,11 @@ const router = express.Router();
 router.get('/', async (req, res) => {
   try {
     const query = {};
-    if (req.query.pageTarget) {
+    if (req.query.pageTarget && req.query.pageTarget !== 'all') {
       query.pageTarget = req.query.pageTarget;
+    }
+    if (req.query.city && req.query.city !== 'all') {
+      query.$or = [{ city: req.query.city }, { city: 'All' }, { city: { $exists: false } }, { city: '' }];
     }
     const packages = await Package.find(query).sort({ createdAt: -1 });
     res.json(packages);

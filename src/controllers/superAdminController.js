@@ -1,4 +1,4 @@
-const User = require('../models/User');
+﻿const User = require('../models/User');
 const Navigation = require('../models/Navigation');
 const HomePage = require('../models/HomePage');
 const bcrypt = require('bcryptjs');
@@ -99,7 +99,7 @@ const getAllUsers = async (req, res) => {
         const bookingsCount = await Booking.countDocuments({ $or: matchCriteria });
         const latestBooking = await Booking.findOne({ $or: matchCriteria })
           .sort({ createdAt: -1 })
-          .select('bookingId productName eventDate totalAmount advanceAmountPaid paymentStatus bookingStatus createdAt');
+          .select('bookingId productName productId productImage city specialRequests eventDate totalAmount advanceAmountPaid paymentStatus bookingStatus createdAt');
         
         return {
           ...u.toObject(),

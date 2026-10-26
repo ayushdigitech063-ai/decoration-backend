@@ -141,6 +141,7 @@ router.post('/', protect, adminOrSuperAdmin, async (req, res) => {
       heading: heading ? heading.trim() : '',
       subheading: subheading ? subheading.trim() : '',
       content: content ? content.trim() : '',
+      customSchema: customSchema ? customSchema.trim() : '',
       serviceAreas: Array.isArray(serviceAreas)
         ? serviceAreas
         : typeof serviceAreas === 'string'
@@ -232,6 +233,7 @@ router.put('/:id', protect, adminOrSuperAdmin, async (req, res) => {
     }
 
     // FAQs
+    if (customSchema !== undefined) city.customSchema = customSchema.trim();
     if (faqs !== undefined) {
       city.faqs = Array.isArray(faqs)
         ? faqs.filter((f) => f && f.question && f.question.trim())

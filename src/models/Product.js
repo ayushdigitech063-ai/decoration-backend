@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+﻿const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -12,6 +12,7 @@ const productSchema = new mongoose.Schema({
   
   category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
   subcategory: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
+  subSubcategory: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
   
   sku: { type: String, default: '' },
   stock: { type: Number, default: 100 },
@@ -19,6 +20,8 @@ const productSchema = new mongoose.Schema({
   availability: { type: Boolean, default: true },
   included: [{ type: String }],
   notIncluded: [{ type: String }],
+  whyUs: [{ type: String }],
+  guidelines: [{ type: String }],
   cancellationPolicy: { type: String, default: '' },
   
   rating: { type: Number, default: 4.8 },
@@ -33,6 +36,7 @@ const productSchema = new mongoose.Schema({
   gradientBg: { type: String, default: '' },
   isSpecialCard: { type: Boolean, default: false },
   availableCities: [{ type: String }],
+  serviceablePincodes: [{ type: String }],
 
   // City-specific content, SEO Meta Tags, and Custom pricing overrides
   cityOverrides: [{
@@ -47,7 +51,7 @@ const productSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 productSchema.index({ name: 'text', description: 'text' });
-productSchema.index({ category: 1, subcategory: 1 });
+productSchema.index({ category: 1, subcategory: 1, subSubcategory: 1 });
 productSchema.index({ price: 1 });
 productSchema.index({ availability: 1 });
 

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const {
   submitReview,
+  createReviewAdmin,
   getReviewsByProduct,
   checkReviewed,
   getAllReviewsAdmin,
@@ -18,6 +19,7 @@ router.post('/', protect, submitReview);
 router.get('/check/:bookingId', protect, checkReviewed);
 
 // Admin-only routes
+router.post('/admin-create', protect, adminOrSuperAdmin, createReviewAdmin);
 router.get('/', protect, adminOrSuperAdmin, getAllReviewsAdmin);
 router.put('/:id', protect, adminOrSuperAdmin, updateReviewStatus);
 router.delete('/:id', protect, adminOrSuperAdmin, deleteReview);

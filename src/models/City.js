@@ -71,6 +71,7 @@ const citySchema = new mongoose.Schema(
       default: [],
     },
     // Dynamic City FAQs for Rich Snippets Schema
+    customSchema: { type: String, default: '' },
     faqs: [
       {
         question: { type: String, trim: true, default: '' },
