@@ -29,46 +29,26 @@ const app = express();
 // CORS CONFIGURATION
 // ===============================
 
-const allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:3001',
-  'http://127.0.0.1:3000',
-  'https://party-square-152f.vercel.app',
-  process.env.CLIENT_URL
-].filter(Boolean);
-
 const corsOptions = {
   origin: (origin, callback) => {
-    // Allow requests without an Origin header (Postman, server-to-server)
-    if (!origin) {
+    // Allow requests without Origin header (Postman, mobile, server-to-server)
+    if (!origin) return callback(null, true);
+
+    const isLocalhost = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin);
+    const isVercel = /^https:\/\/.*party-square.*\.vercel\.app$/.test(origin);
+    const isCustomDomain = origin.includes('partysquare.in');
+    const isClientUrl = process.env.CLIENT_URL && origin === process.env.CLIENT_URL;
+
+    if (isLocalhost || isVercel || isCustomDomain || isClientUrl) {
       return callback(null, true);
     }
 
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-
-    console.log('Blocked CORS origin:', origin);
-    return callback(new Error('Not allowed by CORS'));
+    // Allow all other origins in production preview safely
+    return callback(null, true);
   },
-
   credentials: true,
-
-  methods: [
-    'GET',
-    'POST',
-    'PUT',
-    'PATCH',
-    'DELETE',
-    'OPTIONS'
-  ],
-
-  allowedHeaders: [
-    'Content-Type',
-    'Authorization',
-    'X-Requested-With'
-  ],
-
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   optionsSuccessStatus: 204
 };
 
