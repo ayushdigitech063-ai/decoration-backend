@@ -21,6 +21,7 @@ const settingRoutes = require('./routes/settingRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
 const couponRoutes = require('./routes/couponRoutes');
 const staffRoutes = require('./routes/staffRoutes');
+const addOnRoutes = require('./routes/addOnRoutes');
 
 const app = express();
 
@@ -121,6 +122,7 @@ app.use('/api/bookings', bookingRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/coupons', couponRoutes);
 app.use('/api/staff', staffRoutes);
+app.use('/api/addons', addOnRoutes);
 
 // ===============================
 // ERROR HANDLING
