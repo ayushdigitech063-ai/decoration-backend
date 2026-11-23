@@ -19,6 +19,11 @@ const reviewSchema = new mongoose.Schema(
       required: true,
       index: true,
     },
+    productGroupId: {
+      type: String,
+      default: '',
+      index: true,
+    },
     productName: {
       type: String,
       required: true,
@@ -50,15 +55,17 @@ const reviewSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      maxlength: 1000,
     },
 
-    // Admin moderation
+    // Review status for moderation
     status: {
       type: String,
       enum: ['PENDING', 'APPROVED', 'FEATURED', 'REJECTED'],
       default: 'PENDING',
+      index: true,
     },
+
+    // Flag if created by admin or verified customer
     isManual: {
       type: Boolean,
       default: false,
@@ -69,7 +76,7 @@ const reviewSchema = new mongoose.Schema(
   }
 );
 
-// Sparse compound index for customer reviews
-reviewSchema.index({ booking: 1, user: 1 }, { unique: true, sparse: true });
+reviewSchema.index({ productId: 1, status: 1 });
+reviewSchema.index({ productGroupId: 1, status: 1 });
 
 module.exports = mongoose.model('Review', reviewSchema);

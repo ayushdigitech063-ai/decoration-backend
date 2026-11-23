@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Review = require('../models/Review');
 const Booking = require('../models/Booking');
 const Product = require('../models/Product');
@@ -42,10 +43,25 @@ const submitReview = async (req, res) => {
       return res.status(409).json({ message: 'You have already reviewed this booking.' });
     }
 
+    // Find product to link productGroupId
+    let productGroupId = '';
+    if (booking.productId) {
+      const prod = await Product.findOne({
+        $or: [
+          { _id: mongoose.Types.ObjectId.isValid(booking.productId) ? booking.productId : new mongoose.Types.ObjectId() },
+          { slug: booking.productId }
+        ]
+      });
+      if (prod && prod.productGroupId) {
+        productGroupId = prod.productGroupId;
+      }
+    }
+
     const review = await Review.create({
       booking: booking._id,
       bookingId: booking.bookingId,
       productId: booking.productId || '',
+      productGroupId,
       productName: booking.productName,
       user: req.user._id,
       customerName: req.user.name || booking.customerName,
@@ -84,14 +100,33 @@ const createReviewAdmin = async (req, res) => {
       return res.status(400).json({ message: 'Rating must be between 1 and 5.' });
     }
 
+    // Look up product to resolve ID, name, and productGroupId
+    const prod = await Product.findOne({
+      $or: [
+        { _id: mongoose.Types.ObjectId.isValid(productId) ? productId : new mongoose.Types.ObjectId() },
+        { slug: productId }
+      ]
+    });
+
+    let resolvedProductId = String(productId);
     let resolvedProductName = productName;
-    if (!resolvedProductName) {
-      const prod = await Product.findById(productId);
-      resolvedProductName = prod ? prod.name : 'Decoration Package';
+    let resolvedProductGroupId = '';
+
+    if (prod) {
+      resolvedProductId = String(prod._id);
+      if (!resolvedProductName) {
+        resolvedProductName = prod.name;
+      }
+      if (prod.productGroupId) {
+        resolvedProductGroupId = prod.productGroupId;
+      }
+    } else if (!resolvedProductName) {
+      resolvedProductName = 'Decoration Package';
     }
 
     const review = await Review.create({
-      productId: String(productId),
+      productId: resolvedProductId,
+      productGroupId: resolvedProductGroupId,
       productName: resolvedProductName,
       customerName: customerName.trim(),
       city: city ? city.trim() : '',
@@ -113,16 +148,49 @@ const createReviewAdmin = async (req, res) => {
 
 // ─────────────────────────────────────────────
 // GET /api/reviews/product/:productId
-// Public: returns APPROVED & FEATURED reviews for a product
+// Public: returns APPROVED & FEATURED reviews for a product (or its productGroupId across cities)
 // ─────────────────────────────────────────────
 const getReviewsByProduct = async (req, res) => {
   try {
     const { productId } = req.params;
 
-    const reviews = await Review.find({
-      productId,
-      status: { $in: ['APPROVED', 'FEATURED'] },
-    })
+    // Check if productId belongs to a product that has a productGroupId
+    const targetProduct = await Product.findOne({
+      $or: [
+        { _id: mongoose.Types.ObjectId.isValid(productId) ? productId : new mongoose.Types.ObjectId() },
+        { slug: productId }
+      ]
+    });
+
+    const query = {
+      status: { $in: ['APPROVED', 'FEATURED'] }
+    };
+
+    if (targetProduct) {
+      const matchConditions = [
+        { productId: String(targetProduct._id) },
+        { productId: productId }
+      ];
+      if (targetProduct.slug) {
+        matchConditions.push({ productId: targetProduct.slug });
+      }
+      if (targetProduct.productGroupId) {
+        matchConditions.push({ productGroupId: targetProduct.productGroupId });
+        // Also find all sibling product IDs sharing the same productGroupId
+        const siblingProducts = await Product.find({ productGroupId: targetProduct.productGroupId }, '_id').lean();
+        siblingProducts.forEach((sp) => {
+          matchConditions.push({ productId: String(sp._id) });
+        });
+      }
+      query.$or = matchConditions;
+    } else {
+      query.$or = [
+        { productId: productId },
+        { productGroupId: productId }
+      ];
+    }
+
+    const reviews = await Review.find(query)
       .sort({ createdAt: -1 })
       .lean();
 

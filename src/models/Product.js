@@ -2,7 +2,9 @@
 
 const productSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  slug: { type: String, required: true, unique: true },
+  slug: { type: String, required: true },
+  city: { type: String, required: true, default: 'Delhi', index: true },
+  productGroupId: { type: String, required: true, index: true },
   description: { type: String, required: true },
   fullDescription: { type: String, default: '' },
   price: { type: Number, required: true },
@@ -17,7 +19,7 @@ const productSchema = new mongoose.Schema({
   sku: { type: String, default: '' },
   stock: { type: Number, default: 100 },
   
-  availability: { type: Boolean, default: true },
+  availability: { type: Boolean, default: true, index: true },
   included: [{ type: String }],
   notIncluded: [{ type: String }],
   whyUs: [{ type: String }],
@@ -35,10 +37,9 @@ const productSchema = new mongoose.Schema({
   theme: { type: String, default: '' },
   gradientBg: { type: String, default: '' },
   isSpecialCard: { type: Boolean, default: false },
-  availableCities: [{ type: String }],
+  availableCities: [{ type: String }], // Kept for backward compatibility
   serviceablePincodes: [{ type: String }],
 
-  // City-specific content, SEO Meta Tags, and Custom pricing overrides
   cityOverrides: [{
     cityName: { type: String, required: true },
     metaTitle: { type: String, default: '' },
@@ -50,9 +51,10 @@ const productSchema = new mongoose.Schema({
   }]
 }, { timestamps: true });
 
+productSchema.index({ slug: 1, city: 1 }, { unique: true });
 productSchema.index({ name: 'text', description: 'text' });
 productSchema.index({ category: 1, subcategory: 1, subSubcategory: 1 });
 productSchema.index({ price: 1 });
-productSchema.index({ availability: 1 });
+productSchema.index({ productGroupId: 1, city: 1 });
 
 module.exports = mongoose.model('Product', productSchema);

@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "6af17e553a1cc7686d9150c5",
+    "booking": null,
+    "bookingId": "",
+    "productId": "6ad1b6e6b288d49c28cff8c9",
+    "productName": "Bespoke Room Wall Styling",
+    "user": null,
+    "customerName": "Raj",
+    "city": "Hyderabad",
+    "rating": 5,
+    "comment": "Superb",
+    "status": "APPROVED",
+    "isManual": true,
+    "createdAt": "2026-11-09T08:03:33.365Z",
+    "updatedAt": "2026-11-09T08:03:33.365Z",
+    "__v": 0
+  }
+]

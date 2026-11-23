@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const { protect, superAdminOnly } = require('../middleware/authMiddleware');
 const Product = require('../models/Product');
 const Category = require('../models/Category');
+const City = require('../models/City');
 
 const router = express.Router();
 
@@ -16,7 +17,138 @@ function slugify(text) {
     .replace(/-+$/, '');
 }
 
-// GET all products with server-side search, filtering, sorting, and pagination
+// -------------------------------------------------------------
+// GET /api/products/resolve-city
+// Resolves a product for a new target city via productGroupId or slug
+// -------------------------------------------------------------
+router.get('/resolve-city', async (req, res) => {
+  try {
+    const { productGroupId, slug, targetCity } = req.query;
+    if (!targetCity) {
+      return res.status(400).json({ message: 'targetCity parameter is required' });
+    }
+
+    const cityRegex = new RegExp(`^${targetCity.trim()}$`, 'i');
+    let matchedProduct = null;
+
+    if (productGroupId) {
+      matchedProduct = await Product.findOne({
+        productGroupId: String(productGroupId).trim(),
+        city: cityRegex,
+        availability: true
+      })
+      .populate('category', 'name slug image')
+      .populate('subcategory', 'name slug image parentCategory');
+    }
+
+    if (!matchedProduct && slug) {
+      const cleanSlug = slugify(slug);
+      matchedProduct = await Product.findOne({
+        slug: cleanSlug,
+        city: cityRegex,
+        availability: true
+      })
+      .populate('category', 'name slug image')
+      .populate('subcategory', 'name slug image parentCategory');
+    }
+
+    if (!matchedProduct) {
+      return res.status(404).json({
+        found: false,
+        message: `Product is not currently available in ${targetCity}`
+      });
+    }
+
+    res.json({
+      found: true,
+      product: matchedProduct
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// -------------------------------------------------------------
+// POST /api/products/:id/duplicate-cities
+// Clones an existing product into one or multiple target cities
+// -------------------------------------------------------------
+router.post('/:id/duplicate-cities', protect, superAdminOnly, async (req, res) => {
+  try {
+    const { targetCities, customPrices } = req.body;
+    if (!Array.isArray(targetCities) || targetCities.length === 0) {
+      return res.status(400).json({ message: 'targetCities must be a non-empty array' });
+    }
+
+    const sourceProduct = await Product.findById(req.params.id);
+    if (!sourceProduct) {
+      return res.status(404).json({ message: 'Source product not found' });
+    }
+
+    const groupId = sourceProduct.productGroupId || `grp_${sourceProduct.slug || String(sourceProduct._id)}`;
+    
+    // Ensure source product has the productGroupId assigned
+    if (!sourceProduct.productGroupId) {
+      sourceProduct.productGroupId = groupId;
+      await sourceProduct.save();
+    }
+
+    const createdClones = [];
+    const skippedCities = [];
+
+    for (const rawCity of targetCities) {
+      const city = String(rawCity).trim();
+      if (!city) continue;
+
+      // Duplicate prevention: check if this product already exists in this city
+      const existing = await Product.findOne({
+        slug: sourceProduct.slug,
+        city: new RegExp(`^${city}$`, 'i')
+      });
+
+      if (existing) {
+        skippedCities.push(city);
+        continue;
+      }
+
+      // Determine price override if provided
+      let finalPrice = sourceProduct.price;
+      if (customPrices && typeof customPrices === 'object' && customPrices[city] !== undefined) {
+        const parsed = Number(customPrices[city]);
+        if (!isNaN(parsed) && parsed > 0) {
+          finalPrice = parsed;
+        }
+      }
+
+      const cloneDoc = new Product({
+        ...sourceProduct.toObject(),
+        _id: new mongoose.Types.ObjectId(),
+        city: city,
+        price: finalPrice,
+        productGroupId: groupId,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      });
+
+      const saved = await cloneDoc.save();
+      createdClones.push(saved);
+    }
+
+    res.status(201).json({
+      success: true,
+      productGroupId: groupId,
+      createdCount: createdClones.length,
+      skippedCities,
+      createdProducts: createdClones
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// -------------------------------------------------------------
+// GET /api/products
+// GET all products with server-side city matching, search, and filters
+// -------------------------------------------------------------
 router.get('/', async (req, res) => {
   try {
     const query = {};
@@ -31,7 +163,7 @@ router.get('/', async (req, res) => {
       ];
     }
 
-    // 2. Category filter (by ID, slug, or name with child & related category support)
+    // 2. Category filter
     if (req.query.category && req.query.category !== 'all') {
       if (mongoose.Types.ObjectId.isValid(req.query.category)) {
         const childCats = await Category.find({ parentCategory: req.query.category }, '_id');
@@ -80,7 +212,7 @@ router.get('/', async (req, res) => {
       }
     }
 
-    // 3. Subcategory filter (by ID, slug, or name)
+    // 3. Subcategory filter
     if (req.query.subcategory && req.query.subcategory !== 'all') {
       if (mongoose.Types.ObjectId.isValid(req.query.subcategory)) {
         query.subcategory = req.query.subcategory;
@@ -118,13 +250,21 @@ router.get('/', async (req, res) => {
       }
     }
 
-    // 6. City filter (Strict city matching: Only show products specifically assigned to this city)
-    if (req.query.city && req.query.city !== 'All') {
+    // 6. City filter: supports both city field & legacy availableCities for backward compatibility
+    if (req.query.city && req.query.city !== 'All' && req.query.city !== 'all') {
       const cityRegex = new RegExp(`^${req.query.city.trim()}$`, 'i');
-      query.availableCities = cityRegex;
+      query.$or = [
+        { city: cityRegex },
+        { availableCities: cityRegex }
+      ];
     }
 
-    // 7. Sorting
+    // 7. Group filter (optional)
+    if (req.query.productGroupId) {
+      query.productGroupId = req.query.productGroupId;
+    }
+
+    // 8. Sorting
     const sortField = {};
     switch (req.query.sort) {
       case 'price-low':
@@ -183,38 +323,53 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET single product by ID or slug
+// -------------------------------------------------------------
+// GET /api/products/:id
+// GET single product by ID or slug with optional city context
+// -------------------------------------------------------------
 router.get('/:id', async (req, res) => {
   try {
     const rawId = String(req.params.id || '').trim();
+    const cityParam = req.query.city ? String(req.query.city).trim() : null;
     const isObjectId = mongoose.Types.ObjectId.isValid(rawId);
 
     let product = null;
 
+    // 1. Direct ID lookup
     if (isObjectId) {
       product = await Product.findById(rawId)
         .populate('category', 'name slug image')
         .populate('subcategory', 'name slug image parentCategory')
-      .populate('subSubcategory', 'name slug image parentCategory');
+        .populate('subSubcategory', 'name slug image parentCategory');
     }
 
-    // Try case-insensitive slug
+    // 2. Slug + City lookup if city is provided
+    if (!product && cityParam && cityParam.toLowerCase() !== 'all') {
+      const cleanSlug = slugify(rawId);
+      const cityRegex = new RegExp(`^${cityParam}$`, 'i');
+      product = await Product.findOne({ slug: cleanSlug, city: cityRegex })
+        .populate('category', 'name slug image')
+        .populate('subcategory', 'name slug image parentCategory')
+        .populate('subSubcategory', 'name slug image parentCategory');
+    }
+
+    // 3. Fallback: Slug lookup
     if (!product) {
       const escaped = rawId.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
       product = await Product.findOne({ slug: new RegExp(`^${escaped}$`, 'i') })
         .populate('category', 'name slug image')
         .populate('subcategory', 'name slug image parentCategory')
-      .populate('subSubcategory', 'name slug image parentCategory');
+        .populate('subSubcategory', 'name slug image parentCategory');
     }
 
-    // Try matching normalized name (hyphens replaced with spaces)
+    // 4. Fallback: Normalized name lookup
     if (!product) {
       const namePattern = rawId.replace(/-/g, ' ');
       const escapedName = namePattern.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
       product = await Product.findOne({ name: new RegExp(`^${escapedName}$`, 'i') })
         .populate('category', 'name slug image')
         .populate('subcategory', 'name slug image parentCategory')
-      .populate('subSubcategory', 'name slug image parentCategory');
+        .populate('subSubcategory', 'name slug image parentCategory');
     }
 
     if (!product) return res.status(404).json({ message: 'Product not found' });
@@ -224,12 +379,17 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// CREATE product
+// -------------------------------------------------------------
+// POST /api/products
+// CREATE product (Supports single city or bulk "All Cities" generation)
+// -------------------------------------------------------------
 router.post('/', protect, superAdminOnly, async (req, res) => {
   try {
     const {
       name,
       slug,
+      city,
+      createForAllCities,
       description,
       fullDescription,
       price,
@@ -251,8 +411,7 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
       theme,
       gradientBg,
       isSpecialCard,
-      availableCities,
-      cityOverrides
+      serviceablePincodes
     } = req.body;
 
     // Required fields validation
@@ -282,25 +441,75 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
       if (!subcatDoc) {
         return res.status(400).json({ message: 'Specified subcategory does not exist' });
       }
-      if (String(subcatDoc.parentCategory) !== String(categoryDoc._id)) {
-        return res.status(400).json({
-          message: 'Selected subcategory does not belong to the selected category.'
-        });
-      }
       validSubcatId = subcatDoc._id;
     }
 
     // Handle slug
-    let finalSlug = slug ? slugify(slug) : slugify(name);
-    if (!finalSlug) finalSlug = 'product-' + Date.now();
-    const existing = await Product.findOne({ slug: finalSlug });
-    if (existing) {
-      finalSlug = `${finalSlug}-${Date.now().toString().slice(-4)}`;
+    let baseSlug = slug ? slugify(slug) : slugify(name);
+    if (!baseSlug) baseSlug = 'product-' + Date.now();
+
+    // Assign unified productGroupId
+    const productGroupId = `grp_${baseSlug}_${Date.now().toString().slice(-4)}`;
+
+    // Check if creating for All Cities
+    if (createForAllCities === true || (Array.isArray(req.body.availableCities) && req.body.availableCities.includes('All'))) {
+      const activeCities = await City.find({ isActive: true });
+      const cityList = activeCities.length > 0
+        ? activeCities.map(c => c.name.trim())
+        : ['Delhi', 'Mumbai', 'Bangalore', 'Hyderabad', 'Chennai', 'Ahmedabad', 'Jaipur', 'Pune'];
+
+      const createdDocs = [];
+      for (const cityName of cityList) {
+        // Ensure no duplicate (slug, city)
+        const exists = await Product.findOne({ slug: baseSlug, city: cityName });
+        const finalSlug = exists ? `${baseSlug}-${Date.now().toString().slice(-3)}` : baseSlug;
+
+        const prodDoc = new Product({
+          name: name.trim(),
+          slug: finalSlug,
+          city: cityName,
+          productGroupId: productGroupId,
+          description: description || '',
+          fullDescription: fullDescription || description || '',
+          price: Number(price) || 0,
+          originalPrice: originalPrice ? Number(originalPrice) : undefined,
+          image,
+          images: Array.isArray(images) ? images : [],
+          category: categoryDoc._id,
+          subcategory: validSubcatId,
+          sku: sku || '',
+          stock: stock !== undefined ? Number(stock) : 100,
+          availability: availability !== undefined ? Boolean(availability) : true,
+          included: Array.isArray(included) ? included : (included ? [included] : []),
+          notIncluded: Array.isArray(notIncluded) ? notIncluded : (notIncluded ? [notIncluded] : []),
+          cancellationPolicy: cancellationPolicy || '',
+          rating: rating !== undefined ? Number(rating) : 4.8,
+          reviewCount: reviewCount !== undefined ? Number(reviewCount) : 50,
+          badge: badge || 'Verified Quality Product',
+          faqs: Array.isArray(faqs) ? faqs : [],
+          theme: theme || '',
+          gradientBg: gradientBg || '',
+          isSpecialCard: Boolean(isSpecialCard),
+          serviceablePincodes: Array.isArray(serviceablePincodes) ? serviceablePincodes : []
+        });
+
+        const saved = await prodDoc.save();
+        createdDocs.push(saved);
+      }
+
+      return res.status(201).json(createdDocs[0]);
     }
+
+    // Single City Creation
+    const targetCity = city ? String(city).trim() : 'Delhi';
+    const existing = await Product.findOne({ slug: baseSlug, city: targetCity });
+    const finalSlug = existing ? `${baseSlug}-${Date.now().toString().slice(-4)}` : baseSlug;
 
     const newProduct = new Product({
       name: name.trim(),
       slug: finalSlug,
+      city: targetCity,
+      productGroupId: productGroupId,
       description: description || '',
       fullDescription: fullDescription || description || '',
       price: Number(price) || 0,
@@ -322,15 +531,13 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
       theme: theme || '',
       gradientBg: gradientBg || '',
       isSpecialCard: Boolean(isSpecialCard),
-      availableCities: Array.isArray(availableCities) ? availableCities : ['All'],
-      cityOverrides: Array.isArray(cityOverrides) ? cityOverrides : []
+      serviceablePincodes: Array.isArray(serviceablePincodes) ? serviceablePincodes : []
     });
 
     const saved = await newProduct.save();
     const populated = await Product.findById(saved._id)
       .populate('category', 'name slug image')
-      .populate('subcategory', 'name slug image parentCategory')
-      .populate('subSubcategory', 'name slug image parentCategory');
+      .populate('subcategory', 'name slug image parentCategory');
 
     res.status(201).json(populated);
   } catch (error) {
@@ -338,7 +545,9 @@ router.post('/', protect, superAdminOnly, async (req, res) => {
   }
 });
 
+// -------------------------------------------------------------
 // UPDATE product
+// -------------------------------------------------------------
 router.put('/:id', protect, superAdminOnly, async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
@@ -346,7 +555,7 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
 
     const updateData = { ...req.body };
 
-    // Validate category/subcategory relationship if both or either are provided
+    // Validate category/subcategory relationship
     const targetCategory = updateData.category || product.category;
     if (updateData.subcategory !== undefined) {
       if (updateData.subcategory && updateData.subcategory !== 'null' && updateData.subcategory !== '') {
@@ -354,24 +563,24 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
         if (!subcatDoc) {
           return res.status(400).json({ message: 'Specified subcategory does not exist' });
         }
-        if (String(subcatDoc.parentCategory) !== String(targetCategory)) {
-          return res.status(400).json({
-            message: 'Selected subcategory does not belong to the selected category.'
-          });
-        }
         updateData.subcategory = subcatDoc._id;
       } else {
         updateData.subcategory = null;
       }
     }
 
-    // Slug check if updating slug
+    // Slug check (scoped to this product's city)
     if (updateData.slug) {
       const cleanSlug = slugify(updateData.slug);
-      if (cleanSlug && cleanSlug !== product.slug) {
-        const exists = await Product.findOne({ slug: cleanSlug, _id: { $ne: product._id } });
+      const targetCity = updateData.city || product.city;
+      if (cleanSlug && (cleanSlug !== product.slug || targetCity !== product.city)) {
+        const exists = await Product.findOne({
+          slug: cleanSlug,
+          city: targetCity,
+          _id: { $ne: product._id }
+        });
         if (exists) {
-          return res.status(400).json({ message: 'Slug already in use by another product' });
+          return res.status(400).json({ message: `Slug already in use for city "${targetCity}"` });
         }
         updateData.slug = cleanSlug;
       }
@@ -382,8 +591,7 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
       runValidators: true
     })
       .populate('category', 'name slug image')
-      .populate('subcategory', 'name slug image parentCategory')
-      .populate('subSubcategory', 'name slug image parentCategory');
+      .populate('subcategory', 'name slug image parentCategory');
 
     res.json(updated);
   } catch (error) {
@@ -391,7 +599,9 @@ router.put('/:id', protect, superAdminOnly, async (req, res) => {
   }
 });
 
+// -------------------------------------------------------------
 // DELETE product
+// -------------------------------------------------------------
 router.delete('/:id', protect, superAdminOnly, async (req, res) => {
   try {
     const product = await Product.findByIdAndDelete(req.params.id);

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-23T07-32-23-207Z",
+  "counts": {
+    "products": 37,
+    "reviews": 1,
+    "bookings": 18,
+    "cities": 17,
+    "packages": 21
+  },
+  "dbName": "test",
+  "backupDir": "C:\\party-square\\decoration-backend\\backups\\snapshot_2026-11-23T07-32-23-207Z"
+}

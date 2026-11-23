@@ -1,0 +1,629 @@
+[
+  {
+    "_id": "6abcfc91b686098e6a9110ce",
+    "name": "Classic Wall Arch",
+    "description": "Elegant and neat wall balloon styling, perfect for compact spaces.",
+    "price": 2999,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "wall-decoration",
+    "features": [
+      "Half/Full Wall Balloon Arch",
+      "Matching Foil Curtains & Banners",
+      "Easy peel-off safe wall hooks",
+      "Professional installation team",
+      "Duration: 2-3 Hours Setup"
+    ],
+    "__v": 0,
+    "createdAt": "2026-09-30T12:12:01.159Z",
+    "updatedAt": "2026-10-13T12:07:10.059Z"
+  },
+  {
+    "_id": "6abcfc91b686098e6a9110cf",
+    "name": "Floral & Ring Wall Decor",
+    "description": "Stunning combination of floral loops, fairy lights, and themed wall accents.",
+    "price": 5499,
+    "image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop&q=60",
+    "isPopular": true,
+    "pageTarget": "wall-decoration",
+    "features": [
+      "Everything in Classic Wall Arch",
+      "Metal/Wooden Ring Backdrop Setup",
+      "LED Neon Sign / Custom Name Cutout",
+      "Fairy lights & ambient lighting",
+      "Premium organic biodegradable balloons"
+    ],
+    "__v": 0,
+    "createdAt": "2026-09-30T12:12:01.161Z",
+    "updatedAt": "2026-10-13T12:07:10.094Z"
+  },
+  {
+    "_id": "6abcfc91b686098e6a9110d0",
+    "name": "Grand Entrance & Wall Combo",
+    "description": "Complete wall and door decoration bundle for maximum visual impact.",
+    "price": 8999,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "wall-decoration",
+    "features": [
+      "Comprehensive Wall Decoration",
+      "Matching Door Entrance Styling",
+      "Special Photo-Booth Corner",
+      "Fog or Cold Pyro entry elements",
+      "Dedicated event stylist support"
+    ],
+    "__v": 0,
+    "createdAt": "2026-09-30T12:12:01.161Z",
+    "updatedAt": "2026-10-13T12:07:10.123Z"
+  },
+  {
+    "_id": "6abf55c58d11d8e08a09c15d",
+    "name": "Floral Ring Arch Backdrop",
+    "description": "A magnificent circular floral loop decorated with fresh roses, orchids, and warm fairy lighting for the perfect engagement backdrop.",
+    "price": 12999,
+    "image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "ring-decoration",
+    "features": [
+      "Circular Floral Arch",
+      "Fresh Roses & Orchids",
+      "Warm Fairy Lights",
+      "2-3 Hours Setup"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-02T06:57:09.782Z",
+    "updatedAt": "2026-10-13T12:07:10.251Z"
+  },
+  {
+    "_id": "6abf55c58d11d8e08a09c15e",
+    "name": "Royal Couple Seating & Stage",
+    "description": "Stunning couple sofa setup with rich velvet drapes, golden props, and grand chandelier lighting designed specifically for your special day.",
+    "price": 18999,
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop&q=60",
+    "isPopular": true,
+    "pageTarget": "ring-decoration",
+    "features": [
+      "Royal Couple Sofa",
+      "Velvet Drapes & Gold Props",
+      "Grand Chandelier Lighting",
+      "Dedicated Setup Manager"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-02T06:57:09.784Z",
+    "updatedAt": "2026-10-13T12:07:10.289Z"
+  },
+  {
+    "_id": "6abf55c58d11d8e08a09c15f",
+    "name": "Aisle & Entrance Pathway Decor",
+    "description": "Magical entry walkway adorned with flower petals, pillar candles, and elegant cold pyro fountains to welcome the couple in style.",
+    "price": 8499,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "ring-decoration",
+    "features": [
+      "Walkway Petal Carpet",
+      "Pillar Candles & Lanterns",
+      "Cold Pyro Entry Fountains",
+      "Entry Archway"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-02T06:57:09.784Z",
+    "updatedAt": "2026-10-13T12:07:10.222Z"
+  },
+  {
+    "_id": "6abf55c58d11d8e08a09c160",
+    "name": "Intimate Garden Ring Setup",
+    "description": "Open-air romantic canopy setup with hanging fairy lights, botanical greens, and pastel floral arrangements for outdoor celebrations.",
+    "price": 14999,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "ring-decoration",
+    "features": [
+      "Open-Air Romantic Canopy",
+      "Botanical Greens & Pastels",
+      "Fairy Lights Cluster",
+      "Complete Sound & Lighting Ready"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-02T06:57:09.784Z",
+    "updatedAt": "2026-10-13T12:07:10.183Z"
+  },
+  {
+    "_id": "6accb26d869a65ceff4d9433",
+    "name": "Royal Ring Decoration Standard",
+    "slug": "royal-ring-decoration-standard",
+    "tier": "standard",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 2799,
+    "originalPrice": 3499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791804321/party_square/packages/ywehni1ms1hd03gwyu6q.png",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791799917/party_square/packages/kxeoqn9naqggmbw6yiuc.png"
+    ],
+    "included": [
+      "250 Pastel Balloons",
+      "Ring Setup Frame",
+      "2 Fairy Lights",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb26d869a65ceff4d9434"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb26d869a65ceff4d9435"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Top Choice",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:11:57.358Z",
+    "updatedAt": "2026-10-12T11:25:21.282Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb3b2869a65ceff4d943d",
+    "name": "Royal Ring Decoration Standard",
+    "slug": "royal-ring-decoration-standard-1",
+    "tier": "premium",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 5499,
+    "originalPrice": 6499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800240/party_square/packages/dj37qt7hf3dsyxopeiod.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800242/party_square/packages/n7loq2sjgiqeudiooe7c.png"
+    ],
+    "included": [],
+    "notIncluded": [],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb3b2869a65ceff4d943e"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb3b2869a65ceff4d943f"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:17:22.514Z",
+    "updatedAt": "2026-10-12T10:17:22.514Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb3ee869a65ceff4d944a",
+    "name": "Royal Ring Decoration Standard",
+    "slug": "royal-ring-decoration-standard-2",
+    "tier": "luxury",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 8499,
+    "originalPrice": 9499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800299/party_square/packages/a8vqfogwu1bqhqz0zf20.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800301/party_square/packages/d8bzm1r54tuphtqkdzut.png"
+    ],
+    "included": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb3ee869a65ceff4d944b"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb3ee869a65ceff4d944c"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:18:22.008Z",
+    "updatedAt": "2026-10-12T10:18:22.008Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb480869a65ceff4d945a",
+    "name": "Royal Ring Decoration Standard",
+    "slug": "royal-ring-decoration-standard-3",
+    "tier": "luxury",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 8499,
+    "originalPrice": 9499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800446/party_square/packages/x4whqinlrlloj3vd0tg9.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791800448/party_square/packages/soqu5ta2lvmmhy8i7ivx.png"
+    ],
+    "included": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb480869a65ceff4d945b"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb480869a65ceff4d945c"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:20:48.846Z",
+    "updatedAt": "2026-10-12T10:20:48.846Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb8d34509c7bbc79b1efb",
+    "name": "Royal Office Decoration Standard",
+    "slug": "royal-office-decoration-standard-luxury",
+    "tier": "luxury",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 8499,
+    "originalPrice": 9499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801553/party_square/packages/a0qkorkok7uauy8oodez.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801555/party_square/packages/za1mun8rxo2u5hq7marj.png"
+    ],
+    "included": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb8d34509c7bbc79b1efc"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb8d34509c7bbc79b1efd"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:39:15.999Z",
+    "updatedAt": "2026-10-12T10:39:15.999Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb9034509c7bbc79b1f0b",
+    "name": "Royal Office Decoration Standard",
+    "slug": "royal-office-decoration-standard-standard",
+    "tier": "standard",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 8499,
+    "originalPrice": 9499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801600/party_square/packages/dxxamxkskuod369jhpge.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801602/party_square/packages/uiqiwgjeiafmedt5qzb3.png"
+    ],
+    "included": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb9034509c7bbc79b1f0c"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb9034509c7bbc79b1f0d"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:40:03.363Z",
+    "updatedAt": "2026-10-12T10:40:03.363Z",
+    "__v": 0
+  },
+  {
+    "_id": "6accb91d4509c7bbc79b1f1e",
+    "name": "Royal Office Decoration Standard",
+    "slug": "royal-office-decoration-standard-premium",
+    "tier": "premium",
+    "category": "6acc69a44b76d55584d1af91",
+    "subcategory": null,
+    "description": "",
+    "price": 8499,
+    "originalPrice": 9499,
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801627/party_square/packages/bpzjvfhhfi5jwsakkbeq.jpg",
+    "galleryImages": [
+      "https://res.cloudinary.com/u4bnc0pb/image/upload/v1791801629/party_square/packages/xktr923hkcwx0mrp54jo.png"
+    ],
+    "included": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "notIncluded": [
+      "200 Pastel Balloons",
+      "Ring Setup Frame",
+      "1 Fairy Light",
+      "Happy Birthday Neon Sign"
+    ],
+    "availableSlots": [
+      {
+        "label": "Morning Slot (10:00 AM - 01:00 PM)",
+        "startTime": "10:00",
+        "endTime": "13:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb91d4509c7bbc79b1f1f"
+      },
+      {
+        "label": "Evening Slot (04:00 PM - 07:00 PM)",
+        "startTime": "16:00",
+        "endTime": "19:00",
+        "maxBookings": 2,
+        "isActive": true,
+        "_id": "6accb91d4509c7bbc79b1f20"
+      }
+    ],
+    "setupDuration": "2.5 Hours",
+    "availableCities": [],
+    "isAllCities": true,
+    "badge": "Best Seller",
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2026-10-12T10:40:29.202Z",
+    "updatedAt": "2026-10-12T10:40:29.202Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f948f",
+    "name": "Pastel Luxe Canopy",
+    "description": "Bespoke pastel balloon arch with premium sheer canopy, fairy lights, and neon sign.",
+    "price": 6999,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop&q=60",
+    "isPopular": true,
+    "pageTarget": "birthday",
+    "features": [
+      "Pastel Organic Balloon Arch",
+      "Sheer Fabric Canopy",
+      "Neon Happy Birthday Sign",
+      "Warm LED Ambient Lights"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.918Z",
+    "updatedAt": "2026-10-13T12:07:09.918Z"
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f948e",
+    "name": "Classic Kids Theme",
+    "description": "A vibrant setup with 150+ metallic balloons, birthday banner, and fairy lights.",
+    "price": 3499,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "birthday",
+    "features": [
+      "150+ Metallic Balloons",
+      "HBD Foil Banner",
+      "Fairy Lights Backdrop",
+      "Standard 2hr Setup"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.917Z",
+    "updatedAt": "2026-10-13T12:07:09.917Z"
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f9490",
+    "name": "Grand Balloon Castle",
+    "description": "Showstopper themed balloon castle setup with customized cutouts and ambient styling.",
+    "price": 12499,
+    "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "birthday",
+    "features": [
+      "3D Balloon Castle Structure",
+      "Custom Name Cutouts",
+      "Full Room Ceiling Balloons",
+      "Dedicated Event Stylist"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.918Z",
+    "updatedAt": "2026-10-13T12:07:09.918Z"
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f9495",
+    "name": "Royal Violet Symphony",
+    "description": "Grand floral arch with organic purple & chrome balloon clusters, shimmer wall, and marquee numbers.",
+    "price": 13999,
+    "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "birthday-mother",
+    "features": [
+      "Sequin Shimmer Backdrop",
+      "Giant LED Marquee Age Numbers",
+      "Fresh & Faux Flower Medley",
+      "Complete Ambient Light Poles"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.992Z",
+    "updatedAt": "2026-11-08T09:00:11.691Z",
+    "city": "Delhi",
+    "images": [],
+    "originalPrice": 10999
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f9493",
+    "name": "Rose Gold Grace",
+    "description": "Delicate pastel & rose gold balloons, LED warm lights, and elegant customized backdrop.",
+    "price": 3999,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop&q=60",
+    "isPopular": false,
+    "pageTarget": "birthday-mother",
+    "features": [
+      "Rose Gold & Pastel Balloons",
+      "Curtain Backdrop with Fairy Lights",
+      "Mom Special Foil Accents",
+      "1.5 Hours Quick Setup"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.991Z",
+    "updatedAt": "2026-10-13T12:07:09.991Z"
+  },
+  {
+    "_id": "6ace1eed1cc62ea7ea0f9494",
+    "name": "Golden Empress Canopy",
+    "description": "Flowing satin fabric canopy, fairy lights, metallic gold accents, and a personalized neon sign.",
+    "price": 7499,
+    "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&auto=format&fit=crop&q=60",
+    "isPopular": true,
+    "pageTarget": "birthday-mother",
+    "features": [
+      "Flowing Satin Fabric Canopy",
+      "Warm Fairy Lights Net",
+      "Custom Neon Light Sign",
+      "Comfortable Seating Cushion Styling"
+    ],
+    "__v": 0,
+    "createdAt": "2026-10-13T12:07:09.992Z",
+    "updatedAt": "2026-11-08T09:01:49.190Z",
+    "city": "Mumbai",
+    "images": [],
+    "originalPrice": 5999
+  },
+  {
+    "_id": "6af03b5d02f836a3156bc206",
+    "name": "Demo Decor Bday",
+    "description": "Demo\nDemo\nDemo",
+    "price": 5999,
+    "originalPrice": 2999,
+    "city": "Bangalore",
+    "images": [],
+    "image": "https://res.cloudinary.com/u4bnc0pb/image/upload/v1794128707/party_square/yniibmcqucvidxkui5a0.jpg",
+    "isPopular": false,
+    "pageTarget": "birthday",
+    "features": [
+      "Demo",
+      "Demo",
+      "Demo",
+      "Demo"
+    ],
+    "createdAt": "2026-11-08T09:05:33.920Z",
+    "updatedAt": "2026-11-08T09:06:06.676Z",
+    "__v": 0
+  }
+]
