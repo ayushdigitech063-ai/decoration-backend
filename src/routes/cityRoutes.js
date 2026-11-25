@@ -102,6 +102,7 @@ router.post('/', protect, adminOrSuperAdmin, async (req, res) => {
       heading,
       subheading,
       content,
+      customSchema,
       serviceAreas,
       faqs,
     } = req.body;
